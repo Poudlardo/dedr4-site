@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 function Navbar() {
 
@@ -17,22 +18,22 @@ function Navbar() {
             </Link>
             <ul>
               <li>
-                <Link to="/" onClick={handleClick}>
+                <Link className='nav-link' to="/" onClick={handleClick}>
                     { click ? 'HOME' : <Link to="/games" onClick={closeMobileMenu}>GAMES</Link> }
                 </Link>
               </li>
               <li>
-                <Link to="/about" onClick={closeMobileMenu}>
+                <Link className='nav-link' to="/about" onClick={closeMobileMenu}>
                     ABOUT
                 </Link>
               </li>
               <li>
-                <Link to="/blog" onClick={closeMobileMenu}>
+                <Link className='nav-link' to="/blog" onClick={closeMobileMenu}>
                     BLOG
                 </Link>
               </li>
               <li>
-              <Link to="/connect" onClick={closeMobileMenu}>
+              <Link className='nav-link' to="/connect" onClick={closeMobileMenu}>
                   CONNECT
               </Link>
               </li>
