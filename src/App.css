@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+.Homehero > * {
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid red;
+    padding:1rem;
+}
+
+/* Page d'accueil */
+.home-container {
+    overflow: hidden;
+}
+.Homehero {
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    flex-wrap: wrap;
+    height: 85vh;
+}
+
+.textside {
+    flex: 1;
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 7em 5em 5em auto ;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    align-items: end;
+    justify-items: start;
+}
+.textside > *{
+    border: 1px solid red;
+}
+
+.rectangle {
+    width: 1em;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(129, 20, 20, 0) 0%, #000000 100%);
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+}
+
+.ovoLogo {
+    width: 12rem;
+    height: auto;
+    opacity: 0.6;
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+}
+
+.description {
+    opacity: 0.6;
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+}
+
+.playnow {
+    width: 100%;
+    height: 35%;
+    font-weight: bolder;
+    color: white;
+    background: linear-gradient(180deg, #B0B0B0 0%, #000000 100%);
+    border-radius: 0.7em;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.videoside-content {
+    flex: 1;
+    background-color: orange;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+
+.video {
+    width: 95%;
+    border-radius: 6em;
+    border: 4px solid rgb(0, 0, 0);
+    margin-right: -6em;
+}
+
+
+/* Page GAMES */
+

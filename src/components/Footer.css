@@ -1,0 +1,35 @@
+.line {
+    width: 15em;
+    height: 3px;
+    background-color: black;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    border: 0;
+}
+
+.leftpart {
+    margin-left: 1em;
+}
+
+.rightpart {
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-content: center;
+    column-gap: 3em; 
+    margin-right: 3em
+   }
+   
+.socialmedias {
+    width: 30px;
+    height: auto;
+    border: 0;
+}
