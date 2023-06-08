@@ -13,8 +13,11 @@ function Home() {
         <div className="Homehero">
             <section className="textside">
                 <div className="rectangle"></div>
-                <img src={ovoLogo} className="ovoLogo" />
-                <p className="description"><b>A tough skill based platforming game.</b><br />(Mobile/ PC)</p>
+                <div className="gametitlebox">
+                    
+                    <img src={ovoLogo} className="ovoLogo" />
+                    <p className="description"><b>A tough skill based platforming game.</b><br />(Mobile/ PC)</p>
+                </div>
                 <button className="playnow">PLAY NOW <img src={fleche} width='32px'/></button>
             </section>
             <section className="videoside-content">

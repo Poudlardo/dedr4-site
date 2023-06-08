@@ -5,8 +5,7 @@
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
     height: 5vh;
     align-items: center;
     justify-content: space-between;
@@ -15,21 +14,44 @@
 }
 
 .leftpart {
+    flex: 1;
     margin-left: 1em;
 }
 
 .rightpart {
+    flex: 1;
     font-weight: bolder;
     display: grid;
     grid-template-columns: repeat(5, auto);
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     column-gap: 3em; 
-    margin-right: 3em
+    margin-right: 3em;
    }
    
 .socialmedias {
     width: 30px;
     height: auto;
     border: 0;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        height: 6vh;
+        row-gap: 5px;
+    }
+}
+
+@media (max-width: 676px) {
+    
+.follow, .line {
+    display: none;
+}
+.rightpart {
+    padding-left: 10em;
+}
 }
