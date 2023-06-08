@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 function Home() {
     return(
     <div className="home-container">
-        < Navbar />        
+        <Navbar />        
         <div className="Homehero">
             <section className="textside">
                 <div className="rectangle"></div>
@@ -23,9 +23,9 @@ function Home() {
                  </video> 
             </section>
         </div>
-        < Footer />
+        <Footer />
     </div>
     )
 }
 
-export default Home
+export default Home 

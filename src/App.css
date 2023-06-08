@@ -21,8 +21,9 @@
     flex: 1;
     background-color: blueviolet;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: 2% 49% 49%;
     grid-template-rows: 7em 5em 5em auto ;
+    gap: 1em 1em;
     padding: 0;
     margin: 0;
     border: 0;
@@ -34,7 +35,7 @@
 }
 
 .rectangle {
-    width: 1em;
+    width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(129, 20, 20, 0) 0%, #000000 100%);
     grid-row: 2 / 4;
@@ -42,7 +43,7 @@
 }
 
 .ovoLogo {
-    width: 12rem;
+    width: 50%;
     height: auto;
     opacity: 0.6;
     grid-row: 2 / 3;
@@ -57,13 +58,14 @@
 
 .playnow {
     width: 100%;
-    height: 35%;
+    height: 15%;
     font-weight: bolder;
     color: white;
     background: linear-gradient(180deg, #B0B0B0 0%, #000000 100%);
     border-radius: 0.7em;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     grid-column: 2 / 3;
+    align-self: flex-start;
 }
 
 .videoside-content {
