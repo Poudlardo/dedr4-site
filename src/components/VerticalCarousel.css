@@ -1,0 +1,81 @@
+:root {
+    --white: #ffffff;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+
+  /* REGLER LA TAILLE DE LA POLICE ET LA HAUTEUR ENTRE LES LIGNES */
+  p, .carousel-item {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--white);
+    line-height: 1;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    height: auto;
+    width: 50%;
+    padding: 4em;
+    margin-top: 10%;
+  }
+  
+  .carousel-inner::before,
+  .carousel-inner::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    pointer-events: none;
+  }
+  
+  .carousel-inner::before {
+    top: 0;
+    background-color:  hsla(0, 15%, 84%, 0);
+  }
+  
+  .carousel-inner::after {
+    bottom: 0;
+    background-color:  hsla(0, 0%, 100%, 0);
+  }
+  
+  .carousel-item {
+    position: absolute;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+  
+  .carousel-item.visible {
+    opacity: 1;
+  }
+  
+  .carousel-item.visible:not(.active) {
+    opacity: 0.4;
+  }
+
+  .gamesimages {
+    height: 8em;
+    width: auto;
+  }

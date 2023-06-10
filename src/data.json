@@ -1,0 +1,35 @@
+{
+    "slides": [
+      {
+        "introline": "ovo",
+        "id": "ovo",
+        "images": "../images/qV6_bweDv0NZO9OMxahC2g_store_logo_image_white.png",
+        "videobackground": "a mettre"
+      },
+      {
+        "introline": "quivershop",
+        "id": "quivershop",
+        "images": "../images/quivershot.png",
+        "videobackground": "a mettre"
+      },
+      {
+        "introline": "rise",
+        "id": "rise",
+        "images": "../images/rise.png",
+        "videobackground": "a mettre"
+      },
+      {
+        "introline": "ovo dimensions",
+        "id": "ovodimensions",
+        "images": "../images/ovo_dimensions.png",
+        "videobackground": "a mettre"
+      },
+      {
+        "introline": "Fantasy Merger",
+        "id": "fantasymerger",
+        "images": "../images/fantasymerger.png",
+        "videobackground": "a mettre"
+      }
+    ]
+}
+  
