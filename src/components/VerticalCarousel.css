@@ -22,7 +22,7 @@
 
 
   /* REGLER LA TAILLE DE LA POLICE ET LA HAUTEUR ENTRE LES LIGNES */
-  p, .carousel-item {
+  .carousel-inner p, .carousel-item {
     font-weight: 700;
     font-size: 30px;
     color: var(--white);
@@ -76,6 +76,6 @@
   }
 
   .gamesimages {
-    height: 8em;
+    height: 90px;
     width: auto;
   }

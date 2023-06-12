@@ -47,6 +47,10 @@ const VerticalCarousel = ({ data }) => {
     }
   };
 
+  const changeBackground = () => {
+    
+  }
+
   return (
     <div className="carousel-inner">
     {data.map((item, i) => (
@@ -59,12 +63,15 @@ const VerticalCarousel = ({ data }) => {
         style={{
             transform: `translateY(${determinePlacement(i)}px)`
         }}
-        >
-        <img src={ item.images } className="gamesimages" />
-        </button>
+        ><img src={item.images} className="gamesimages" /></button>
+
     ))}
     </div>
   );
+};
+
+VerticalCarousel.propTypes = {
+  data: PropTypes.array.isRequired,
 };
 
 export default VerticalCarousel;

@@ -1,8 +1,6 @@
 import React from "react";
 import '../App.css'
-import ovoLogo from '../images/qV6_bweDv0NZO9OMxahC2g_store_logo_image.png';
 import homeVideo from '../videos/GamesDedra-1438626014704308233-01.mp4';
-import fleche from '../images/Arrow 1.png'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -15,10 +13,10 @@ function Home() {
                 <div className="rectangle"></div>
                 <div className="gametitlebox">
                     
-                    <img src={ovoLogo} className="ovoLogo" />
+                    <img src='images/qV6_bweDv0NZO9OMxahC2g_store_logo_image.png' className="ovoLogo" />
                     <p className="description"><b>A tough skill based platforming game.</b><br />(Mobile/ PC)</p>
                 </div>
-                <button className="playnow">PLAY NOW <img src={fleche} width='32px'/></button>
+                <button className="playnow">PLAY NOW <img src='images/Arrow 1.png' width='32px'/></button>
             </section>
             <section className="videoside-content">
                 <video className="video" autoPlay loop muted>
