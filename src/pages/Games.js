@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
-import homeVideo from '../videos/GamesDedra-1438626014704308233-01.mp4';
 import data from "../data.json";
 import VerticalCarousel from "../components/VerticalCarousel";
 
@@ -21,7 +20,7 @@ function Games() {
     return(
         <div className="gamespage">
                 <video className="gamespage-video" autoPlay loop muted>
-                    <source src={homeVideo} type="video/mp4" />
+                    <source src='videos/GamesDedra-1438626014704308233-01.mp4' className='gamespage-source' type="video/mp4" />
                 </video>    
                 <div className='blacksail'>
                 </div> 
