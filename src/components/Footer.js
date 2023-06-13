@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import './Footer.css';
-import faTwitter from '../images/twitter.svg'
-import faDiscord from '../images/discord.svg'
-import faYoutube from '../images/youtube.svg'
 
 function Footer() {
 
@@ -12,9 +9,9 @@ function Footer() {
       <div className='rightpart'>
         <p className='follow'>FOLLOW US</p>
         <div className="line"></div>
-        <a href="https://discord.com/invite/ovo-speedrunning-community-645935373368688650"><img src={faDiscord} className="socialmedias" /></a>
-        <a href="https://www.youtube.com/channel/UCQ2CAlP8Zo8-P4I7hZ23Yfg"><img src={faYoutube} className="socialmedias" /></a>
-        <a href="https://twitter.com/GamesDedra"><img src={faTwitter} className="socialmedias" /></a>
+        <a href="https://discord.com/invite/ovo-speedrunning-community-645935373368688650"><img src='images/discord.svg' className="socialmedias" /></a>
+        <a href="https://www.youtube.com/channel/UCQ2CAlP8Zo8-P4I7hZ23Yfg"><img src='images/youtube.svg' className="socialmedias" /></a>
+        <a href="https://twitter.com/GamesDedra"><img src='images/twitter.svg' className="socialmedias" /></a>
       </div> 
     </div>
   )

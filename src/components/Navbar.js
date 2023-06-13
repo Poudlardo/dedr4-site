@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import dedraLogo from '../images/unnamed-trnsprnt.png';
-import BlackhbrgerLogo from '../images/black_hamburger-menu-svgrepo-com-.svg'
-
 
 function Navbar() {
 
@@ -20,7 +17,7 @@ function clickHamberger() {
   return (
     <nav className='navbar'>
         <Link to="/" className='dedra' onClick={closeMobileMenu}>
-        <img className="dedra-logo" src={dedraLogo} /> DEDRA 
+        <img className="dedra-logo" src='images/unnamed-trnsprnt.png' /> DEDRA 
         </Link>
         <ul>
           <li>
@@ -44,7 +41,7 @@ function clickHamberger() {
           </Link>
           </li>
         </ul>
-        <img src={BlackhbrgerLogo} className='BlackhbrgerLogo' onClick={clickHamberger} />
+        <img src='images/black_hamburger-menu-svgrepo-com-.svg' className='BlackhbrgerLogo' onClick={clickHamberger} />
     </nav>
   )
 }
