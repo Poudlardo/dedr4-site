@@ -48,13 +48,16 @@ const VerticalCarousel = ({ data }) => {
   };
 
   const changeBackground = () => {
-    
+  const videoSource = document.querySelector('video');
+  videoSource.src = data[activeIndex].videobackground;
+  console.log(activeIndex)
+  console.log(videoSource.src) ;
   }
 
   return (
     <div className="carousel-inner">
     {data.map((item, i) => (
-        <button type="button" onClick={() => setActiveIndex(i)} className={cn("carousel-item", {
+        <button type="button" onClick={function() {setActiveIndex(i); changeBackground()}} className={cn("carousel-item", {
             active: activeIndex === i,
             visible:
             Math.abs(determinePlacement(i)) <= visibleStyleThreshold
@@ -64,7 +67,6 @@ const VerticalCarousel = ({ data }) => {
             transform: `translateY(${determinePlacement(i)}px)`
         }}
         ><img src={item.images} className="gamesimages" /></button>
-
     ))}
     </div>
   );

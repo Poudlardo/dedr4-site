@@ -2,33 +2,33 @@
 "slides":[
       {
         "introline": "ovo",
-        "id": "ovo",
+        "id": "0",
         "images": "images/qV6_bweDv0NZO9OMxahC2g_store_logo_image_white.png",
-        "videobackground": "a mettre"
+        "videobackground": "videos/GamesDedra-1438626014704308233-01.mp4"
       },
       {
         "introline": "quivershop",
-        "id": "quivershop",
+        "id": "1",
         "images": "/images/quivershot.png",
-        "videobackground": "a mettre"
+        "videobackground": "https://joy1.videvo.net/videvo_files/video/free/2016-05/large_watermarked/5_LA_DownTown_3_Videvo_preview.mp4"
       },
       {
         "introline": "rise",
-        "id": "rise",
+        "id": "2",
         "images": "/images/rise.png",
-        "videobackground": "a mettre"
+        "videobackground": "videos/GamesDedra-1438626014704308233-01.mp4"
       },
       {
         "introline": "ovo dimensions",
-        "id": "ovodimensions",
+        "id": "3",
         "images": "/images/ovo_dimensions.png",
-        "videobackground": "a mettre"
+        "videobackground": "https://joy.videvo.net/videvo_files/video/premium/partners0200/large_watermarked/BB_2091b55f-249d-4cd4-9f6a-3d39a8607619_preview.mp4"
       },
       {
         "introline": "Fantasy Merger",
-        "id": "fantasymerger",
+        "id": "4",
         "images": "/images/fantasymerger.png",
-        "videobackground": "a mettre"
+        "videobackground": "videos/GamesDedra-1438626014704308233-01.mp4"
       }
     ]
 } 

@@ -1,6 +1,5 @@
 import React from "react";
 import '../App.css'
-import homeVideo from '../videos/GamesDedra-1438626014704308233-01.mp4';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -20,7 +19,7 @@ function Home() {
             </section>
             <section className="videoside-content">
                 <video className="video" autoPlay loop muted>
-      <source src={homeVideo} type="video/mp4" />
+      <source src='videos/GamesDedra-1438626014704308233-01.mp4' type="video/mp4" />
                  </video> 
             </section>
         </div>
