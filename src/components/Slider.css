@@ -9,7 +9,7 @@
   }
   
   input {
-    position: absolute;  
+    position: relative;  
     opacity: 0;
     margin-top: 95vh;
     cursor: pointer;

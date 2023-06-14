@@ -7,7 +7,6 @@ function Blog() {
     return(
         <div>
             <Navbar />
-            <p>ma bbbbad</p>
             <Slider />
         </div>
     )

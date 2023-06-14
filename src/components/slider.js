@@ -5,8 +5,6 @@ function Slider() {
 
   return (
     <div className='slider'>
-        <h1>Pure CSS slider</h1><pre>(with Autoplay at the beginning)</pre><br>
-        </br>
         <input type="radio" id="trigger1" name="slider" />
         <label for="trigger1"><span class="sr-only">Slide 1 of 5. A photo of a mountain pass with a winding path along the river and a view of distant mountains hiding in the mist.</span></label>
         <div class="slide bg1"></div>
