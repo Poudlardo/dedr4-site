@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import homeVideo from '../videos/GamesDedra-1438626014704308233-01.mp4';
-import whiteHbrgerLogo from '../images/white_hamburger-menu-svgrepo-com.svg';
 import data from "../data.json";
 import VerticalCarousel from "../components/VerticalCarousel";
 
@@ -52,7 +51,7 @@ function Games() {
             </Link>
             </li>
             </ul>
-            <img src={whiteHbrgerLogo} className='whiteHbrgerLogo' onClick={clickHamberger} />
+            <img src='images/white_hamburger-menu-svgrepo-com.svg' className='whiteHbrgerLogo' onClick={clickHamberger} />
                 </nav>      
                 <VerticalCarousel data={data.slides} />
         </div>
