@@ -51,8 +51,16 @@ function Games() {
             </li>
             </ul>
             <img src='images/white_hamburger-menu-svgrepo-com.svg' className='whiteHbrgerLogo' onClick={clickHamberger} />
-                </nav>      
-                <VerticalCarousel data={data.slides} />
+                </nav>
+                <div id="gamesmainpage">
+                    <VerticalCarousel data={data.slides} />
+                    <section className='gamescontent'>
+                        <div className="rectangle2"></div>
+                         <p className="description2">A tough skill based platforming game.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac suscipit arcu. Pellentesque tristique facilisis sollicitudin. Aliquam at erat vel lectus efficitur sodales. In hac</p>
+                    </section>
+                </div>
+
         </div>
     )
 }

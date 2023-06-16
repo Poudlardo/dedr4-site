@@ -5,26 +5,23 @@ function Slider() {
 
   return (
     <div className='slider'>
-        <input type="radio" id="trigger1" name="slider" />
-        <label for="trigger1"><span class="sr-only">Slide 1 of 5. A photo of a mountain pass with a winding path along the river and a view of distant mountains hiding in the mist.</span></label>
-        <div class="slide bg1"></div>
+<input id="dot1" type="radio" name="dotGroup" checked />
+  <label for="dot1" />
+ <div className="slide background1" id="1" />
 
-        <input type="radio" id="trigger2" name="slider" checked autofocus />
-        <label for="trigger2"><span class="sr-only">Slide 2 of 5. A photo of a bird eating sunflower seeds from an open hand.</span></label>
-        <div class="slide bg2"></div>
+ <input id="dot2" type="radio" name="dotGroup" checked />
+  <label for="dot2" />
+  <div className="slide background2" id="2" />
 
-        <input type="radio" id="trigger3" name="slider" />
-        <label for="trigger3"><span class="sr-only">Slide 3 of 5. A photo of a concrete bridge over the river with high voltage power lines on both banks.</span></label>
-        <div class="slide bg3"></div>
-
-        <input type="radio" id="trigger4" name="slider" />
-        <label for="trigger4"><span class="sr-only">Slide 4 of 5. A photo of a lake surrounded by the forest with mountains in the background.</span></label>
-        <div class="slide bg4"></div>
-
-        <input type="radio" id="trigger5" name="slider" />
-        <label for="trigger5"><span class="sr-only">Slide 5 of 5. A photo of a forest.</span></label>
-        <div class="slide bg5"></div>
+  <input id="dot3" type="radio" name="dotGroup" checked />
+  <label for="dot3" />
+  <div className="slide background3" id="3" />
+  
+  <input id="dot4" type="radio" name="dotGroup" checked />
+  <label for="dot4" />
+  <div className="slide background4" id="4" />
     </div>
+    
   )
 }
 

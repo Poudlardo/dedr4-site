@@ -5,9 +5,12 @@ import Slider from "../components/slider";
 
 function Blog() {
     return(
-        <div>
+        <div id='blogpage'>
             <Navbar />
-            <Slider />
+            <div id='blogpage-container'>
+                <Slider  />
+            </div>
+
         </div>
     )
 }

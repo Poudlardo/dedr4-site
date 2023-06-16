@@ -49,9 +49,12 @@ const VerticalCarousel = ({ data }) => {
 
   const changeBackground = () => {
   const videoSource = document.querySelector('video');
+  const descriptionDeux = document.querySelector('.description2');
+
   videoSource.src = data[activeIndex].videobackground;
-  console.log(activeIndex)
-  console.log(videoSource.src) ;
+  descriptionDeux.innerText = data[activeIndex].description;
+  console.log(activeIndex);
+  console.log(videoSource.src);
   }
 
   return (
