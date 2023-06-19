@@ -11,7 +11,10 @@ function Navbar() {
 
 function clickHamberger() {
   const Links = document.querySelector('ul');
+  const Hamburger = document.querySelector('.hbrgerLogo');
   Links.classList.toggle('mobile-menu');
+  Hamburger.style.filter = 'none'; 
+  
 }
 
   return (
@@ -21,8 +24,8 @@ function clickHamberger() {
         </Link>
         <ul>
           <li>
-            <Link className='nav-link' to="/" onClick={handleClick}>
-                { click ? 'HOME' : <Link to="/games" onClick={closeMobileMenu}>GAMES</Link> }
+            <Link className='nav-link' to="/games" onClick={handleClick}>
+                GAMES
             </Link>
           </li>
           <li>
@@ -41,7 +44,11 @@ function clickHamberger() {
           </Link>
           </li>
         </ul>
-        <img src="images/black_hamburger-menu-svgrepo-com-.svg" className='BlackhbrgerLogo' onClick={clickHamberger} />
+        <svg viewBox="0 0 100 80" width="40" height="30" className='hbrgerLogo' onClick={clickHamberger}>
+            <rect width="90" height="10"></rect>
+            <rect y="30" width="90" height="10"></rect>
+            <rect y="60" width="90" height="10"></rect>
+        </svg>
     </nav>
   )
 }

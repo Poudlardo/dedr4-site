@@ -30,12 +30,14 @@
   }
   
   .carousel-inner {
+    border: 1px solid red;
     position: relative;
     height: auto;
-    width: 40%;
+    float: left;
+    width: 50%;
     padding: 4em;
     margin-top: 12%;
-    flex: 1;
+
   }
   
   .carousel-inner::before,

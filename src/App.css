@@ -5,6 +5,10 @@
     padding:1em;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* Page d'accueil */
 
 .home-container {
@@ -98,115 +102,57 @@
     
 /* Page GAMES */
 .gamespage {
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: grid;
-}
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
+  object-fit: contain;
+  }
 
-.gamespage > * {
-    box-sizing: border-box;
-}
 
-.gamespage-video {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.gamespage-video {    
     object-fit: cover;
-    object-position: center;
     position: fixed;
-}
-
-.blacksail {
     width: 100%;
     height: 100%;
-    position: fixed;
-    background-color: rgba(0,0,0,0.5)
+    z-index: -1;
 }
 
-.gamespage-navbar {
-  display: flex;
-  height: 10vh;
-  justify-content: space-between;
-  padding: 0 50px;
-  box-sizing: border-box;
-  align-items: center;
-  position: relative;
-  z-index: 2;
+.gamespage .navbar > *, .gamespage .navbar li > * {
+  color: white;
 }
 
-.gamespage-navbar > * {
- text-decoration: none;
- list-style: none;
- color: white;
- font-size: medium;
- font-family: 'Montserrat', sans-serif;
- margin: 0;
- border: 0;
- background-color: rgba(0,0,0,0);
+.gamespage .navbar {
+  width: 100%;
+  z-index: 999;
 }
 
-.gamespage-navbar ul {
-  display: flex;
-}
-
-.gamespage-navbar li {
-  margin: 0 100px;
-  font-weight: bold;
-}
-
-.gamespage-navbar li > * {
-    color: white;
-}
-
-.gamespage-navbar .dedra {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: larger;
-  font-weight: bolder;
-}
-
-.gamespage-navbar .dedra-logo {
-  width: 40px;
-  height: auto;
-}
-
-.gamespage-navbar .whiteHbrgerLogo {
-  width: 60px;
-  height: auto;
-  display: none;
-  top: 34px;
-  right: 50px;
-  width: 35px;
-}
-
-.gamespage-navbar ul.mobile-menu {
-  margin-left: 0;
+.gamespage .navbar .hbrgerLogo {
+  filter: invert(95%) sepia(100%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
 }
 
 #gamesmainpage {
   width: 100%;
   height: 100vh;
-  border: 3px solid red;
-  position: fixed;
-  display: flex;
+  position: fixed;  
+  content: "";
+  display: table;
+  clear: both;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .gamescontent {
-  flex: 1;
-  border: 3px solid red;
+  float: left;
+  width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 24px;
+  border: 1px solid red;
 }
 
 .rectangle2 {
-  width: 12px;
-  height: 13em;
+  width: 18px;
+  height: 10em;
   background: linear-gradient(360deg, rgba(129, 20, 20, 0) 0%, #ffffff 100%);
 }
 
@@ -220,7 +166,11 @@
 
 @media screen and (max-width: 900px) {
 
-.gamespage-navbar .whiteHbrgerLogo {
+.gamescontent {
+    width: 100%;
+}
+
+.gamespage .navbar .hbrgerLogo {
     display: block;
   }
 

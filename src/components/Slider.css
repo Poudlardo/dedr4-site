@@ -25,7 +25,7 @@
     border: 2px solid #000000;
     border-radius: 50%;
     background-color: transparent;
-    margin: 72vh 6px 0 6px;
+    margin: calc(42em - 7vh) 6px 0 6px;
     cursor: pointer;
     transition-duration: 0.4s;
   }
