@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
@@ -31,11 +31,6 @@ function clickHamberger() {
           <li>
             <Link className='nav-link' to="/about" onClick={closeMobileMenu}>
                 ABOUT
-            </Link>
-          </li>
-          <li>
-            <Link className='nav-link' to="/blog" onClick={closeMobileMenu}>
-                BLOG
             </Link>
           </li>
           <li>

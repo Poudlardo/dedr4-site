@@ -30,14 +30,12 @@
   }
   
   .carousel-inner {
-    border: 1px solid red;
+    flex: 1;
     position: relative;
-    height: auto;
-    float: left;
+    height: 100%;
     width: 50%;
     padding: 4em;
-    margin-top: 12%;
-
+    top: 35vh;
   }
   
   .carousel-inner::before,
@@ -81,4 +79,15 @@
   .gamesimages {
     width: 100%;
     height: 6em;
+  }
+
+  @media screen and (max-width: 900px) {
+    
+    .carousel-inner {
+      display: flex;
+      justify-content: center;
+      text-align:start;
+      width: 100%;
+      top: 20vh;
+    }
   }

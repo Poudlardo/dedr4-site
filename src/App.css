@@ -13,6 +13,9 @@
 
 .home-container {
     overflow: hidden;
+    background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
+background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
+background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
 }
 .Homehero {
     display:flex;
@@ -81,6 +84,8 @@
 }
 
 @media (max-width: 900px) {
+
+  /* Page HOME */
     .Homehero {
         flex-direction: column;
     }
@@ -95,10 +100,6 @@
     }
 }
 
-@media (max-width: 676px) {
-    
-
-}
     
 /* Page GAMES */
 .gamespage {
@@ -107,6 +108,7 @@
   display: flex;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
   object-fit: contain;
+  align-items: flex-start;
   }
 
 
@@ -134,25 +136,25 @@
 #gamesmainpage {
   width: 100%;
   height: 100vh;
-  position: fixed;  
-  content: "";
-  display: table;
-  clear: both;
+  position: fixed;
+  display: flex;
   align-items: center;
+  justify-items: center;
 }
 
 .gamescontent {
-  float: left;
-  width: 50%;
+  flex: 1;
+  width: 30%;
+  min-width: 460px;
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  align-items: flex-start;
   gap: 24px;
-  border: 1px solid red;
 }
 
 .rectangle2 {
-  width: 18px;
-  height: 10em;
+  width: 20px;
+  height: 100px;
   background: linear-gradient(360deg, rgba(129, 20, 20, 0) 0%, #ffffff 100%);
 }
 
@@ -162,43 +164,25 @@
   text-align: justify;
   line-height: 1.6;
   font-weight: bold;
+  font-size: larger;
 }
 
 @media screen and (max-width: 900px) {
 
-.gamescontent {
-    width: 100%;
+#gamesmainpage {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gamescontent  { /* same styling is applied to <Vertical Carousel /> in its own css file*/
+    width: 60vw;
+    padding-top:140px;
 }
 
 .gamespage .navbar .hbrgerLogo {
     display: block;
   }
-
-.gamespage-navbar  ul {
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    width: 95%;
-    height: 101%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: -110%;
-    z-index: 1;
-  }
-  
-.gamespage-navbar  li {
-    margin: 25px 0;
-    font-size: 1.2em;
-    
-  }
-
-.gamespage-navbar  .nav-link, .nav-link > * {
-    color: #000000;
-  }
-
 }
 
 /* BLOG PAGE */
@@ -224,4 +208,24 @@
   height: 90%;
   justify-content: center;
   align-items: center;
+}
+
+/* ABOUT PAGE */
+
+.aboutpage {
+  width: 100%;
+  height: 100vh;
+  background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
+  background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
+  background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
+}
+
+/* CONNECT PAGE */
+
+.connectpage {
+  width: 100%;
+  height: 100vh;
+  background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
+background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
+background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
 }

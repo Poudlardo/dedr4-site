@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 function Connect() {
     return(
-        <div>
+        <div className="connectpage">
             <Navbar />
         </div>
     )
