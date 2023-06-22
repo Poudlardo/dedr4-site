@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import data from "../data.json";
 import VerticalCarousel from "../components/VerticalCarousel";
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar';
+import 'animate.css';
 
 function Games() {
 
@@ -14,10 +15,10 @@ function Games() {
                     <source src='videos/GamesDedra-1438626014704308233-01.mp4' className='gamespage-source' type="video/mp4" />
                 </video>    
                 <div id="gamesmainpage">
-                    <VerticalCarousel data={data.slides} />
+                        <VerticalCarousel data={data.slides} onClick={animateCSS} />
                     <section className='gamescontent'>
-                        <div className="rectangle2"></div>
-                         <p className="description2">A tough skill based platforming game.
+                        <div className="rectangle2 animate__animated animate__fadeInUp"></div>
+                         <p className="description2 animate__animated animate__fadeInUp'">A tough skill based platforming game.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac suscipit arcu. Pellentesque tristique facilisis sollicitudin. Aliquam at erat vel lectus efficitur sodales. In hac</p>
                     </section>
                 </div>

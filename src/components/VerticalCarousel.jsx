@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import cn from "classnames";
 import "./VerticalCarousel.css";
-
+import 'animate.css'
 /*
  * Read the blog post here:
  * https://letsbuildui.dev/articles/building-a-vertical-carousel-component-in-react
@@ -47,20 +47,35 @@ const VerticalCarousel = ({ data }) => {
     }
   };
 
-  const changeBackground = () => {
+    const changeBackground = () => {
   const videoSource = document.querySelector('video');
   const descriptionDeux = document.querySelector('.description2');
+ const rectangleDeux = document.querySelector('.rectangle2');
 
   videoSource.src = data[activeIndex].videobackground;
   descriptionDeux.innerText = data[activeIndex].description;
-  console.log(activeIndex);
-  console.log(videoSource.src);
+
   }
+
+  const animateCSS = () => {
+    const descriptionDeux = document.querySelector('.description2');
+   
+
+    /* function remove after first animation at page launch */
+
+
+    /* functions to add animation classes
+    descriptionDeux.classList.add('animate__animated', 'animate__fadeInUp');
+    rectangleDeux.classList.add('animate__animated', 'animate__fadeInUp'); */
+
+  }     
+
+
 
   return (
     <div className="carousel-inner">
     {data.map((item, i) => (
-        <button type="button" onClick={function() {setActiveIndex(i); changeBackground()}} className={cn("carousel-item", {
+        <button type="button" onClick={function() {setActiveIndex(i); animateCSS(); changeBackground();}} className={cn("carousel-item", {
             active: activeIndex === i,
             visible:
             Math.abs(determinePlacement(i)) <= visibleStyleThreshold

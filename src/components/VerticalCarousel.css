@@ -36,6 +36,8 @@
     width: 50%;
     padding: 4em;
     top: 35vh;
+    animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.7s; /* don't forget to set a duration! */
   }
   
   .carousel-inner::before,
