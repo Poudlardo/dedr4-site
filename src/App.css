@@ -17,6 +17,12 @@
 background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
 background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
 }
+
+.home-container .navbar .dedra-logo {
+  animation: rotateIn;
+  animation-duration: 2s;
+}
+
 .Homehero {
     display:flex;
     height: 85vh;
@@ -30,6 +36,8 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
     gap: 5em 2em;
     padding-left: 2em;
     padding-top: 17em;
+    animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.7s; /* don't forget to set a duration! */
 }
 
 .rectangle {
@@ -75,6 +83,8 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
     width: 100%;
     display: flex;
     justify-content: center;
+    animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .video {
@@ -228,6 +238,23 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
   background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
 }
+
+.slogancontainer {
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+
+}
+.historycontainer {
+  width: 100vw;
+  height: 100%;
+}
+
+.teamcontainer {
+  width: 100vw;
+  height: 100%;
+}
+
 
 /* CONNECT PAGE */
 

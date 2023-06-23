@@ -54,6 +54,7 @@ const VerticalCarousel = ({ data }) => {
   videoSource.src = data[activeIndex].videobackground;
   descriptionDeux.innerText = data[activeIndex].description;
 
+    
   }
 
   const animateCSS = () => {
@@ -63,6 +64,8 @@ const VerticalCarousel = ({ data }) => {
     /*functions to add animation classes */
     descriptionDeux.classList.add('animate__animated', 'animate__fadeInUp');
     rectangleDeux.classList.add('animate__animated', 'animate__fadeInUp');
+    descriptionDeux.style.setProperty('--animate-duration', '.4s');
+    rectangleDeux.style.setProperty('--animate-duration', '.4s');
 
     descriptionDeux.addEventListener('animationend', (e) => {e.target.classList.remove('animate__fadeInUp')});
     rectangleDeux.addEventListener('animationend', (e) => {e.target.classList.remove('animate__fadeInUp')});
@@ -75,7 +78,7 @@ const VerticalCarousel = ({ data }) => {
         document.querySelector('.rectangle2').classList.remove('animate__fadeInUp');
         document.querySelector('.description2').classList.remove('animate__fadeInUp');
       }, 1000);
-  }, []);
+  });
 
 
   return (
