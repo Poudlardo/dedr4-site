@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import cn from "classnames";
 import "./VerticalCarousel.css";
-import 'animate.css'
+import 'animate.css';
 /*
  * Read the blog post here:
  * https://letsbuildui.dev/articles/building-a-vertical-carousel-component-in-react
@@ -50,7 +50,6 @@ const VerticalCarousel = ({ data }) => {
     const changeBackground = () => {
   const videoSource = document.querySelector('video');
   const descriptionDeux = document.querySelector('.description2');
- const rectangleDeux = document.querySelector('.rectangle2');
 
   videoSource.src = data[activeIndex].videobackground;
   descriptionDeux.innerText = data[activeIndex].description;
@@ -59,17 +58,24 @@ const VerticalCarousel = ({ data }) => {
 
   const animateCSS = () => {
     const descriptionDeux = document.querySelector('.description2');
-   
+    const rectangleDeux = document.querySelector('.rectangle2');
 
-    /* function remove after first animation at page launch */
-
-
-    /* functions to add animation classes
+    /*functions to add animation classes */
     descriptionDeux.classList.add('animate__animated', 'animate__fadeInUp');
-    rectangleDeux.classList.add('animate__animated', 'animate__fadeInUp'); */
+    rectangleDeux.classList.add('animate__animated', 'animate__fadeInUp');
 
+    descriptionDeux.addEventListener('animationend', (e) => {e.target.classList.remove('animate__fadeInUp')});
+    rectangleDeux.addEventListener('animationend', (e) => {e.target.classList.remove('animate__fadeInUp')});
   }     
 
+
+  useEffect(() => {
+    setTimeout(
+      function() {
+        document.querySelector('.rectangle2').classList.remove('animate__fadeInUp');
+        document.querySelector('.description2').classList.remove('animate__fadeInUp');
+      }, 1000);
+  }, []);
 
 
   return (
