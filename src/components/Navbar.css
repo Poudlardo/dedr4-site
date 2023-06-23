@@ -52,6 +52,10 @@ li {
   width: 35px;
 }
 
+.nav-link:hover {
+  color: #898989;
+}
+
 
 ul.mobile-menu {
   margin-left: 0;

@@ -8,7 +8,7 @@ function About() {
         <div className="aboutpage">
             <Navbar />
             <div className="slogancontainer">
-                <h1>ON PASSE NOTRE TEMPS A FAIRE DES JEUX POUR QUE TU PASSES LE TIEN A Y JOUER</h1>
+                <h1>WE SPEND TIME MAKING GAMES SO YOU SPEND YOURS PLAYING THEM</h1>
             </div>
             <div className="historycontainer"></div>
             <div className="teamcontainer"></div>

@@ -130,13 +130,21 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
     z-index: -1;
 }
 
-.gamespage .navbar > *, .gamespage .navbar li > * {
+.gamespage .navbar > *, .gamespage .nav-link {
   color: white;
 }
 
 .gamespage .navbar {
   width: 100%;
   z-index: 999;
+}
+
+.gamespage.nav-link {
+  display: inline-block;
+  position: relative;
+}
+.gamespage.nav-link:hover {
+  color: rgba(255,255,255,0.9);
 }
 
 .gamespage .navbar .hbrgerLogo {
@@ -232,27 +240,39 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 /* ABOUT PAGE */
 
 .aboutpage {
-  width: 100%;
-  height: 100vh;
+  border: 1px solid red;
+  width: 100vw;
+  height: 100%;
   background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
   background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
   background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
 }
 
-.slogancontainer {
-  width: 100vw;
-  height: 100%;
-  text-align: center;
+.aboutpage > * {
+  box-sizing: border-box;
+}
 
+.slogancontainer {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  line-height:90vh;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.slogancontainer h1 {
+  font-size: 1.5em;
 }
 .historycontainer {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .teamcontainer {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 
