@@ -58,25 +58,21 @@ const VerticalCarousel = ({ data }) => {
   }
 
   const animateCSS = () => {
-    const descriptionDeux = document.querySelector('.description2');
-    const rectangleDeux = document.querySelector('.rectangle2');
+    const Gamescontent = document.querySelector('.gamescontent');
 
     /*functions to add animation classes */
-    descriptionDeux.classList.add('animate__animated', 'animate__fadeInUp');
-    rectangleDeux.classList.add('animate__animated', 'animate__fadeInUp');
-    descriptionDeux.style.setProperty('--animate-duration', '.4s');
-    rectangleDeux.style.setProperty('--animate-duration', '.4s');
+    Gamescontent.classList.add('animate__animated', 'animate__fadeInUp');
+  
+    Gamescontent.style.setProperty('--animate-duration', '.4s');
 
-    descriptionDeux.addEventListener('animationend', (e) => {e.target.classList.remove('animate__fadeInUp')});
-    rectangleDeux.addEventListener('animationend', (e) => {e.target.classList.remove('animate__fadeInUp')});
+    Gamescontent.addEventListener('animationend', (e) => {e.target.classList.remove('animate__fadeInUp')});
   }     
 
 
   useEffect(() => {
     setTimeout(
       function() {
-        document.querySelector('.rectangle2').classList.remove('animate__fadeInUp');
-        document.querySelector('.description2').classList.remove('animate__fadeInUp');
+        document.querySelector('.gamescontent').classList.remove('animate__fadeInUp');
       }, 1000);
   });
 

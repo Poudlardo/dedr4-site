@@ -18,11 +18,13 @@ function About() {
                     <br />
                     <p>Nous voulons que nos jeux aient du sens. Nous nous efforçons de créer des expériences universelles auxquelles tout le monde peut s’identifier, tout en racontant des histoires authentiques qui suscitent la réflexion. Chaque jeu que nous développons est une création originale qui a quelque chose de nouveau à offrir à notre communauté de joueuses et de joueurs.Nous sommes désormais en mesure d’autoéditer nos jeux et de les mettre directement entre les mains de nos joueuses et joueurs. Nous partageons également notre expertise en matière d’édition et collaborons avec d’autres développeurs pour donner vie à leurs histoires. Nous travaillons avec des studios qui partagent nos valeurs et dont la vision créative s’aligne sur la nôtre.</p>
                 </div>
-                <img src="images/ossamadam.jpg" className="ossamadam"/>
+                <div><img src="images/ossamadam.jpg" className="ossamadam"/>
+                </div>
+                <div></div>
             </div>
             <div className="teamcontainer">
-                <h1>OUR TEAM</h1>
-                
+                <h1>A PASSIONATE TEAM TO MAKE THE MAGIC HAPPEN</h1>
+
             </div>
             <Footer />
         </div>

@@ -16,10 +16,15 @@ function Games() {
                 </video>    
                 <div id="gamesmainpage">
                         <VerticalCarousel data={data.slides} />
-                    <section className='gamescontent'>
-                        <div className="rectangle2 animate__animated animate__fadeInUp"></div>
-                         <p className="description2 animate__animated animate__fadeInUp">A tough skill based platforming game.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac suscipit arcu. Pellentesque tristique facilisis sollicitudin. Aliquam at erat vel lectus efficitur sodales. In hac</p>
+                    <section className='gamescontent animate__animated animate__fadeInUp'>
+                        <div className='gametext'>
+                            <div className="rectangle2 "></div>
+                            <p className="description2">A tough skill based platforming game. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac suscipit arcu. Pellentesque tristique facilisis sollicitudin. Aliquam at erat vel lectus efficitur sodales. In hac</p>
+                        </div>
+                        <div className='platformslist' >
+                            <button className='gamebuttons'>Play on Poki</button>
+                            <button className='gamebuttons'>Play on Coolmath Games</button>
+                        </div>
                     </section>
                 </div>
 
