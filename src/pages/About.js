@@ -7,10 +7,6 @@ function About() {
     return(
         <div className="aboutpage">
             <Navbar />
-<<<<<<< HEAD
-            <div className="slogancontainer">
-                <h1>WE SPEND TIME MAKING GAMES SO YOU SPEND YOURS PLAYING THEM</h1>
-=======
             <div className="slogancontainer animate__animated animate__slideInUp">
                 <h1>WE SPEND OUR TIME MAKING GAMES YOU'LL SPEND YOURS TO PLAY</h1>
                 <img src='images/ovo-avatars.png' />
@@ -27,7 +23,6 @@ function About() {
             <div className="teamcontainer">
                 <h1>OUR TEAM</h1>
                 
->>>>>>> 282b5c7 (structure html of about page)
             </div>
             <Footer />
         </div>

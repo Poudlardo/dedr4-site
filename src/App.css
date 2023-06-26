@@ -221,8 +221,6 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 }
 
 #blogpage > * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -249,22 +247,13 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 
 }
 
-<<<<<<< HEAD
 .aboutpage > * {
   box-sizing: border-box;
 }
 
-.slogancontainer {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  line-height:90vh;
-  border: 1px solid rgb(0, 0, 0);
-}
-
 .slogancontainer h1 {
   font-size: 1.5em;
-=======
+}
 .slogancontainer {
   width: 100vw;
   height: 100%;
@@ -275,7 +264,6 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   padding-top: 25em;
   gap:10em;
   animation-duration: 2s;
->>>>>>> 282b5c7 (structure html of about page)
 }
 .aboutpage h1 {
   font-size: 35px;
@@ -283,10 +271,8 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 
 .historycontainer {
   width: 100vw;
-<<<<<<< HEAD
   height: 100vh;
   border: 1px solid rgb(0, 0, 0);
-=======
   height: 100%;
   display: flex;
   align-items: center;
@@ -301,7 +287,6 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 .ossamadam {
   width: 700px;
   height: auto;
->>>>>>> 282b5c7 (structure html of about page)
 }
 
 .teamcontainer {
