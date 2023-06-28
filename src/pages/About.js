@@ -23,8 +23,29 @@ function About() {
                 <div></div>
             </div>
             <div className="teamcontainer">
-                <h1>A PASSIONATE TEAM TO MAKE THE MAGIC HAPPEN</h1>
-
+                <h1>WE MAKE GAMES</h1>
+                <div className="teammembers">
+                    <div className="ossam">
+                        <img src="images/skuuuurrrrr.png" height='350px' />
+                        <h2>Ossama Jouini</h2>
+                        <p>J'aime les jeux vidéos lourds</p>
+                    </div>
+                    <div className="adam">
+                        <img src="images/skuuuurrrrr.png" height='350px' />
+                        <h2>Adam Merhairi</h2>
+                        <p>J'aime les jeux vidéos lourds</p>
+                    </div>
+                    <div className="maryland">
+                        <img src="images/skuuuurrrrr.png" height='350px' />
+                        <h2>Maryland member</h2>
+                        <p>J'aime les jeux vidéos lourds</p>
+                    </div>
+                    <div className="brasil">
+                        <img src="images/skuuuurrrrr.png" height='350px' />
+                        <h2>Brazil member</h2>
+                        <p>J'aime les jeux vidéos lourds</p>
+                    </div>
+                </div>
             </div>
             <Footer />
         </div>

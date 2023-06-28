@@ -22,8 +22,8 @@ function Games() {
                             <p className="description2">A tough skill based platforming game. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac suscipit arcu. Pellentesque tristique facilisis sollicitudin. Aliquam at erat vel lectus efficitur sodales. In hac</p>
                         </div>
                         <div className='platformslist' >
-                            <button className='gamebuttons'>Play on Poki</button>
-                            <button className='gamebuttons'>Play on Coolmath Games</button>
+                            <img src='images/poki.png' className="partnerslogo" />
+                            <img src='images/coolmathgames.png' className="partnerslogo" />
                         </div>
                     </section>
                 </div>
