@@ -35,7 +35,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
     grid-template-rows: min-content;
     gap: 5em 2em;
     padding-left: 2em;
-    padding-top: 17em;
+    padding-top: 12em;
     animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 0.7s; /* don't forget to set a duration! */
 }
@@ -79,6 +79,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 }
 
 .videoside-content {
+  padding-top: 1.5em;
     flex: 1;
     width: 100%;
     display: flex;
@@ -98,6 +99,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   /* Page HOME */
     .Homehero {
         flex-direction: column;
+        height: 110vh;
     }
     .textside, .videoside-content {
         width: 100%;
@@ -207,6 +209,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+
 }
 
 .gamescontent  { /* same styling is applied to <Vertical Carousel /> in its own css file*/
@@ -262,13 +265,12 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 }
 .slogancontainer {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items:center;
   justify-content:center;
-  padding-top: 25em;
-  gap:10em;
   animation-duration: 2s;
 }
 .aboutpage h1 {
@@ -280,8 +282,9 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: end;
-  gap:12%;
+  justify-content: center;
+  gap:5em;
+  padding-left: 7em;
 }
 
 .quisommesnous  {
@@ -309,24 +312,73 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   gap: 7em;
 }
 
+@media screen and (max-width: 900px) {
+
+  
+}
+
+
 /* CONNECT PAGE */
 
 .connectpage {
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 100%;
+  border: 1px solid rgb(0, 255, 8);
   background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
-background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
-background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
+  background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
+  background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
 }
 
 .sm-container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-top:3%;
+  row-gap: 5%;
+}
+.sm-container h1 {
+  font-size: 40px;
   border: 1px solid red;
 }
 
 .socialmedias2 {
-  width: 90px;
-  height: auto;
+  flex: 1;
+  width: auto;
   border: 0;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  border: 1px solid red;
+}
+
+svg {
+  width: 100px ;
+  height: auto;
+}
+
+.bi-youtube:hover path{
+  fill: #FF0000;
+}
+
+.bi-discord:hover path{
+  fill: #7289da ;
+}
+
+.bi-twitter:hover path{
+  fill: #1DA1F2;
+}
+
+.formcontainer {
+  flex: 4;
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .connectpage { height: 100vh; }
+
 }
