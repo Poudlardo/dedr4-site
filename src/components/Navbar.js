@@ -22,23 +22,26 @@ function clickHamberger() {
         <Link to="/" className='dedra' onClick={closeMobileMenu}>
         <img className="dedra-logo" src="images/unnamed-trnsprnt.png" /> DEDRA 
         </Link>
-        <ul>
-          <li>
+        <div id="wrapper">
+          <ul>
+          <li className="different">
             <Link className='nav-link' to="/games" onClick={handleClick}>
                 GAMES
             </Link>
           </li>
-          <li>
+          <li className="different">
             <Link className='nav-link' to="/about" onClick={closeMobileMenu}>
                 ABOUT
             </Link>
           </li>
-          <li>
+          <li className="different">
           <Link className='nav-link' to="/connect" onClick={closeMobileMenu}>
               CONNECT
           </Link>
           </li>
-        </ul>
+          </ul>
+        </div>
+
         <svg viewBox="0 0 100 80" width="40" height="30" className='hbrgerLogo' onClick={clickHamberger}>
             <rect width="90" height="10"></rect>
             <rect y="30" width="90" height="10"></rect>
