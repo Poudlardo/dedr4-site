@@ -2,10 +2,10 @@ import React from 'react';
 import './emailus.css';
 
 
-function Emailus() {
+const Emailus = (props) => {
 
   return (
-    <div class="buttton-wrapper">
+    <div className="buttton-wrapper" onClick={props.addTrip}>
       <a href="#"><span></span>Email us</a>
     </div>
   )
