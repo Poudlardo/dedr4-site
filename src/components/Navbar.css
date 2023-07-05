@@ -11,21 +11,18 @@
   z-index: 1;
 }
 
-* {
+#wrapper ul, #wrapper ul li > * {
  text-decoration: none;
  list-style: none;
  color: black;
  font-size: medium;
- font-family: 'Montserrat', sans-serif;
- margin: 0;
- border: 0;
 }
 
-ul {
+.navbar ul {
   display: flex;
 }
 
-li {
+.navbar li {
   margin: 0 100px;
   font-weight: bold;
 }
@@ -61,6 +58,8 @@ li.different:hover{
   gap: 10px;
   font-size: larger;
   font-weight: bolder;
+  text-decoration: none;
+  color: black;
 }
 
 .dedra-logo {
@@ -89,7 +88,7 @@ ul.mobile-menu {
     z-index: 1;
   }
 
-  ul {
+  .mobile-menu {
     border: 3px solid red;
     top: 0;
     left: 0;
@@ -105,7 +104,7 @@ ul.mobile-menu {
     z-index: 1;
   }
   
-  li {
+  .mobile-menu li {
     margin: 25px 0;
     font-size: 1.2em;
     
