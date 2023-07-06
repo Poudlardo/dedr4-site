@@ -333,27 +333,30 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 .connectmainpage {
   display:flex;
   flex-direction: column;
-  height: auto;
-  border: 1px solid red;
+  align-items: center;
+  padding-top: 2em;
+  height: 90vh;
+  width: 100vw;
 }
 
 .sm-container {
   width: 100%;
-  height: 6em;
+  height: 20em;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  column-gap: 5em;
-  border: 1px solid red;
+  row-gap: 2em;
 }
 .sm-container h1 {
   font-size: 40px;
+  margin-right: 1em ;
 }
 
 .socialmedias2 {
   width: auto;
   display: grid;
-  grid-template-columns: repeat(3, 10em);
+  grid-template-columns: repeat(3, 9em);
 }
 
 svg {

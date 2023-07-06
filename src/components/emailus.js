@@ -7,16 +7,18 @@ const Emailus = () => {
     const formStyle = document.querySelector('.form-style-9');
     const emailBtn = document.querySelector('.buttton-wrapper');
     
-    formStyle.style.transition = 'opacity 200ms, display 200ms';
     formStyle.style.display = 'block';
-    
-    emailBtn.style.display = 'none';
+    formStyle.style.animation = 'fadeIn';
+    formStyle.style.animationDuration = '3s';
 
+    emailBtn.style.animation = 'fadeOut'; /* referring directly to the animation's @keyframe declaration */
+    emailBtn.style.animationDuration = '0.5s';
+    emailBtn.addEventListener('animationend', () => {emailBtn.style.display = 'none'})
   };
 
   return (
-    <>
-    <div className="buttton-wrapper" onClick={handleClick}>
+    <div className='email-us'>
+    <div className="buttton-wrapper " onClick={handleClick}>
       <a href="#"><span></span>Email us</a>
     </div>
     <form className="form-style-9">
@@ -41,7 +43,7 @@ const Emailus = () => {
       </li>
       </ul>
     </form>
-    </>
+    </div>
   )
 }
 

@@ -9,7 +9,7 @@ function Connect() {
             <Navbar />
             <div className="connectmainpage">
                 <div className="sm-container">
-                    <h1 className="animate_animated animate__backInLeft">REACH US OUT !</h1>             
+                    <h1 className="animate_animated animate__backInLeft">STAY CONNECTED</h1>             
                     <div className="socialmedias2 animate_animated animate__backInRight">                    
                         <a href="https://twitter.com/GamesDedra">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
