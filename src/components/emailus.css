@@ -3,6 +3,9 @@
 .email-us { 
 	margin-right: 1em ;
 	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .buttton-wrapper a {
@@ -77,12 +80,11 @@ a:hover span::after  {
 
 .form-style-9 {
 	background: transparent;
-	margin: -10px auto;
-	padding-right: 50px ;
 	height: min-content;
 	z-index: 1;
 	display: none;
 	width: 700px;
+	margin-bottom: 10em;
 }
 
 .form-style-9 .form-list{
