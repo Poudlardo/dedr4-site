@@ -3,8 +3,9 @@
 .email-us { 
 	margin-right: 1em ;
 	width: 100vw;
+	height: 100%;
 	display: flex;
-	align-items: center;
+	align-items: start;
 	justify-content: center;
 }
 
@@ -15,13 +16,12 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
-	/* line-height: 2; */
 	color: rgb(0, 0, 0);
 	font-size: 30px;
   	font-weight: 900;
   	padding: 6.5px;
-  	margin-left: -0.5em ;
-  	z-index: 2;
+  	margin-left: -0.8em ;
+	z-index: 3;
 }
 
 .buttton-wrapper a:active {
@@ -81,10 +81,10 @@ a:hover span::after  {
 .form-style-9 {
 	background: transparent;
 	height: min-content;
-	z-index: 1;
 	display: none;
 	width: 700px;
 	margin-bottom: 10em;
+	transition: margin-bottom 700ms;
 }
 
 .form-style-9 .form-list{
@@ -108,7 +108,7 @@ a:hover span::after  {
 	-webkit-transition: all 0.30s ease-in-out;
 	-moz-transition: all 0.30s ease-in-out;
 	-ms-transition: all 0.30s ease-in-out;
-	-o-transition: all 0.30s ease-in-out;
+	transition: all 0.30s ease-in-out;
 
 }.form-style-9 .form-list li  .field-style:focus{
 	box-shadow: 0 0 5px #e0e0e0;
