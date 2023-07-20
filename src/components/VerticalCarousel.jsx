@@ -24,6 +24,16 @@ const VerticalCarousel = ({ data }) => {
   const visibleStyleThreshold = shuffleThreshold / 2;
 
   const determinePlacement = (itemIndex) => {
+    console.log(activeIndex);
+    
+    // Change background video playing and description according to activeIndex
+    const videoSource = document.querySelector('video');
+    const descriptionDeux = document.querySelector('.description2');
+  
+    videoSource.src = data[activeIndex].videobackground;
+    descriptionDeux.innerText = data[activeIndex].description;
+
+
     // If these match, the item is active
     if (activeIndex === itemIndex) return 0;
 
@@ -46,16 +56,6 @@ const VerticalCarousel = ({ data }) => {
       return -(activeIndex - itemIndex) * itemHeight;
     }
   };
-
-    const changeBackground = () => {
-  const videoSource = document.querySelector('video');
-  const descriptionDeux = document.querySelector('.description2');
-
-  videoSource.src = data[activeIndex].videobackground;
-  descriptionDeux.innerText = data[activeIndex].description;
-
-    
-  }
 
   const animateCSS = () => {
     const Gamescontent = document.querySelector('.gamescontent');
@@ -80,7 +80,7 @@ const VerticalCarousel = ({ data }) => {
   return (
     <div className="carousel-inner">
     {data.map((item, i) => (
-        <button type="button" onClick={function() {setActiveIndex(i); animateCSS(); changeBackground();}} className={cn("carousel-item", {
+        <button type="button" onClick={function() {setActiveIndex(i); animateCSS();}} className={cn("carousel-item", {
             active: activeIndex === i,
             visible:
             Math.abs(determinePlacement(i)) <= visibleStyleThreshold

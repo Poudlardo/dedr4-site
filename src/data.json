@@ -2,38 +2,43 @@
 "slides":[
       {
         "introline": "ovo",
-        "id": "0",
         "images": "images/qV6_bweDv0NZO9OMxahC2g_store_logo_image_white.png",
         "videobackground": "videos/GamesDedra-1438626014704308233-01.mp4",
-        "description": "A tough skill based platforming game. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac suscipit arcu. Pellentesque tristique facilisis sollicitudin. Aliquam at erat vel lectus efficitur sodales. In hac"
+        "description": "1111A tough skill based platforming game. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac suscipit arcu. Pellentesque tristique facilisis sollicitudin. Aliquam at erat vel lectus efficitur sodales. In hac",
+        "platformun": "images/poki.png",
+        "platformdeux": "images/poki.png"
       },
       {
         "introline": "quivershop",
-        "id": "1",
         "images": "/images/quivershot.png",
         "videobackground": "https://joy1.videvo.net/videvo_files/video/free/2016-05/large_watermarked/5_LA_DownTown_3_Videvo_preview.mp4",
-        "description": "In hac Pellentesque tristique facilisis sollicitudin. Aliquam at erat vel lectus efficitur sodales. A tough skill based platforming game. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac suscipit arcu."
+        "description": "2222In hac Pellentesque tristique facilisis sollicitudin. Aliquam at erat vel lectus efficitur sodales. A tough skill based platforming game. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac suscipit arcu.",
+        "platformun": "images/poki.png",
+        "platformdeux": "images/poki.png"
       },
       {
         "introline": "rise",
-        "id": "2",
         "images": "/images/rise.png",
         "videobackground": "videos/GamesDedra-1438626014704308233-01.mp4",
-        "description": "Aliquam at erat vel lectus efficitur sodales. A tough skill based platforming game. In hac Pellentesque tristique facilisis sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac suscipit arcu."
+        "description": "3333Aliquam at erat vel lectus efficitur sodales. A tough skill based platforming game. In hac Pellentesque tristique facilisis sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac suscipit arcu.",
+        "platformun": "images/poki.png",
+        "platformdeux": ""
       },
       {
         "introline": "ovo dimensions",
-        "id": "3",
         "images": "/images/ovo_dimensions.png",
         "videobackground": "https://joy.videvo.net/videvo_files/video/premium/partners0200/large_watermarked/BB_2091b55f-249d-4cd4-9f6a-3d39a8607619_preview.mp4",
-        "description": "Lorem ipsum dolor sit amet, Aliquam at erat vel lectus efficitur sodales. A tough skill based platforming game. consectetur adipiscing elit. Etiam ac suscipit arcu. In hac Pellentesque tristique facilisis sollicitudin."
+        "description": "44444Lorem ipsum dolor sit amet, Aliquam at erat vel lectus efficitur sodales. A tough skill based platforming game. consectetur adipiscing elit. Etiam ac suscipit arcu. In hac Pellentesque tristique facilisis sollicitudin.",
+        "platformun": "images/poki.png",
+        "platformdeux": "s"
       },
       {
         "introline": "Fantasy Merger",
-        "id": "4",
         "images": "/images/fantasymerger.png",
         "videobackground": "videos/GamesDedra-1438626014704308233-01.mp4",
-        "description": "Lectus efficitur sodales. A tough skill based platformingLorem ipsum dolor sit amet, Aliquam at erat vel lectus efficitur sodales. A tough skill based platforming game. consectetur adipiscing elit. Etiam ac suscipit arcu. In hac Pellentesque tristique facilisis sollicitudin."
+        "description": "55555Lectus efficitur sodales. A tough skill based platformingLorem ipsum dolor sit amet, Aliquam at erat vel lectus efficitur sodales. A tough skill based platforming game. consectetur adipiscing elit. Etiam ac suscipit arcu. In hac Pellentesque tristique facilisis sollicitudin.",
+        "platformun": "images/poki.png",
+        "platformdeux": ""
       }
     ]
 } 
