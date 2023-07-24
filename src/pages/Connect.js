@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import '../App.css'
 import Navbar from "../components/Navbar";
 import Emailus from "../components/emailus";
+
 
 function Connect() {
     
@@ -42,11 +44,20 @@ function Connect() {
                             </a>
                     </div>
                     <div className="buttton-wrapper " onClick={handleClick}>
-                        <a href="#"><span></span>Em@il us</a>
+                        <a><span></span>Em@il us</a>
                     </div>
                     <Emailus />                   
                 </div>
-
+                <div className="extra-info">
+                <Link className='nav-link' to="/Privacypolicy">
+                    PRIVACY POLICY
+                </Link>
+                <Link className='nav-link' to="/Termsofservice">
+                    TERMS OF SERVICE
+                </Link>
+                <br />
+                <p>©2023 DEDRA GAMES. All Rights Reserved.</p>
+                </div>
             </div>
         </div>
     )
