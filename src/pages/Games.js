@@ -15,7 +15,7 @@ function Games() {
                     <source src='videos/GamesDedra-1438626014704308233-01.mp4' className='gamespage-source' type="video/mp4" />
                 </video>    
                 <div id="gamesmainpage">
-                        <VerticalCarousel data={data.slides} />
+                        <VerticalCarousel data={data.slides} leadingText={data.leadingText} />
                     <section className='gamescontent animate__animated animate__fadeInUp'>
                         <div className='gametext'>
                             <div className="rectangle2 "></div>

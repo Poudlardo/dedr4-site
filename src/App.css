@@ -279,6 +279,50 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   font-size: 35px;
 }
 
+
+.arrow-box{
+	position: absolute;
+	top: 75vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.arrow-box span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 2px solid #000;
+	border-right: 2px solid #000;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+
+.arrow-box span:nth-child(2)
+{
+	animation-delay: -0.2s;
+}
+
+.arrow-box span:nth-child(3)
+{
+	animation-delay: -0.4s;
+}
+
+@keyframes animate{
+	
+	0%{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
+}
+
 .historycontainer {
   width: 100vw;
   height: 100vh;
@@ -410,24 +454,21 @@ path { transition: fill .4s ease; }
 padding: 25px;
 }
 
+.faq-container {
+  border: 1px solid greenyellow;
+}
+
 
 #main-doc {
   position: relative;
-  margin: 60px 0 0 25vw;
+  margin: 60px 0 0 24vw;
   padding: 0 30px;
   border: 1px solid red;
 }
 
 #faq-navbar {
   border: 1px solid blue;
-  opacity: .85;
-  position: absolute;
-  left: 0;
-  margin: 0;
-  height: 100vh;
-  width: 200px;
-  z-index: 100;
-  transition: opacity .5s;
+  width: 24vw;
 }
 
 
@@ -439,4 +480,9 @@ padding: 25px;
   line-height: 15vh;
   color: lightgray;
   background-color: black;
+}
+
+.tos-list {
+  padding: 2vh 7vw;
+  text-align: justify;
 }

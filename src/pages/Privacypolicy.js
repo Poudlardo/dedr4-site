@@ -17,8 +17,31 @@ This privacy policy applies to all information collected through our website (su
 <br/>
 <b>Please read this privacy policy carefully as it will help you make informed decisions about sharing your personal information with us.</b></p>
             <div className="faq-container">
-
             <br />
+            <nav id="faq-navbar">
+                    <a href="#collectinfo" class="nav-link">WHAT INFORMATION DO WE COLLECT?</a>
+                    <br />
+                    <a href="#useofinfo" class="nav-link">HOW DO WE USE YOUR INFORMATION?</a>
+                    <br />
+                    <a href="#shareinfo" class="nav-link">WILL YOUR INFORMATION BE SHARED WITH ANYONE?</a>
+                    <br />
+                    <a href="#cookies" class="nav-link">DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</a>
+                    <br />
+                    <a href="#sociallogins" class="nav-link">HOW DO WE HANDLE YOUR SOCIAL LOGINS?</a>
+                    <br />
+                    <a href="#thirdpartysites" class="nav-link">WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?</a>
+                    <br />
+                    <a href="#howlong" class="nav-link">HOW LONG DO WE KEEP YOUR INFORMATION?</a>
+                    <br />
+                    <a href="#safeinformation" class="nav-link">HOW DO WE KEEP YOUR INFORMATION SAFE?</a>
+                    <br />
+                    <a href="#privacyrights" class="nav-link">WHAT ARE YOUR PRIVACY RIGHTS?</a>
+                    <br />
+                    <a href="#updates" class="nav-link">DO WE MAKE UPDATES TO THIS POLICY?</a>
+                    <br />
+                    <a href="#contactus" class="nav-link">HOW CAN YOU CONTACT US ABOUT THIS POLICY?</a>
+                    <br />
+                </nav>
             <main id="main-doc">
                 <section class="main-section" id="collectinfo">
                     <h3 id="header">1. WHAT INFORMATION DO WE COLLECT?</h3>

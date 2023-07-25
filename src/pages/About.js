@@ -10,6 +10,11 @@ function About() {
             <div className="slogancontainer animate__animated animate__slideInUp">
                 <h1>WE SPEND OUR TIME MAKING GAMES YOU'LL SPEND YOURS TO PLAY</h1>
                 <img src='images/ovo-avatars.png' />
+                <div className="arrow-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <div className="historycontainer">
