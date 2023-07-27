@@ -40,18 +40,13 @@
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        justify-content: flex-end;
-        height: 6vh;
-        row-gap: 5px;
+        justify-content: flex-start;
+        padding: 5vh 0vw 3vh 0vw;
     }
-}
-
-@media (max-width: 676px) {
-    
-.follow, .line {
-    display: none;
-}
-.rightpart {
-    padding-left: 10em;
-}
+    .follow, .line {
+        display: none;
+    }
+    .rightpart {
+        padding-left: 10em;
+    }
 }

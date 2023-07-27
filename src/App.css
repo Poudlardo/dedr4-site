@@ -107,19 +107,17 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   /* Page HOME */
     .Homehero {
         flex-direction: column;
-        height: 110vh;
+        height: 100vh;
     }
     .textside, .videoside-content {
-        width: 100%;
-        height: 35%;
-        padding-top: 50px;
+        width: 90%;
+        height: auto;
         justify-content: center;
     }
     .textside {
         justify-content: center;
     }
 }
-
 /* Page GAMES */
 .gamespage {
   height: 100vh;
@@ -139,24 +137,24 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
     z-index: -1;
 }
 
-.gamespage .navbar > *, .gamespage .nav-link {
+.gamespage .wh-navbar > *, .gamespage .wh-nav-link {
   color: white;
 }
 
-.gamespage .navbar {
+.gamespage .wh-navbar {
   width: 100%;
   z-index: 999;
 }
 
-.gamespage.nav-link {
+.gamespage.wh-nav-link {
   display: inline-block;
   position: relative;
 }
-.gamespage.nav-link:hover {
+.gamespage.wh-nav-link:hover {
   color: rgba(255,255,255,0.9);
 }
 
-.gamespage .navbar .hbrgerLogo {
+.gamespage .wh-navbar .wh-hbrgerLogo {
   filter: invert(95%) sepia(100%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
 }
 
@@ -217,16 +215,14 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 #gamesmainpage {
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-
 }
 
 .gamescontent  { /* same styling is applied to <Vertical Carousel /> in its own css file*/
     width: 60vw;
-    padding-top:140px;
+    margin-top: 20vh;
 }
 
-.gamespage .navbar .hbrgerLogo {
+.gamespage .wh-navbar .wh-hbrgerLogo {
     display: block;
   }
 }
@@ -283,6 +279,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 }
 .aboutpage h1 {
   font-size: 35px;
+  text-align: center;
 }
 
 
@@ -361,11 +358,23 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 
 .teammembers {
   display: flex;
-  gap: 7em;
+  column-gap: 7em;;
 }
 
 @media screen and (max-width: 900px) {
 
+  .historycontainer {
+    flex-direction: column;
+    padding: 0;
+  }
+  .teamcontainer {
+    row-gap: 0;
+    justify-content: 
+  }
+  .teammembers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 
