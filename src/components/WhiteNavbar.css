@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 
-.navbar {
+.wh-navbar {
   display: flex;
   height: 10vh;
+  width: 100%;
   justify-content: space-between;
   padding: 0 50px;
   box-sizing: border-box;
@@ -11,63 +12,63 @@
   z-index: 1;
 }
 
-#wrapper ul, #wrapper ul li > * {
+#wh-wrapper ul, #wh-wrapper ul li > * {
  text-decoration: none;
  list-style: none;
- color: black;
+ color: rgb(255, 255, 255);
  font-size: medium;
 }
 
-.navbar ul {
+.wh-navbar ul {
   display: flex;
 }
 
-.navbar li {
+.wh-navbar li {
   margin: 0 100px;
   font-weight: bold;
 }
 
-.nav-link { line-height: 30px }
+.wh-nav-link { line-height: 30px }
 
-li.different{
+li.wh-different{
   border:none;
   position: relative;
 }
-li.different:hover{
+li.wh-different:hover{
   border: none;
 }
 
-.different::after{
+.wh-different::after{
   content: '';
   position: absolute;
   width: 0px;
   height: 3px;
   left: 50%;
   bottom:0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   transition: all ease-in-out .2s;
 }
-.different:hover::after{
+.wh-different:hover::after{
   width: 100%;
   left: 0;
 }
 
-.dedra {
+.wh-dedra {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: larger;
   font-weight: bolder;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
-.dedra-logo {
+.wh-dedra-logo {
   width: 40px;
   height: auto;
 }
 
-.hbrgerLogo {
+.wh-hbrgerLogo {
   width: 60px;
   height: auto;
   display: none;
@@ -76,19 +77,19 @@ li.different:hover{
   width: 35px;
 }
 
-ul.mobile-menu {
+ul.wh-mobile-menu {
   margin-left: 0;
 }
 
 @media screen and (max-width: 900px) {
 
-  .hbrgerLogo {
+  .wh-hbrgerLogo {
     display: block;
     position: absolute;
     z-index: 1;
   }
 
-  .mobile-menu {
+  .wh-mobile-menu {
     top: 0;
     left: 0;
     position: absolute;
@@ -103,13 +104,13 @@ ul.mobile-menu {
     z-index: 1;
   }
   
-  .mobile-menu li {
+  .wh-mobile-menu li {
     margin: 25px 0;
     font-size: 1.2em;
     
   }
 
-  .nav-link, .nav-link > * {
+  .wh-nav-link, .wh-nav-link > * {
     color: #000000;
   }
 

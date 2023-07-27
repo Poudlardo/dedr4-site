@@ -29,11 +29,11 @@ const VerticalCarousel = ({ data }) => {
     // Change background video playing and description according to activeIndex
     const videoSource = document.querySelector('video');
     const descriptionDeux = document.querySelector('.description2');
-  
+
+    if (descriptionDeux !== undefined && descriptionDeux !== null) {
     videoSource.src = data[activeIndex].videobackground;
     descriptionDeux.innerText = data[activeIndex].description;
-
-
+    }
     // If these match, the item is active
     if (activeIndex === itemIndex) return 0;
 
