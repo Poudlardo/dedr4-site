@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../App.css'
 import Navbar from "../components/Navbar";
 import Emailus from "../components/emailus";
+import ConnectFooter from '../components/ConnectFooter'
 
 
 function Connect() {
@@ -23,7 +24,6 @@ function Connect() {
     return(
         <div className="connectpage">
             <Navbar />
-            <div className="connectmainpage">
                 <div className="sm-container">
                     <h1 className="stay-connected">STAY CONNECTED</h1>             
                     <div className="socialmedias2">                    
@@ -48,17 +48,7 @@ function Connect() {
                     </div>
                     <Emailus />                   
                 </div>
-                <div className="extra-info">
-                <Link className='nav-link' to="/Privacypolicy">
-                    PRIVACY POLICY
-                </Link>
-                <Link className='nav-link' to="/Termsofservice">
-                    TERMS OF SERVICE
-                </Link>
-                <br />
-                <p>©2023 DEDRA GAMES. All Rights Reserved.</p>
-                </div>
-            </div>
+            <ConnectFooter />
         </div>
     )
 }

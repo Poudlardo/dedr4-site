@@ -342,8 +342,8 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 }
 
 .ossamadam {
-  width: 700px;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 .teamcontainer {
@@ -358,7 +358,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 
 .teammembers {
   display: flex;
-  column-gap: 7em;;
+  column-gap: 7em;
 }
 
 @media screen and (max-width: 900px) {
@@ -369,7 +369,6 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   }
   .teamcontainer {
     row-gap: 0;
-    justify-content: 
   }
   .teammembers {
     flex-wrap: wrap;
@@ -386,16 +385,9 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
   background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
   background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
-}
-
-.connectmainpage {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  height: 90vh;
-  width: 100vw;
-  gap: 25vh;
+  justify-content: space-between;
 }
 
 .sm-container {
@@ -406,6 +398,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   align-items: center;
   justify-content: space-between;
   row-gap: 3em;
+  margin-bottom: 5em;
 }
 .sm-container h1 {
   font-size: 40px;
@@ -423,11 +416,6 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 .stay-connected {
   animation: backInRight;
   animation-duration: 1s;
-}
-
-.extra-info { 
-  animation: backInUp;
-  animation-duration: 3s;
 }
 
 svg {
