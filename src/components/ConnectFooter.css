@@ -8,9 +8,8 @@
     display: flex;
     height: 5vh;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0;
-    border: 0;
 }
 
 .cn-leftpart {
@@ -24,9 +23,8 @@
     display: grid;
     grid-template-columns: repeat(5, auto);
     align-items: center;
-    justify-content: end;
-    column-gap: 3em; 
-    margin-right: 3em;
+    justify-content: flex-end;
+    column-gap: 2.5em; 
    }
    
    
@@ -42,12 +40,12 @@
         align-items: center;
         justify-content: flex-start;
         padding: 5vh 0vw 3vh 0vw;
-        border: 1px solid red;
     }
     .cn-follow, .cn-line {
         display: none;
     }
     .cn-rightpart {
         padding-left: 10em;
+        column-gap: 3em; 
     }
 }
