@@ -15,7 +15,7 @@ function Home() {
                     <img src='images/qV6_bweDv0NZO9OMxahC2g_store_logo_image.png' className="ovoLogo" />
                     <p className="description"><b>A tough skill based platforming game.</b><br />(Mobile/ PC)</p>
                 </div>
-                <button className="playnow">PLAY NOW <img src='images/Arrow 1.png' width='32px'/></button>
+                <a href="https://www.crazygames.com/game/ovo" ><button className="playnow" ><b>PLAY NOW </b><img src='images/Arrow 1.png' width='32px'/></button></a>
             </section>
             <section className="videoside-content">
                 <video className="video" autoPlay loop muted>

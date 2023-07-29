@@ -29,10 +29,18 @@ const VerticalCarousel = ({ data }) => {
     // Change background video playing and description according to activeIndex
     const videoSource = document.querySelector('video');
     const descriptionDeux = document.querySelector('.description2');
+    const imgPlatformUn = document.getElementById('logo1');
+    const imgPlatformDeux = document.getElementById('logo2');
+    const lienPlatformUn = document.getElementById('lien1');
+    const lienPlatformDeux = document.getElementById('lien2');
 
     if (descriptionDeux !== undefined && descriptionDeux !== null) {
     videoSource.src = data[activeIndex].videobackground;
     descriptionDeux.innerText = data[activeIndex].description;
+    imgPlatformUn.src = data[activeIndex].platformun;
+    if(data[activeIndex].platformdeux !== "") { imgPlatformDeux.src = data[activeIndex].platformdeux }
+    lienPlatformUn.href = data[activeIndex].link1;
+    if(data[activeIndex].link2 !== "") { lienPlatformDeux.href = data[activeIndex].link2 } 
     }
     // If these match, the item is active
     if (activeIndex === itemIndex) return 0;

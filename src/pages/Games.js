@@ -21,8 +21,8 @@ function Games() {
                                 <p className="description2">A tough skill based platforming game. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac suscipit arcu. Pellentesque tristique facilisis sollicitudin. Aliquam at erat vel lectus efficitur sodales. In hac</p>
                             </div>
                             <div className='platformslist' >
-                                <img src='images/poki.png' className="partnerslogo"/>
-                                <img src='images/coolmathgames.png' className="partnerslogo" />
+                                <a id='lien1' href="https://poki.com/en/g/ovo-classic"><img src='images/poki.png' id='logo1' className="partnerslogo"/></a>
+                                <a id='lien2' href="https://www.coolmathgames.com/0-ovo"><img src='images/coolmathgames.png'  id='logo2' className="partnerslogo" /></a>
                             </div>
                         </section>
                 </div>

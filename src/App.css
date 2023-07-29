@@ -73,18 +73,21 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
     margin-top: 2em;
     opacity: 0.6;
 }
+.textside > a {
+    justify-self: center;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
 
 .playnow {
-
     font-weight: bolder;
     color: white;
     background: linear-gradient(180deg, #B0B0B0 0%, #000000 100%);
     border-radius: 0.7em;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    width: 10em;
-    height: 3em;
-    justify-self: center;
+    width: 11em;
+    height: 3.5em;
 }
 
 .videoside-content {
@@ -500,7 +503,7 @@ text-align: justify;
   right: 0;
   left:0;
   bottom: 0;
-  background: hwb(201 42% 7%);
+  background:rgb(226, 226, 226);
   border: 1px solid black;
   height: 100vh;
 }
