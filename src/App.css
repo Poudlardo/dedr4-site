@@ -251,6 +251,7 @@
 
 .aboutpage {
   width: 100%;
+  overflow-x: clip;
   height: 100%;
   background: -moz-linear-gradient(
     270deg,
