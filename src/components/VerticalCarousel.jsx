@@ -36,9 +36,10 @@ const VerticalCarousel = ({ data }) => {
       videoSource.src = data[activeIndex].videobackground;
       descriptionDeux.innerText = data[activeIndex].description;
       imgPlatformUn.src = data[activeIndex].platformun;
-      if (data[activeIndex].platformdeux !== "") {
-        imgPlatformDeux.src = data[activeIndex].platformdeux;
-      }
+
+      data[activeIndex].platformdeux
+        ? (imgPlatformDeux.src = data[activeIndex].platformdeux)
+        : (imgPlatformDeux.src = "");
       lienPlatformUn.href = data[activeIndex].link1;
       if (data[activeIndex].link2 !== "") {
         lienPlatformDeux.href = data[activeIndex].link2;
