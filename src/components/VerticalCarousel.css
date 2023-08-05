@@ -1,103 +1,101 @@
 :root {
-    --white: #ffffff;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  button {
-    cursor: pointer;
-  }
-  
-  img {
-    max-width: 100%;
-  }
+  --white: #ffffff;
+}
 
+* {
+  box-sizing: border-box;
+}
 
-  /* REGLER LA TAILLE DE LA POLICE ET LA HAUTEUR ENTRE LES LIGNES */
-  .carousel-inner p, .carousel-item {
-    font-weight: 700;
-    font-size: 30px;
-    color: var(--white);
-    line-height: 1;
-  }
-  
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* REGLER LA TAILLE DE LA POLICE ET LA HAUTEUR ENTRE LES LIGNES */
+.carousel-inner p,
+.carousel-item {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--white);
+  line-height: 1;
+}
+
+.carousel-inner {
+  flex: 1;
+  position: relative;
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.7s;
+  margin-bottom: 10em;
+  margin-left: 2em; /* don't forget to set a duration! */
+}
+
+.carousel-inner::before,
+.carousel-inner::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 110px;
+  pointer-events: none;
+}
+
+.carousel-inner::before {
+  top: 0;
+  background-color: hsla(0, 15%, 84%, 0);
+}
+
+.carousel-inner::after {
+  bottom: 0;
+  background-color: hsla(0, 0%, 100%, 0);
+}
+
+.carousel-item {
+  position: absolute;
+  background: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  width: auto;
+  height: max-content;
+}
+
+.carousel-item.visible {
+  opacity: 1;
+  height: max-content;
+}
+
+.carousel-item.visible:not(.active) {
+  opacity: 0.4;
+  width: auto;
+}
+
+.gamesimages {
+  width: auto;
+  height: 4em;
+}
+
+@media screen and (max-width: 900px) {
   .carousel-inner {
-    flex: 1;
-    position: relative;
-    animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 0.7s;
-    margin-bottom: 10em;
-    margin-left: 2em; /* don't forget to set a duration! */
-  }
-  
-  .carousel-inner::before,
-  .carousel-inner::after {
-    content: "";
-    z-index: 1;
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: start;
     width: 100%;
-    height: 110px;
-    pointer-events: none;
-  }
-  
-  .carousel-inner::before {
-    top: 0;
-    background-color:  hsla(0, 15%, 84%, 0);
-  }
-  
-  .carousel-inner::after {
-    bottom: 0;
-    background-color:  hsla(0, 0%, 100%, 0);
-  }
-  
-  .carousel-item {
-    position: absolute;
-    background: none;
-    padding: 0;
     margin: 0;
-    opacity: 0;
-    transition: transform 0.4s ease, opacity 0.4s ease;
-    width: auto;
-    height: max-content;
-  }
-  
-  .carousel-item.visible {
-    opacity: 1;
-    height: max-content;
-  }
-  
-  .carousel-item.visible:not(.active) {
-    opacity: 0.4;
-    width: auto;
   }
 
   .gamesimages {
     width: auto;
-    height: 4em;
+    height: 3em;
   }
-
-  @media screen and (max-width: 900px) {
-    
-    .carousel-inner {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      text-align:start;
-      width: 100%;
-      margin: 0;
-    }
-
-    .gamesimages {
-      width: auto;
-      height: 3em;
-    }
-
-  }
+}

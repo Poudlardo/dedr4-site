@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 
 .wh-navbar {
   display: flex;
@@ -8,15 +8,16 @@
   padding: 0 50px;
   box-sizing: border-box;
   align-items: center;
-  overflow:hidden;
+  overflow: hidden;
   z-index: 1;
 }
 
-#wh-wrapper ul, #wh-wrapper ul li > * {
- text-decoration: none;
- list-style: none;
- color: rgb(255, 255, 255);
- font-size: medium;
+#wh-wrapper ul,
+#wh-wrapper ul li > * {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  font-size: medium;
 }
 
 .wh-navbar ul {
@@ -28,27 +29,29 @@
   font-weight: bold;
 }
 
-.wh-nav-link { line-height: 30px }
+.wh-nav-link {
+  line-height: 30px;
+}
 
-li.wh-different{
-  border:none;
+li.wh-different {
+  border: none;
   position: relative;
 }
-li.wh-different:hover{
+li.wh-different:hover {
   border: none;
 }
 
-.wh-different::after{
-  content: '';
+.wh-different::after {
+  content: "";
   position: absolute;
   width: 0px;
   height: 3px;
   left: 50%;
-  bottom:0;
+  bottom: 0;
   background-color: rgb(255, 255, 255);
-  transition: all ease-in-out .2s;
+  transition: all ease-in-out 0.2s;
 }
-.wh-different:hover::after{
+.wh-different:hover::after {
   width: 100%;
   left: 0;
 }
@@ -82,7 +85,6 @@ ul.wh-mobile-menu {
 }
 
 @media screen and (max-width: 900px) {
-
   .wh-hbrgerLogo {
     display: block;
     position: absolute;
@@ -103,15 +105,14 @@ ul.wh-mobile-menu {
     margin-left: -110%;
     z-index: 1;
   }
-  
+
   .wh-mobile-menu li {
     margin: 25px 0;
     font-size: 1.2em;
-    
   }
 
-  .wh-nav-link, .wh-nav-link > * {
+  .wh-nav-link,
+  .wh-nav-link > * {
     color: #000000;
   }
-
 }

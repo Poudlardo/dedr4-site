@@ -1,146 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 
 .Homehero > * {
-    font-family: 'Montserrat', sans-serif;
-    padding:1em;
+  font-family: "Montserrat", sans-serif;
+  padding: 1em;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    margin: 0;
-    border: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  border: 0;
 }
 
 /* Page d'accueil */
 
 .home-container {
-    overflow: hidden;
-    background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
-background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
-background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
+  overflow: hidden;
+  background: -moz-linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 31%,
+    rgba(221, 221, 221, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 31%,
+    rgba(221, 221, 221, 1) 100%
+  );
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 31%,
+    rgba(221, 221, 221, 1) 100%
+  );
 }
-
-.home-container .navbar .dedra-logo {
-  animation: rotateIn;
-  animation-duration: 2s;
-}
-
-.wh-navbar .wh-dedra-logo {
-  animation: wobble;
-  animation-duration: 0.8s;
-}
-
 
 .Homehero {
-    display:flex;
-    height: 85vh;
-    align-items: center;
+  display: flex;
+  height: 85vh;
+  align-items: center;
 }
 
 .textside {
-    flex: 1;
-    display: grid;
-    grid-template-columns: min-content auto;
-    grid-template-rows: min-content;
-    gap: 5em 2em;
-    animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 0.7s; /* don't forget to set a duration! */
+  flex: 1;
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: min-content;
+  gap: 5em 2em;
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.7s; /* don't forget to set a duration! */
 }
 
 .rectangle {
-    width: 12px;
-    height: 13em;
-    background: linear-gradient(360deg, rgba(129, 20, 20, 0) 0%, #000000 100%);
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
+  width: 12px;
+  height: 13em;
+  background: linear-gradient(360deg, rgba(129, 20, 20, 0) 0%, #000000 100%);
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
 }
 
 .gametitlebox {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    height: min-content;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  height: min-content;
 }
 
 .ovoLogo {
-    opacity: 0.6;
-    width: 20em;
-    height: auto;
+  opacity: 0.6;
+  width: 20em;
+  height: auto;
 }
 
 .description {
-    margin-top: 2em;
-    opacity: 0.6;
+  margin-top: 2em;
+  opacity: 0.6;
 }
 .textside > a {
-    justify-self: center;
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
+  justify-self: center;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 
 .playnow {
-    font-weight: bolder;
-    color: white;
-    background: linear-gradient(180deg, #B0B0B0 0%, #000000 100%);
-    border-radius: 0.7em;
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    width: 11em;
-    height: 3.5em;
+  font-weight: bolder;
+  color: white;
+  background: linear-gradient(180deg, #b0b0b0 0%, #000000 100%);
+  border-radius: 0.7em;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  width: 11em;
+  height: 3.5em;
 }
 
 .videoside-content {
-    flex: 1;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .video {
-    height: auto;
-    width: 100%;
-    max-width: 800px;
+  height: auto;
+  width: 100%;
+  max-width: 800px;
 }
 
 @media (max-width: 900px) {
-
   /* Page HOME */
-    .Homehero {
-        flex-direction: column;
-        height: 100vh;
-    }
-    .textside, .videoside-content {
-        width: 90%;
-        height: auto;
-        justify-content: center;
-    }
-    .textside {
-        justify-content: center;
-    }
+  .Homehero {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .textside,
+  .videoside-content {
+    width: 90%;
+    height: auto;
+    justify-content: center;
+  }
+  .textside {
+    justify-content: center;
+  }
 }
 /* Page GAMES */
 .gamespage {
   height: 100vh;
   width: 100%;
   display: flex;
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
   object-fit: contain;
   align-items: flex-start;
-  }
-
-
-.gamespage-video {    
-    object-fit: cover;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
 }
 
-.gamespage .wh-navbar > *, .gamespage .wh-nav-link {
+.gamespage-video {
+  object-fit: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.gamespage .wh-navbar > *,
+.gamespage .wh-nav-link {
   color: white;
 }
 
@@ -154,11 +155,12 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   position: relative;
 }
 .gamespage.wh-nav-link:hover {
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .gamespage .wh-navbar .wh-hbrgerLogo {
-  filter: invert(95%) sepia(100%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
+  filter: invert(95%) sepia(100%) saturate(14%) hue-rotate(213deg)
+    brightness(104%) contrast(104%);
 }
 
 #gamesmainpage {
@@ -175,7 +177,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-width: 460px;  
+  min-width: 460px;
   margin: 0;
 }
 
@@ -191,7 +193,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   height: 100px;
   background: linear-gradient(360deg, rgba(129, 20, 20, 0) 0%, #ffffff 100%);
   margin-top: 8px;
-  animation-duration: 0.7s; 
+  animation-duration: 0.7s;
 }
 
 .description2 {
@@ -200,8 +202,8 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   text-align: justify;
   line-height: 1.6;
   font-weight: 500;
-  font-size: 22px; 
-  animation-duration: 0.7s; 
+  font-size: 22px;
+  animation-duration: 0.7s;
 }
 
 .partnerslogo {
@@ -214,18 +216,18 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 }
 
 @media screen and (max-width: 900px) {
-
-#gamesmainpage {
+  #gamesmainpage {
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.gamescontent  { /* same styling is applied to <Vertical Carousel /> in its own css file*/
+  .gamescontent {
+    /* same styling is applied to <Vertical Carousel /> in its own css file*/
     width: 60vw;
     margin-top: 20vh;
-}
+  }
 
-.gamespage .wh-navbar .wh-hbrgerLogo {
+  .gamespage .wh-navbar .wh-hbrgerLogo {
     display: block;
   }
 }
@@ -258,9 +260,21 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 .aboutpage {
   width: 100vw;
   height: 100%;
-  background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
-  background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
-  background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
+  background: -moz-linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 31%,
+    rgba(221, 221, 221, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 31%,
+    rgba(221, 221, 221, 1) 100%
+  );
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 31%,
+    rgba(221, 221, 221, 1) 100%
+  );
 }
 
 .aboutpage > * {
@@ -268,16 +282,15 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 }
 
 .slogancontainer h1 {
-  font-size:
-   1.5em;
+  font-size: 1.5em;
 }
 .slogancontainer {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
   animation-duration: 2s;
 }
 .aboutpage h1 {
@@ -285,48 +298,44 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   text-align: center;
 }
 
-
-.arrow-box{
-	position: absolute;
-	top: 75vh;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.arrow-box {
+  position: absolute;
+  top: 75vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.arrow-box span{
-	display: block;
-	width: 20px;
-	height: 20px;
-	border-bottom: 2px solid #000;
-	border-right: 2px solid #000;
-	transform: rotate(45deg);
-	margin: -10px;
-	animation: animate 2s infinite;
+.arrow-box span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
 }
 
-.arrow-box span:nth-child(2)
-{
-	animation-delay: -0.2s;
+.arrow-box span:nth-child(2) {
+  animation-delay: -0.2s;
 }
 
-.arrow-box span:nth-child(3)
-{
-	animation-delay: -0.4s;
+.arrow-box span:nth-child(3) {
+  animation-delay: -0.4s;
 }
 
-@keyframes animate{
-	
-	0%{
-		opacity: 0;
-		transform: rotate(45deg) translate(-20px, -20px);
-	}
-	50%{
-		opacity: 1;
-	}
-	100%{
-		opacity: 0;
-		transform: rotate(45deg) translate(20px, 20px);
-	}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
 
 .historycontainer {
@@ -335,11 +344,11 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:5em;
+  gap: 5em;
   padding-left: 7em;
 }
 
-.quisommesnous  {
+.quisommesnous {
   max-width: 500px;
   text-align: justify;
 }
@@ -365,7 +374,6 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 }
 
 @media screen and (max-width: 900px) {
-
   .historycontainer {
     flex-direction: column;
     padding: 0;
@@ -379,15 +387,26 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   }
 }
 
-
 /* CONNECT PAGE */
 
 .connectpage {
   width: 100vw;
   height: 100vh;
-  background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
-  background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
-  background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1) 100%);
+  background: -moz-linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 31%,
+    rgba(221, 221, 221, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 31%,
+    rgba(221, 221, 221, 1) 100%
+  );
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 31%,
+    rgba(221, 221, 221, 1) 100%
+  );
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -405,7 +424,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
 }
 .sm-container h1 {
   font-size: 40px;
-  margin-right: 1em ;
+  margin-right: 1em;
 }
 
 .socialmedias2 {
@@ -416,28 +435,41 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 31%, rgba(221,221,221,1)
   animation-duration: 1s;
 }
 
-.stay-connected, .buttton-wrapper {
+.stay-connected,
+.buttton-wrapper {
   animation: backInRight;
   animation-duration: 1s;
 }
 
 svg {
-  width: 100px ;
+  width: 100px;
   height: auto;
 }
 
-path { transition: fill .4s ease; }
+path {
+  transition: fill 0.4s ease;
+}
 
-.bi-youtube path, .bi-discord path, .bi-twitter path{ fill: rgba(0,0,0,0.5); }
+.bi-youtube path,
+.bi-discord path,
+.bi-twitter path {
+  fill: rgba(0, 0, 0, 0.5);
+}
 
-.bi-youtube:hover path{ fill: #FF0000; }
+.bi-youtube:hover path {
+  fill: #ff0000;
+}
 
-.bi-discord:hover path{ fill: #7289da ; }
+.bi-discord:hover path {
+  fill: #7289da;
+}
 
-.bi-twitter:hover path{  fill: #1DA1F2; }
+.bi-twitter:hover path {
+  fill: #1da1f2;
+}
 
 .extra-info {
- padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 .extra-info > * {
@@ -445,21 +477,19 @@ path { transition: fill .4s ease; }
   padding: 0 25px;
 }
 
-
 .formcontainer {
   border: 1px solid rgb(0, 21, 255);
 }
 
-
 @media screen and (max-width: 900px) {
-
-  .connectmainpage { flex-direction: column; }
-
+  .connectmainpage {
+    flex-direction: column;
+  }
 }
 
 /* PRIVACY POLICY PAGE */
 
-.Privacypage > h1{
+.Privacypage > h1 {
   text-align: center;
   line-height: 15vh;
   color: lightgray;
@@ -467,8 +497,8 @@ path { transition: fill .4s ease; }
 }
 
 #faq-intro {
-padding: 25px;
-text-align: justify;
+  padding: 25px;
+  text-align: justify;
 }
 
 /* .faq-container {
@@ -494,16 +524,16 @@ text-align: justify;
 #doc-container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 #pp-navbar {
   position: sticky;
   top: 0;
   right: 0;
-  left:0;
+  left: 0;
   bottom: 0;
-  background:rgb(226, 226, 226);
+  background: rgb(226, 226, 226);
   border: 1px solid black;
   height: 100vh;
 }
@@ -573,7 +603,6 @@ text-align: justify;
     flex-direction: column;
   }
 }
-
 
 /* TERMS OF SERVICE PAGE */
 
