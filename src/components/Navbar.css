@@ -106,7 +106,7 @@ li.different:hover {
   width: 35px;
 }
 
-ul.mobile-menu {
+ul.menu {
   margin-left: 0;
 }
 
@@ -117,7 +117,7 @@ ul.mobile-menu {
     z-index: 1;
   }
 
-  .mobile-menu {
+  .menu {
     top: 0;
     left: 0;
     position: absolute;
@@ -132,7 +132,20 @@ ul.mobile-menu {
     z-index: 1;
   }
 
-  .mobile-menu li {
+  .menu-closed {
+    display: none !important;
+  }
+
+  .whiteNavBarDifferent::after {
+    background-color: black !important;
+  }
+
+  .whiteNavBarWrapper ul,
+  .whiteNavBarWrapper ul li > * {
+    color: black !important;
+  }
+
+  .menu li {
     margin: 25px 0;
     font-size: 1.2em;
   }

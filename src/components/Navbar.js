@@ -7,12 +7,8 @@ function Navbar({ isWhite = false }) {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
   function clickHamberger() {
-    const Links = document.querySelector("ul");
-    const Hamburger = document.querySelector(".hbrgerLogo");
-    Links.classList.toggle("mobile-menu");
-    Hamburger.style.filter = "none";
+    setClick(!click);
   }
 
   return (
@@ -33,7 +29,7 @@ function Navbar({ isWhite = false }) {
         DEDRA
       </Link>
       <div id="wrapper" className={`${isWhite ? "whiteNavBarWrapper" : ""}`}>
-        <ul>
+        <ul className={click ? "menu" : "menu menu-closed"}>
           <li className={`different ${isWhite ? "whiteNavBarDifferent" : ""}`}>
             <Link className="nav-link" to="/games" onClick={handleClick}>
               GAMES
@@ -56,7 +52,7 @@ function Navbar({ isWhite = false }) {
         viewBox="0 0 100 80"
         width="40"
         height="30"
-        fill={isWhite ? "white" : "black"}
+        fill={isWhite && !click ? "white" : "black"}
         className="hbrgerLogo"
         onClick={clickHamberger}
       >

@@ -1,25 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import Navbar from "../components/Navbar";
-import Emailus from "../components/emailus";
 import ConnectFooter from "../components/ConnectFooter";
+import "../components/emailus.css";
+import Icon from "@mdi/react";
+import { mdiAt, mdiCircleSmall } from "@mdi/js";
 
 function Connect() {
   const handleClick = (e) => {
-    const formStyle = document.querySelector(".form-style-9");
-    const emailBtn = document.querySelector(".buttton-wrapper");
-
-    formStyle.style.display = "block";
-    formStyle.style.animation = "fadeIn";
-    formStyle.style.animationDuration = "3s";
-
-    /* referring directly to the animation's @keyframe declaration */
-    emailBtn.style.animation = "fadeOut";
-    emailBtn.style.animationDuration = "0.2s";
-    emailBtn.addEventListener("animationend", () => {
-      emailBtn.style.display = "none";
-    });
+    window.open(
+      "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeBcSs01PBeyGOk6xqz9aPB0zGn6vdM7Rsf6OIO_bqOyraGhQ/viewform?pli=1"
+    );
   };
 
   return (
@@ -70,7 +62,15 @@ function Connect() {
             <span></span>Em@il us
           </a>
         </div>
-        <Emailus />
+        <div className="email">
+          games
+          <Icon className="emaildot" path={mdiCircleSmall} size={1} />
+          dedra
+          <Icon path={mdiAt} size={1} />
+          gmail
+          <Icon className="emaildot" path={mdiCircleSmall} size={1} />
+          com
+        </div>
       </div>
       <ConnectFooter />
     </div>

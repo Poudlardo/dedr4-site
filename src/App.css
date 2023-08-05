@@ -158,11 +158,6 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-.gamespage .wh-navbar .wh-hbrgerLogo {
-  filter: invert(95%) sepia(100%) saturate(14%) hue-rotate(213deg)
-    brightness(104%) contrast(104%);
-}
-
 #gamesmainpage {
   width: 100%;
   height: 100vh;
@@ -225,10 +220,6 @@
     /* same styling is applied to <Vertical Carousel /> in its own css file*/
     width: 60vw;
     margin-top: 20vh;
-  }
-
-  .gamespage .wh-navbar .wh-hbrgerLogo {
-    display: block;
   }
 }
 
@@ -390,6 +381,7 @@
 /* CONNECT PAGE */
 
 .connectpage {
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
   background: -moz-linear-gradient(
@@ -424,7 +416,6 @@
 }
 .sm-container h1 {
   font-size: 40px;
-  margin-right: 1em;
 }
 
 .socialmedias2 {
@@ -435,6 +426,11 @@
   animation-duration: 1s;
 }
 
+.socialmedias2 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .stay-connected,
 .buttton-wrapper {
   animation: backInRight;
@@ -585,14 +581,16 @@ path {
 @media (max-width: 900px) {
   #pp-navbar {
     position: relative;
-    height: 250px;
-    width: 100%;
-    overflow: scroll;
-    border-bottom: 2px solid gray;
+    height: fit-content;
+    margin: 10px;
+    width: calc(100% - 20px);
+    overflow: auto;
+    border-top: 1px solid black;
   }
   .pp-nav-link {
     text-align: center;
     padding: 6px;
+    border-left: 0;
   }
   #main-doc {
     margin: auto;

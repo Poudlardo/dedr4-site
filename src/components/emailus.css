@@ -8,7 +8,17 @@
   justify-content: center;
 }
 
+.email {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.emaildot {
+  margin: 0 -5px;
+}
+
 .buttton-wrapper a {
+  width: 200px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -19,8 +29,6 @@
   font-size: 30px;
   font-weight: 900;
   padding: 6.5px;
-  margin-left: -0.8em;
-  z-index: 3;
 }
 
 .buttton-wrapper a:active {
@@ -36,7 +44,7 @@
   width: 8px;
   height: 8px;
   background: transparent;
-  transition: 0.7s;
+  transition: 0.5s;
   -webkit-mix-blend-mode: hue;
 }
 
@@ -70,7 +78,7 @@ a:hover::before,
 a:hover::after,
 a:hover span::before,
 a:hover span::after {
-  width: calc(180px / 2);
+  width: calc(200px / 2);
   height: calc(50px / 2);
 }
 
