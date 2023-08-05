@@ -56,6 +56,7 @@ function Navbar({ isWhite = false }) {
         viewBox="0 0 100 80"
         width="40"
         height="30"
+        fill={isWhite ? "white" : "black"}
         className="hbrgerLogo"
         onClick={clickHamberger}
       >
