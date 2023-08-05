@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar({ isWhite = false }) {
+function Navbar({ isWhite = false, hasShadow = false }) {
   const [click, setClick] = useState(false);
+  const [whiteTheme, setWhiteTheme] = useState(isWhite);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -11,8 +12,31 @@ function Navbar({ isWhite = false }) {
     setClick(!click);
   }
 
+  if (localStorage.getItem("theme") === "inverted") {
+    document.body.classList.add("inverted");
+  } else {
+    document.body.classList.remove("inverted");
+  }
+
+  function toggleTheme() {
+    if (whiteTheme) {
+      document.body.classList.add("inverted");
+      localStorage.setItem("theme", "inverted");
+    } else {
+      document.body.classList.remove("inverted");
+      localStorage.setItem("theme", "normal");
+    }
+    setWhiteTheme(!whiteTheme);
+  }
+
   return (
-    <nav className="navbar">
+    <nav
+      className={`navbar ${
+        hasShadow
+          ? "navbar-shadow " + (isWhite ? "navbar-shadow-white" : "")
+          : ""
+      }`}
+    >
       <Link
         to="/"
         className={`dedra ${isWhite ? "whiteDedra" : ""}`}

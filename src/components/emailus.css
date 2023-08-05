@@ -17,8 +17,35 @@
   margin: 0 -5px;
 }
 
+.tooltip {
+  margin-top: -40px;
+  position: relative;
+  display: inline-block;
+  border-top: 1px solid black;
+  opacity: 0;
+  padding: 0 2px;
+  transform: translate(0, -10px);
+  transition: all 0.3s;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltipOpen {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 .buttton-wrapper a {
-  width: 200px;
+  width: 230px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -78,7 +105,7 @@ a:hover::before,
 a:hover::after,
 a:hover span::before,
 a:hover span::after {
-  width: calc(200px / 2);
+  width: calc(230px / 2);
   height: calc(50px / 2);
 }
 

@@ -29,10 +29,25 @@
   margin-right: 3em;
 }
 
+.rightpart a {
+  transform: scale(1);
+  transition: transform 0.23s ease;
+  width: 30px;
+  height: auto;
+}
+
+.rightpart a:hover {
+  transform: scale(1.25);
+}
+
 .socialmedias {
   width: 30px;
   height: auto;
   border: 0;
+}
+
+.follow {
+  white-space: nowrap;
 }
 
 @media (max-width: 900px) {

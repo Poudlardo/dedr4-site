@@ -4,7 +4,10 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <p className="leftpart">Dedra Games © 2023. All Rights Reserved.</p>
+      <p className="cn-leftpart">
+        Dedra Games © 2023.{" "}
+        <span className="cn-nowrap">All Rights Reserved.</span>
+      </p>
       <div className="rightpart">
         <p className="follow">FOLLOW US</p>
         <div className="line"></div>

@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 function About() {
   return (
     <div className="aboutpage">
-      <Navbar />
+      <Navbar hasShadow={true} />
       <div className="slogancontainer animate__animated animate__slideInUp">
         <h1>WE SPEND OUR TIME MAKING GAMES YOU'LL SPEND YOURS TO PLAY</h1>
         <img src="images/ovo-avatars.png" />
@@ -47,22 +47,22 @@ function About() {
           <div className="ossam">
             <img src="images/skuuuurrrrr.png" height="350px" />
             <h2>Ossama Jouini</h2>
-            <p>J'aime les jeux vidéos lourds</p>
+            <p>J'aime les jeux vidéos</p>
           </div>
           <div className="adam">
             <img src="images/skuuuurrrrr.png" height="350px" />
             <h2>Adam Merhairi</h2>
-            <p>J'aime les jeux vidéos lourds</p>
+            <p>J'aime les jeux vidéos</p>
           </div>
           <div className="maryland">
             <img src="images/skuuuurrrrr.png" height="350px" />
             <h2>Maryland member</h2>
-            <p>J'aime les jeux vidéos lourds</p>
+            <p>I love video games</p>
           </div>
           <div className="brasil">
             <img src="images/skuuuurrrrr.png" height="350px" />
             <h2>Brazil member</h2>
-            <p>J'aime les jeux vidéos lourds</p>
+            <p>me guston los videon juegon</p>
           </div>
         </div>
       </div>

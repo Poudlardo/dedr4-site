@@ -10,11 +10,11 @@ function ConnectFooter() {
         <span className="cn-nowrap">All Rights Reserved.</span>
       </p>
       <div className="cn-rightpart">
-        <Link className="cn-nav-link" to="/Privacypolicy">
+        <Link className="cn-nav-link" to="/privacy">
           PRIVACY POLICY
         </Link>
         <div className="cn-line"></div>
-        <Link className="cn-nav-link" to="/Termsofservice">
+        <Link className="cn-nav-link" to="/tos">
           TERMS OF SERVICE
         </Link>
       </div>
