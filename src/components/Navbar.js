@@ -3,10 +3,12 @@ import { Link, withRouter } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar({ isWhite = false }) {
+
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  
   function clickHamberger() {
     setClick(!click);
   }
