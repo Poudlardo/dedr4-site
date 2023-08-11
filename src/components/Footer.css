@@ -30,9 +30,16 @@
 }
 
 .socialmedias {
-  width: 30px;
-  height: auto;
-  border: 0;
+  width: 11em;
+  column-gap: 2.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cn-nav-link {
+  color: black;
+  text-decoration: underline;
+  white-space: nowrap;
 }
 
 @media (max-width: 900px) {
