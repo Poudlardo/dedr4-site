@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Games from "./pages/Games";
 import Blog from "./pages/Blog";
+import Consulting from "./pages/Consulting.js";
 import About from "./pages/About";
 import Connect from "./pages/Connect";
 import Termsofservice from "./pages/Termsofservice";
@@ -18,6 +19,7 @@ function App() {
           <Route path="/games" element={<Games />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
+          <Route path="/consulting" element={<Consulting />} />
           <Route path="/connect" element={<Connect />} />
           <Route path="/Termsofservice" element={<Termsofservice />} />
           <Route path="/Privacypolicy" element={<Privacypolicy />} />
