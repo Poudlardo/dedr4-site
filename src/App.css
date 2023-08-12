@@ -615,3 +615,29 @@ path {
   padding: 2vh 7vw;
   text-align: justify;
 }
+
+/* GAMES TWO PAGE */
+
+.carousel-control {
+  background: none;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 3em;
+  text-shadow: none;
+  margin-top: 30px;
+  opacity:1;
+  border: 1px solid red;
+}
+
+.left, .right {
+  border: 1px solid blue;
+}
+
+#CarouselBtns {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 4%;
+}
