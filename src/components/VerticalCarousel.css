@@ -27,15 +27,17 @@ img {
   font-size: 30px;
   color: var(--white);
   line-height: 1;
+
 }
 
 .carousel-inner {
-  flex: 1;
-  position: relative;
-  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 0.7s;
-  margin-bottom: 10em;
-  margin-left: 2em; /* don't forget to set a duration! */
+  position: relative; /* don't forget to set a duration! */  
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  column-gap: 82vw;
+  margin-top: 7vh;
 }
 
 .carousel-inner::before,
@@ -65,8 +67,7 @@ img {
   margin: 0;
   opacity: 0;
   transition: transform 0.4s ease, opacity 0.4s ease;
-  width: auto;
-  height: max-content;
+  border: 1px solid red;
 }
 
 .carousel-item.visible {
@@ -77,6 +78,19 @@ img {
 .carousel-item.visible:not(.active) {
   opacity: 0.4;
   width: auto;
+}
+
+.carousel-control {
+  background: none;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 3em;
+  text-shadow: none;
+  margin-top: 5em;
+  opacity:1;
+}
+
+.left, .right {
+  border: 1px solid blue;
 }
 
 .gamesimages {
