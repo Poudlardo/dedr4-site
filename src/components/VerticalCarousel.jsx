@@ -4,7 +4,7 @@ import cn from "classnames";
 import "./VerticalCarousel.css";
 import "animate.css";
 import Icon from '@mdi/react';
-import { mdiChevronLeftCircle, mdiChevronRightCircle } from '@mdi/js';
+import { mdiChevronLeftCircle, mdiChevronRightCircle, mdiChevronRightCircleOutline, mdiChevronLeftCircleOutline } from '@mdi/js';
 
 /*
  * Read the blog post here:
@@ -114,7 +114,7 @@ const VerticalCarousel = ({ data }) => {
     
     <div className="carousel-inner">
       <a data-slide="prev" href="#quote-carousel" className="carousel-control" onClick={() => handleClick("prev")} >
-        <Icon path={mdiChevronLeftCircle} size={4} className="left" />
+        <Icon path={mdiChevronLeftCircleOutline} size={3} className="left" />
       </a>
       {data.map((item, i) => (
         <button
@@ -135,7 +135,7 @@ const VerticalCarousel = ({ data }) => {
         </button>
       ))}
       <a data-slide="next" href="#quote-carousel" className="carousel-control" onClick={() => handleClick("next")}>
-            <Icon path={mdiChevronRightCircle} size={4} className="right"  />
+            <Icon path={mdiChevronRightCircleOutline} size={3} className="right"  />
       </a>
     </div>
   );

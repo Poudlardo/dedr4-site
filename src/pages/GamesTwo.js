@@ -10,6 +10,9 @@ function GamesTwo() {
 
 
   return (
+    <>
+    <div className="shadows left"></div>
+    <div className="shadows right"></div>  
     <div className="gamespage">
       <Navbar isWhite={true} />
       <video className="gamespage-video" autoPlay loop muted>
@@ -21,22 +24,24 @@ function GamesTwo() {
       </video>
       <VerticalCarousel data={data.slides} leadingText={data.leadingText} />
       <div className="gameinfo-container">
-        <p className="description2"></p>      
-        <div className="platformslist">
-          <a id="lien1" href="https://poki.com/en/g/ovo-classic">
-                <img src="images/poki.png" id="logo1" className="partnerslogo" />
-          </a>
-          <a id="lien2" href="https://www.coolmathgames.com/0-ovo">
-                <img
-                  src="images/coolmathgames.png"
-                  id="logo2"
-                  className="partnerslogo"
-                />
-          </a>
-        </div> 
-      </div>
+        <p className="description2">Arcade platform game in which you take part in speedruns using a stickman character. Your objective is to reach the flag at the finish line as quickly as possible. Your speed and efficiency will determine your success and high score. All you have to do is hop, skip and jump your way through the levels! If you really want to master the game, combine these actions to get even more power! You can jump higher right after a slide or a leap to the ground! Can you be the fastest speedrunner in the game ?</p>      
 
+      </div>
+      <div className="platformslist">
+        <a id="lien1" href="https://poki.com/en/g/ovo-classic">
+              <img src="images/poki.png" id="logo1" className="partnerslogo" />
+        </a>
+        <a id="lien2" href="https://www.coolmathgames.com/0-ovo">
+              <img
+                src="images/coolmathgames.png"
+                id="logo2"
+                className="partnerslogo"
+              />
+        </a>
+      </div>
     </div>
+    </>
+
   );
 }
 

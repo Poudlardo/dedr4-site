@@ -47,12 +47,15 @@ function About() {
           <div className="ossam">
             <img src="images/skuuuurrrrr.png" height="350px" />
             <h2>Ossama Jouini</h2>
-            <p>J'aime les jeux vidéos lourds</p>
+            <p><b>Co-founder, game designer and programmer</b>
+            <br />
+            The one supervising the team, dispatching some of the tasks, and coordinating what each member of the team does. He also handles coding Als of the games and the many interfaces the user will encounter. Finally, he helps with all the coding part and the scenario.</p>
           </div>
           <div className="adam">
             <img src="images/skuuuurrrrr.png" height="350px" />
             <h2>Adam Merhairi</h2>
-            <p>J'aime les jeux vidéos lourds</p>
+            <p><b>Co-founder, scenarist and level designer</b>
+<br />He is in charge of making our games feel complete and real by doing the world building and level design, as well as creating most of the scenario seen in the game. He is also in charge of helping with some of the art of the games.</p>
           </div>
           <div className="maryland">
             <img src="images/skuuuurrrrr.png" height="350px" />
