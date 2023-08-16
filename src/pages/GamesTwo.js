@@ -7,12 +7,19 @@ import VerticalCarousel from "../components/VerticalCarousel";
 
 function GamesTwo() {
 
+  function componentDidMount() {
 
+    makeBtnsBlackOnCheck(); 
+  }
 
+  function makeBtnsBlackOnCheck() {
+    let btnChecked = document.querySelectorAll('input');
+    btnChecked[0].checked = true;
+  }
+
+  const [Idx, SetIdx] = useState(0);
+  
   return (
-    <>
-    <div className="shadows left"></div>
-    <div className="shadows right"></div>  
     <div className="gamespage">
       <Navbar isWhite={true} />
       <video className="gamespage-video" autoPlay loop muted>
@@ -25,7 +32,6 @@ function GamesTwo() {
       <VerticalCarousel data={data.slides} leadingText={data.leadingText} />
       <div className="gameinfo-container">
         <p className="description2">Arcade platform game in which you take part in speedruns using a stickman character. Your objective is to reach the flag at the finish line as quickly as possible. Your speed and efficiency will determine your success and high score. All you have to do is hop, skip and jump your way through the levels! If you really want to master the game, combine these actions to get even more power! You can jump higher right after a slide or a leap to the ground! Can you be the fastest speedrunner in the game ?</p>      
-
       </div>
       <div className="platformslist">
         <a id="lien1" href="https://poki.com/en/g/ovo-classic">
@@ -39,9 +45,16 @@ function GamesTwo() {
               />
         </a>
       </div>
-    </div>
-    </>
 
+      	<form>
+		<div id="debt-amount-slider">
+        { data.slides.map( (item, Idx)=>  <label for={Idx}><input className={item.introline} type="radio" name="debt-amount" id={Idx} value={Idx} required />
+                                          </label>
+        )}
+			<div id="debt-amount-pos"></div>
+		</div>
+	</form>
+    </div>
   );
 }
 
