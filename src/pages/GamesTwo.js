@@ -24,7 +24,7 @@ function GamesTwo() {
       <Navbar isWhite={true} />
       <video className="gamespage-video" autoPlay loop muted>
         <source
-          src="videos/GamesDedra-1438626014704308233-01.mp4"
+          src="/videos/Desktop 17-08-2023 03-21-01.mp4"
           className="gamespage-source"
           type="video/mp4"
         />
