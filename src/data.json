@@ -1,6 +1,7 @@
 {
   "slides": [
     {
+      "id": "1",
       "introline": "ovo",
       "images": "images/qV6_bweDv0NZO9OMxahC2g_store_logo_image_white.png",
       "videobackground": "/videos/Desktop 17-08-2023 03-21-01.mp4",
@@ -11,6 +12,7 @@
       "link2": "https://www.coolmathgames.com/0-ovo"
     },
     {
+      "id": "2",
       "introline": "quivershop",
       "images": "/images/quivershot.png",
       "videobackground": "videos/Action 31-05-2023 11-34-02_1.mp4",
@@ -19,6 +21,7 @@
       "link1": "https://poki.com/fr/g/quivershot"
     },
     {
+      "id": "3",
       "introline": "rise",
       "images": "/images/rise.png",
       "videobackground": "videos/Trailer Rise 1.mp4",
@@ -27,6 +30,7 @@
       "link1": "https://rise-dedra.surge.sh/"
     },
     {
+      "id": "4",
       "introline": "ovo dimensions",
       "images": "/images/ovo_dimensions.png",
       "videobackground": "/videos/Desktop 17-08-2023 02-26-36.mp4",
@@ -35,6 +39,7 @@
       "link1": "https://poki.com/fr/g/ovo-dimensions"
     },
     {
+      "id": "5",
       "introline": "Fantasy Merger",
       "images": "/images/fantasymerger.png",
       "videobackground": "videos/Action 31-05-2023 12-30-03.mp4",

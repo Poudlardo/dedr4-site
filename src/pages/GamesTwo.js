@@ -47,13 +47,12 @@ function GamesTwo() {
       </div>
 
       	<form>
-		<div id="debt-amount-slider">
-        { data.slides.map( (item, Idx)=>  <label for={Idx}><input className={item.introline} type="radio" name="debt-amount" id={Idx} value={Idx} required />
-                                          </label>
-        )}
-			<div id="debt-amount-pos"></div>
-		</div>
-	</form>
+          <div id="debt-amount-slider">
+              { data.slides.map( (item, Idx) => <label for="debt-amount"><div id="debt-amount-pos"></div><input className={item.introline} key={Idx} type="radio" name="debt-amount" id={Idx} value={Idx} required />
+                                                </label>
+              )}
+          </div>
+	      </form>
     </div>
   );
 }
