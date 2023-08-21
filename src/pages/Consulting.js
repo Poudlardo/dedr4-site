@@ -98,12 +98,12 @@ I started working on the game a while ago to help push it to Early Access and ma
             </div>
         </div>
         <div id="gallery-container">
-            <img src='images/8bit-gif.gif'></img>
             <img src='images/character.gif'></img>
             <img src='images/d7cosm6w4aedi37-447x398.jpg'></img>
             <img src='images/dialog.gif'></img>
             <img src='images/gameplay.gif'></img>
             <img src='images/ovoavatar.gif'></img>
+            <img src='images/8bit-gif.gif'></img>
             <img src='images/progressbar.gif'></img>
             <img src='images/rhythmy-level.gif'></img>
         </div>
