@@ -11,8 +11,7 @@ import { mdiChevronLeftCircle, mdiChevronRightCircle, mdiChevronRightCircleOutli
  * https://letsbuildui.dev/articles/building-a-vertical-carousel-component-in-react
  */
 
-const VerticalCarousel = ({ data }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
+const VerticalCarousel = ({ data, activeIndex, setActiveIndex}) => {
 
   // Used to determine which items appear above the active item
   const halfwayIndex = Math.ceil(data.length / 2);
@@ -118,10 +117,7 @@ const VerticalCarousel = ({ data }) => {
       </a>
       {data.map((item, i) => (
         <button
-          type="button"
-          onClick={function () {
-            setActiveIndex(i);
-          }}
+          type="button" 
           className={cn("carousel-item", {
             active: activeIndex === i,
             visible: Math.abs(determinePlacement(i)) <= visibleStyleThreshold,
