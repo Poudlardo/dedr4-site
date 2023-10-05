@@ -7,6 +7,14 @@ import VerticalCarousel from "../components/VerticalCarousel";
 
 function GamesTwo() {
   
+  function hideIntroDiv() {
+
+    const introDiv = document.querySelector('.dedra-intro');
+    introDiv.style.animation = 'fade-out 0.7s forwards';
+    introDiv.addEventListener("animationend", introDiv.style.display == 'none');
+
+  }
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -22,6 +30,18 @@ function GamesTwo() {
 
   return (
     <div className="gamespage">
+      <div className="dedra-intro">
+        <div className="title-container">
+          <div className="dedra-title">D</div>
+          <div class="loader">
+            <div class="top"></div>
+            <div class="bottom"></div>
+         </div>
+         <div className="dedra-title">DRA</div>
+        </div>
+        <h3>A video game studio.</h3>
+        <h3 onClick={hideIntroDiv()}>ENTER</h3>
+      </div>
       <Navbar isWhite={true} />
       <video className="gamespage-video" autoPlay loop muted>
         <source
