@@ -548,7 +548,7 @@ path {
   position: fixed;
   z-index: 99;
   transition: all .3s;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -708,6 +708,7 @@ path {
 form {
   width: 70%;
   max-width: 350px;
+  margin-top: 10vh;
 }
 form #form-title {
   margin-top: 0;

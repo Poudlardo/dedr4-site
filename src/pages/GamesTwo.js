@@ -7,40 +7,41 @@ import VerticalCarousel from "../components/VerticalCarousel";
 
 function GamesTwo() {
   
-  function hideIntroDiv() {
-
-    const introDiv = document.querySelector('.dedra-intro');
-    introDiv.style.animation = 'fade-out 0.7s forwards';
-    introDiv.addEventListener("animationend", introDiv.style.display == 'none');
-
-  }
-
   const [activeIndex, setActiveIndex] = useState(0);
 
+ function hideIntroDiv() {
+  let introDiv = document.querySelector('.dedra-intro');
+      introDiv.style.animation = 'fade-out 0.7s forwards';
+      introDiv.addEventListener('animationend', () => {introDiv.style.display = "none"})  
+ }
   useEffect(() => {
+    let introDiv = document.querySelector('.dedra-intro');
     //console.log(activeIndex);
+    if (window.sessionStorage.getItem('animated') === null) { 
+      introDiv.style.display = "flex";
+      window.sessionStorage.setItem('animated', 1);
+    }
     let checkedInput = document.querySelector(`input[id='${activeIndex + 1}']`);
     let blackDot = document.getElementById('debt-amount-pos');
-
     checkedInput.checked = 'true';
     blackDot.style.opacity = "1";
     blackDot.style.left = `${((activeIndex + 1) * 20) - 10}%`;
     
- }, [activeIndex])
+ }, [activeIndex]);
 
   return (
     <div className="gamespage">
       <div className="dedra-intro">
         <div className="title-container">
           <div className="dedra-title">D</div>
-          <div class="loader">
-            <div class="top"></div>
-            <div class="bottom"></div>
+          <div className="loader">
+            <div className="top"></div>
+            <div className="bottom"></div>
          </div>
          <div className="dedra-title">DRA</div>
         </div>
         <h3>A video game studio.</h3>
-        <h3 onClick={hideIntroDiv()}>ENTER</h3>
+        <h3 onClick={hideIntroDiv}>ENTER</h3>
       </div>
       <Navbar isWhite={true} />
       <video className="gamespage-video" autoPlay loop muted>
