@@ -33,11 +33,6 @@ function Navbar({ isWhite = false }) {
       <div id="wrapper" className={`${isWhite ? "whiteNavBarWrapper" : ""}`}>
         <ul className={click ? "menu" : "menu menu-closed"}>
           <li className={`different ${isWhite ? "whiteNavBarDifferent" : ""}`}>
-            <Link className="nav-link" to="/games" onClick={handleClick}>
-              GAMES
-            </Link>
-          </li>
-          <li className={`different ${isWhite ? "whiteNavBarDifferent" : ""}`}>
             <Link className="nav-link" to="/about" onClick={closeMobileMenu}>
               ABOUT
             </Link>

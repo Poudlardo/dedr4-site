@@ -3,25 +3,45 @@ import PropTypes from "prop-types";
 import cn from "classnames";
 import "./VerticalCarousel.css";
 import "animate.css";
+import Icon from '@mdi/react';
+import { mdiChevronLeftCircle, mdiChevronRightCircle, mdiChevronRightCircleOutline, mdiChevronLeftCircleOutline } from '@mdi/js';
+
 /*
  * Read the blog post here:
  * https://letsbuildui.dev/articles/building-a-vertical-carousel-component-in-react
  */
 
-const VerticalCarousel = ({ data }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
+const VerticalCarousel = ({ data, activeIndex, setActiveIndex}) => {
 
   // Used to determine which items appear above the active item
   const halfwayIndex = Math.ceil(data.length / 2);
 
   // Usd to determine the height/spacing of each item
-  const itemHeight = 140;
+  const itemHeight = 0;
 
   // Used to determine at what point an item is moved from the top to the bottom
   const shuffleThreshold = halfwayIndex * itemHeight;
 
   // Used to determine which items should be visible. this prevents the "ghosting" animation
   const visibleStyleThreshold = shuffleThreshold / 2;
+
+  const handleClick = (direction) => {
+    setActiveIndex((prevIndex) => {
+      if (direction === "next") {
+        if (prevIndex + 1 > data.length - 1) {
+          return 0;
+        }
+        return prevIndex + 1;
+      }
+
+      if (prevIndex - 1 < 0) {
+        return data.length - 1;
+      }
+
+      return prevIndex - 1;
+    });
+  };
+
 
   const determinePlacement = (itemIndex) => {
     // Change background video playing and description according to activeIndex
@@ -50,28 +70,28 @@ const VerticalCarousel = ({ data }) => {
 
     if (itemIndex >= halfwayIndex) {
       if (activeIndex > itemIndex - halfwayIndex) {
-        return (itemIndex - activeIndex) * itemHeight;
+        return (itemIndex - activeIndex) / itemHeight;
       } else {
-        return -(data.length + activeIndex - itemIndex) * itemHeight;
+        return -(data.length + activeIndex - itemIndex) / itemHeight;
       }
     }
 
     if (itemIndex > activeIndex) {
-      return (itemIndex - activeIndex) * itemHeight;
+      return (itemIndex - activeIndex) / itemHeight;
     }
 
     if (itemIndex < activeIndex) {
       if ((activeIndex - itemIndex) * itemHeight >= shuffleThreshold) {
-        return (data.length - (activeIndex - itemIndex)) * itemHeight;
+        return (data.length - (activeIndex - itemIndex)) / itemHeight;
       }
-      return -(activeIndex - itemIndex) * itemHeight;
+      return -(activeIndex - itemIndex) / itemHeight;
     }
   };
 
-  const animateCSS = () => {
+  /*const animateCSS = () => {
     const Gamescontent = document.querySelector(".gamescontent");
 
-    /*functions to add animation classes */
+    // functions to add animation classes 
     Gamescontent.classList.add("animate__animated", "animate__fadeInUp");
 
     Gamescontent.style.setProperty("--animate-duration", ".4s");
@@ -87,29 +107,32 @@ const VerticalCarousel = ({ data }) => {
         .querySelector(".gamescontent")
         .classList.remove("animate__fadeInUp");
     }, 1000);
-  });
+  });*/ 
 
   return (
+    
     <div className="carousel-inner">
+      <a data-slide="prev" href="#quote-carousel" className="carousel-control" onClick={() => handleClick("prev")} >
+        <Icon path={mdiChevronLeftCircleOutline} size={3} className="left" />
+      </a>
       {data.map((item, i) => (
         <button
-          type="button"
-          onClick={function () {
-            setActiveIndex(i);
-            animateCSS();
-          }}
+          type="button" 
           className={cn("carousel-item", {
             active: activeIndex === i,
             visible: Math.abs(determinePlacement(i)) <= visibleStyleThreshold,
           })}
           key={i}
           style={{
-            transform: `translateY(${determinePlacement(i)}px)`,
+            transform: `translateX(${determinePlacement(i)}px)`,
           }}
         >
           <img src={item.images} className="gamesimages" />
         </button>
       ))}
+      <a data-slide="next" href="#quote-carousel" className="carousel-control" onClick={() => handleClick("next")}>
+            <Icon path={mdiChevronRightCircleOutline} size={3} className="right"  />
+      </a>
     </div>
   );
 };

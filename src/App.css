@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 
+@font-face {
+  font-family: 'AddLGBitmap09';
+  src: url('https://assets.codepen.io/217233/AddLGBitmap09.woff2') format('woff2'),
+    url('https://assets.codepen.io/217233/AddLGBitmap09.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .Homehero > * {
   font-family: "Montserrat", sans-serif;
   padding: 1em;
