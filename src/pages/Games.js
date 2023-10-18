@@ -23,7 +23,7 @@ function Games() {
             <div className="rectangle2 "></div>
             <p className="description2">
               A tough skill based platforming game. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Etiam ac suscipit arcu. Pellentesque
+              consectetur adipiscinpuziurzeirug elit. Etiam ac suscipit arcu. Pellentesque
               tristique facilisis sollicitudin. Aliquam at erat vel lectus
               efficitur sodales. In hac
             </p>

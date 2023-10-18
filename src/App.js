@@ -1,9 +1,9 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Games from "./pages/Games";
+import GamesTwo from "./pages/GamesTwo";
 import Blog from "./pages/Blog";
+import Consulting from "./pages/Consulting.js";
 import About from "./pages/About";
 import Connect from "./pages/Connect";
 import Termsofservice from "./pages/Termsofservice";
@@ -14,10 +14,10 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/games" element={<Games />} />
+          <Route path="/" element={<GamesTwo />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
+          <Route path="/consulting" element={<Consulting />} />
           <Route path="/connect" element={<Connect />} />
           <Route path="/tos" element={<Termsofservice />} />
           <Route path="/privacy" element={<Privacypolicy />} />

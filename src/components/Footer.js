@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
-function Footer() {
+function Footer({ connectPage = false }) {
+
+
   return (
     <div className="footer">
       <p className="cn-leftpart">
@@ -9,17 +12,28 @@ function Footer() {
         <span className="cn-nowrap">All Rights Reserved.</span>
       </p>
       <div className="rightpart">
-        <p className="follow">FOLLOW US</p>
+        { connectPage ?  
+          <Link className="cn-nav-link" to="/Privacypolicy">
+            PRIVACY POLICY
+          </Link> : <p className="follow">FOLLOW US</p>
+      }      
         <div className="line"></div>
-        <a href="https://discord.com/invite/ovo-speedrunning-community-645935373368688650">
-          <img src="images/discord.svg" className="socialmedias" />
-        </a>
-        <a href="https://www.youtube.com/channel/UCQ2CAlP8Zo8-P4I7hZ23Yfg">
-          <img src="images/youtube.svg" className="socialmedias" />
-        </a>
-        <a href="https://twitter.com/GamesDedra">
-          <img src="images/twitter.svg" className="socialmedias" />
-        </a>
+        { connectPage ? 
+           <Link className="cn-nav-link" to="/Termsofservice">
+                 TERMS OF SERVICE
+           </Link> :    
+           <div className="socialmedias">
+              <a href="https://discord.com/invite/ovo-speedrunning-community-645935373368688650">
+                <img src="images/discord.svg"  />
+              </a>
+              <a href="https://www.youtube.com/channel/UCQ2CAlP8Zo8-P4I7hZ23Yfg">
+                <img src="images/youtube.svg"/>
+              </a>
+              <a href="https://twitter.com/GamesDedra">
+                <img src="images/twitter.svg" />
+              </a>
+           </div>
+        }
       </div>
     </div>
   );

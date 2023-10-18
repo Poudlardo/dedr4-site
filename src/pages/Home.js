@@ -31,7 +31,7 @@ function Home() {
         <section className="videoside-content">
           <video className="video" autoPlay loop muted>
             <source
-              src="videos/GamesDedra-1438626014704308233-01.mp4"
+              src="/videos/Desktop 17-08-2023 03-21-01.mp4"
               type="video/mp4"
             />
           </video>

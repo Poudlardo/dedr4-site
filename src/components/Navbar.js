@@ -8,6 +8,7 @@ function Navbar({ isWhite = false, hasShadow = false }) {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
   function clickHamberger() {
     setClick(!click);
   }
@@ -55,13 +56,17 @@ function Navbar({ isWhite = false, hasShadow = false }) {
       <div id="wrapper" className={`${isWhite ? "whiteNavBarWrapper" : ""}`}>
         <ul className={click ? "menu" : "menu menu-closed"}>
           <li className={`different ${isWhite ? "whiteNavBarDifferent" : ""}`}>
-            <Link className="nav-link" to="/games" onClick={handleClick}>
-              GAMES
+            <Link className="nav-link" to="/about" onClick={closeMobileMenu}>
+              ABOUT
             </Link>
           </li>
           <li className={`different ${isWhite ? "whiteNavBarDifferent" : ""}`}>
-            <Link className="nav-link" to="/about" onClick={closeMobileMenu}>
-              ABOUT
+            <Link
+              className="nav-link"
+              to="/consulting"
+              onClick={closeMobileMenu}
+            >
+              CONSULTING
             </Link>
           </li>
           <li className={`different ${isWhite ? "whiteNavBarDifferent" : ""}`}>

@@ -373,4 +373,4 @@ function Privacypolicy() {
   );
 }
 
-export default Privacypolicy;
+export default Privacypolicy ;
