@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import Navbar from "../components/Navbar";
@@ -12,6 +12,19 @@ function Connect() {
     window.open(
       "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeBcSs01PBeyGOk6xqz9aPB0zGn6vdM7Rsf6OIO_bqOyraGhQ/viewform?pli=1"
     );
+  };
+
+  const [tooltip, setTooltip] = useState(false);
+
+  const clickEmail = (e) => {
+    // copy to clipboard
+    navigator.clipboard.writeText("games.dedra@gmail.com");
+    // show tooltip
+    if (tooltip) return;
+    setTooltip(true);
+    setTimeout(() => {
+      setTooltip(false);
+    }, 1300);
   };
 
   return (
@@ -59,10 +72,10 @@ function Connect() {
         </div>
         <div className="buttton-wrapper" onClick={handleClick}>
           <a>
-            <span></span>Em@il us
+            <span></span>Cont@ct us
           </a>
         </div>
-        <div className="email">
+        <div className="email" onClick={clickEmail}>
           games
           <Icon className="emaildot" path={mdiCircleSmall} size={1} />
           dedra
@@ -71,8 +84,11 @@ function Connect() {
           <Icon className="emaildot" path={mdiCircleSmall} size={1} />
           com
         </div>
+        <div className={tooltip ? "tooltip tooltipOpen" : "tooltip"}>
+          <div className="tooltipText">Copied!</div>
+        </div>
       </div>
-      <Footer connectPage={true}/>
+      <Footer connectPage={true} />
     </div>
   );
 }

@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 function Termsofservice() {
   return (
     <div className="tos-page">
-      <Navbar />
+      <Navbar hasShadow={true} />
       <h1>TERMS OF SERVICE</h1>
       <br />
       <div className="tos-list">

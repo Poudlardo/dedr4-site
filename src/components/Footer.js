@@ -7,7 +7,10 @@ function Footer({ connectPage = false }) {
 
   return (
     <div className="footer">
-      <p className="leftpart">Dedra Games © 2023. All Rights Reserved.</p>
+      <p className="cn-leftpart">
+        Dedra Games © 2023.{" "}
+        <span className="cn-nowrap">All Rights Reserved.</span>
+      </p>
       <div className="rightpart">
         { connectPage ?  
           <Link className="cn-nav-link" to="/Privacypolicy">

@@ -3,13 +3,31 @@
 .navbar {
   display: flex;
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   justify-content: space-between;
   padding: 0 50px;
   box-sizing: border-box;
   align-items: center;
   overflow: hidden;
   z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-shadow {
+  background-color: white;
+  box-shadow: rgb(0, 0, 0, 0.1) 0 5px 10px 1px;
+}
+
+.aboutpage .navbar-shadow {
+  background-color: rgb(255, 255, 255, 0.7);
+  box-shadow: rgb(0, 0, 0, 0.1) 0 5px 10px 1px;
+  backdrop-filter: blur(8px);
+}
+
+.navbar-shadow-white {
+  background-color: black;
+  box-shadow: rgb(0, 0, 0, 0.1) 0 5px 10px 1px;
 }
 
 #wrapper ul,

@@ -1,11 +1,12 @@
 import React from "react";
 import "../App.css";
 import Navbar from "../components/Navbar";
+import { Link, withRouter } from "react-router-dom";
 
 function Privacypolicy() {
   return (
     <div className="Privacypage">
-      <Navbar />
+      <Navbar hasShadow={true} />
       <h1>PRIVACY POLICY</h1>
       <p id="faq-intro">
         {" "}

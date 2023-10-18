@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 
 @font-face {
-  font-family: 'AddLGBitmap09';
-  src: url('https://assets.codepen.io/217233/AddLGBitmap09.woff2') format('woff2'),
-    url('https://assets.codepen.io/217233/AddLGBitmap09.woff') format('woff');
+  font-family: "AddLGBitmap09";
+  src: url("https://assets.codepen.io/217233/AddLGBitmap09.woff2")
+      format("woff2"),
+    url("https://assets.codepen.io/217233/AddLGBitmap09.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -20,7 +21,8 @@
   font-weight: 500;
   margin: 0;
   border: 0;
-  scroll-behavior: smooth
+  user-select: none;
+  scroll-behavior: smooth;
 }
 
 /* Page d'accueil */
@@ -117,7 +119,6 @@
 }
 
 @media (max-width: 900px) {
-  
   .Homehero {
     flex-direction: column;
     height: 100vh;
@@ -152,7 +153,7 @@
   height: 100%;
   position: fixed;
   z-index: 99;
-  transition: all .3s;
+  transition: all 0.3s;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -171,15 +172,13 @@
 
 .dedra-intro h3:last-child {
   margin-top: 15vh;
-  font-family: 'AddLGBitmap09';
+  font-family: "AddLGBitmap09";
 }
 
-.dedra-intro h3:last-child:hover { 
+.dedra-intro h3:last-child:hover {
   color: #2f9eaf;
   cursor: pointer;
- }
-
- 
+}
 
 .title-container {
   display: flex;
@@ -206,11 +205,11 @@
   0% {
     transform: none;
   }
-  
+
   90% {
     transform: none;
   }
-  
+
   100% {
     transform: rotate(180deg);
   }
@@ -227,8 +226,12 @@
 }
 
 @keyframes top {
-  90% { transform: scale(0.3); }
-  100% { transform: scale(0);}
+  90% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
 
 .bottom {
@@ -243,9 +246,15 @@
 }
 
 @keyframes bottom {
-  10% { transform: scale(0); }
-  90% { transform: scale(1); }
-  100% { transform: scale(1); }
+  10% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .gamespage-video {
@@ -309,7 +318,6 @@
   margin-top: -10vh;
 }
 
-
 form {
   width: 70%;
   max-width: 350px;
@@ -338,7 +346,8 @@ form #debt-amount-slider::before {
   transform: translate(-50%, -50%);
   background: #fff;
 }
-form #debt-amount-slider input, form #debt-amount-slider label {
+form #debt-amount-slider input,
+form #debt-amount-slider label {
   box-sizing: border-box;
   flex: 1;
   user-select: none;
@@ -407,7 +416,7 @@ form #debt-amount-slider input:checked + label::after {
   border: 2px solid #000;
   opacity: 1;
   z-index: 2;
-  top:25%;
+  top: 25%;
   left: 10%;
 }
 form:valid #debt-amount-slider input + label::before {
@@ -425,12 +434,11 @@ form:valid #debt-amount-slider input:checked + label::before {
 }
 
 label input .ovo:checked {
- background-color: black;
- color: black;
+  background-color: black;
+  color: black;
 }
 
 @media screen and (max-width: 900px) {
-
   .gamescontent {
     /* same styling is applied to <Vertical Carousel /> in its own css file*/
     width: 60vw;
@@ -461,10 +469,11 @@ label input .ovo:checked {
   align-items: center;
 }
 
-/* ABOUT PAGE */ 
+/* ABOUT PAGE */
 
 .aboutpage {
-  width: 100vw;
+  width: 100%;
+  overflow-x: clip;
   height: 100%;
   background: -moz-linear-gradient(
     270deg,
@@ -491,7 +500,7 @@ label input .ovo:checked {
   font-size: 1.5em;
 }
 .slogancontainer {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -545,7 +554,7 @@ label input .ovo:checked {
 }
 
 .historycontainer {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -565,7 +574,7 @@ label input .ovo:checked {
 }
 
 .teamcontainer {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -577,6 +586,22 @@ label input .ovo:checked {
 .teammembers {
   display: flex;
   column-gap: 7em;
+  margin: 3em;
+}
+
+.teammembers img {
+  /* contain */
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1080px) {
+  .teamcontainer {
+    row-gap: 0;
+  }
+  .teammembers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -652,6 +677,11 @@ label input .ovo:checked {
   animation-duration: 1s;
 }
 
+.email {
+  animation: backInLeft;
+  animation-duration: 1s;
+}
+
 svg {
   width: 100px;
   height: auto;
@@ -712,7 +742,7 @@ path {
   text-align: justify;
 }
 
- .faq-container {
+.faq-container {
   border: 1px solid greenyellow;
   width: 100%;
   display: flex;
@@ -729,7 +759,7 @@ path {
   border: 1px solid blue;
   overflow: auto;
   position: sticky;
-} 
+}
 
 #doc-container {
   display: flex;
@@ -739,13 +769,13 @@ path {
 
 #pp-navbar {
   position: sticky;
-  top: 0;
+  top: 10vh;
   right: 0;
   left: 0;
   bottom: 0;
   background: rgb(226, 226, 226);
   border: 1px solid black;
-  height: 100vh;
+  height: 90vh;
 }
 
 #pp-navbar header {
@@ -830,7 +860,7 @@ path {
   text-align: justify;
 }
 
-/* CONSULTING PAGE */ 
+/* CONSULTING PAGE */
 
 #consultingpage {
   width: 100vw;
@@ -844,7 +874,7 @@ path {
 .gamespage-video {
   filter: grayscale(50%);
   filter: blur(0.2em);
-  position:absolute;
+  position: absolute;
   height: 100%;
 }
 
@@ -857,7 +887,7 @@ path {
   flex-direction: column;
   text-align: center;
   color: white;
-  row-gap: 3.5em; 
+  row-gap: 3.5em;
   text-shadow: black 2px 0 15px;
 }
 
@@ -872,81 +902,89 @@ path {
 }
 
 #introduction-container div > a:hover {
- animation: turnToGrey 0.6s ease;
- animation-fill-mode: forwards;
+  animation: turnToGrey 0.6s ease;
+  animation-fill-mode: forwards;
 }
 
 @keyframes turnToGrey {
-
-  from {  color: white;
-          border: 2px solid white;
-        }
-  to {    color: rgb(223, 100, 100);
-          border: 2px solid rgb(223, 100, 100);
-     }
-
-  }
-
-  #previous-work-container {
-    width: 100vw;
-    background-color: rgb(32, 32, 32);
+  from {
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    border: 2px solid white;
   }
+  to {
+    color: rgb(223, 100, 100);
+    border: 2px solid rgb(223, 100, 100);
+  }
+}
 
-  #previous-work-container h1 {
-    font-weight: 900;
-  }
+#previous-work-container {
+  width: 100vw;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-  #games-helped {
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 2em;
-  }
+#previous-work-container h1 {
+  font-weight: 900;
+}
 
-  #games-worked {
-    width: 100vw;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    --s: 200px; /* control the size */
-    --c1: #1d1d1d;
-    --c2: #4e4f51;
-    --c3: #3c3c3c;
-    background:
-      repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
-       calc(.5*var(--s)) calc(.5*var(--s)*0.577),
-      repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
-    background-size: var(--s) calc(var(--s)*0.577);
-  }
+#games-helped {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2em;
+}
 
-  #games-img {
-    display: flex;
-    align-items: center;
-  }
+#games-worked {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  --s: 200px; /* control the size */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
 
-  #games-img > a {
-    width: 15em;
-    margin-right: 1.8em;
-    background: transparent;
-  }
+#games-img {
+  display: flex;
+  align-items: center;
+}
 
-  .gamecards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 500px;
-  }
+#games-img > a {
+  width: 15em;
+  margin-right: 1.8em;
+  background: transparent;
+}
+
+.gamecards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 500px;
+}
 
 .consulting-cards {
   border-radius: 4px;
@@ -958,12 +996,12 @@ path {
   margin: 3em;
 }
 
-.consulting-cards p { 
+.consulting-cards p {
   text-align: start;
   padding: 30px;
 }
 
-.consulting-cards a {   
+.consulting-cards a {
   padding-top: 30px;
   text-decoration: none;
   color: white;
@@ -985,9 +1023,14 @@ path {
   row-gap: 2em;
 }
 
-#reviews-introductio h3 b, #addons-made h3 b, #games-worked h3 b, #games-helped h3 b { font-weight: 900; }
+#reviews-introductio h3 b,
+#addons-made h3 b,
+#games-worked h3 b,
+#games-helped h3 b {
+  font-weight: 900;
+}
 
-#addons-icons { 
+#addons-icons {
   display: flex;
   align-items: center;
   margin: 0 3.5em;
@@ -995,7 +1038,7 @@ path {
 
 #gallery-container {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   padding: 25px;
   width: 100vw;
@@ -1006,9 +1049,8 @@ path {
 #gallery-container > img {
   width: 23vw;
   height: 40vh;
-  object-fit:cover;
+  object-fit: cover;
 }
-
 
 #reviews-introduction {
   width: 100vw;
@@ -1021,11 +1063,10 @@ path {
   color: white;
   text-shadow: black 2px 0 15px;
   --s: 200px; /* control the size */
-  --_g: #00000000 90deg,rgb(95, 95, 95) 0;
-  background: 
-      conic-gradient(from 90deg at 2px 2px,var(--_g)),
-      conic-gradient(from 90deg at 1px 1px,var(--_g));
-  background-size: var(--s) var(--s), calc(var(--s)/5) calc(var(--s)/5);
+  --_g: #00000000 90deg, rgb(95, 95, 95) 0;
+  background: conic-gradient(from 90deg at 2px 2px, var(--_g)),
+    conic-gradient(from 90deg at 1px 1px, var(--_g));
+  background-size: var(--s) var(--s), calc(var(--s) / 5) calc(var(--s) / 5);
 }
 
 #reviews-quotes {
@@ -1040,23 +1081,36 @@ path {
   --c1: #f1f1f1;
   --c2: #ffffff;
   --c3: #fafafa;
-  --_g: var(--c3) 0 120deg,#0000 0;
-  background:
-    conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
-    conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
-    conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
-    conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
-    linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
-                          var(--c1) 0 calc(500%/6),var(--c2) 0);
-  background-size: calc(1.732*var(--s)) var(--s);
+  --_g: var(--c3) 0 120deg, #0000 0;
+  background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+    conic-gradient(
+      from 60deg at calc(200% / 3),
+      var(--c3) 60deg,
+      var(--c2) 0 120deg,
+      #0000 0
+    ),
+    conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
+    linear-gradient(
+      90deg,
+      var(--c1) calc(100% / 6),
+      var(--c2) 0 50%,
+      var(--c1) 0 calc(500% / 6),
+      var(--c2) 0
+    );
+  background-size: calc(1.732 * var(--s)) var(--s);
 }
-#reviews-quotes h1 { 
+#reviews-quotes h1 {
   font-size: 40px;
   margin-bottom: 7vh;
   font-weight: bolder;
 }
-.quotepp-wrapper { width: 70px; }
-.quotepp-wrapper img {  border-radius: 100% }
+.quotepp-wrapper {
+  width: 70px;
+}
+.quotepp-wrapper img {
+  border-radius: 100%;
+}
 
 #all-quotes {
   display: grid;
@@ -1070,10 +1124,10 @@ path {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
-.quotecard p { 
+.quotecard p {
   line-height: 30px;
   font-size: medium;
   text-align: start;
@@ -1093,4 +1147,6 @@ path {
   justify-content: space-evenly;
 }
 
-.quotetext-wrapper > p { font-size: medium; }
+.quotetext-wrapper > p {
+  font-size: medium;
+}
