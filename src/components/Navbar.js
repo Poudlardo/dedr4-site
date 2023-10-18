@@ -38,13 +38,13 @@ function Navbar({ isWhite = false }) {
             </Link>
           </li>
           <li className={`different ${isWhite ? "whiteNavBarDifferent" : ""}`}>
-            <Link className="nav-link" to="/connect" onClick={closeMobileMenu}>
-              CONNECT
+            <Link className="nav-link" to="/consulting" onClick={closeMobileMenu}>
+              CONSULTING
             </Link>
           </li>
           <li className={`different ${isWhite ? "whiteNavBarDifferent" : ""}`}>
-            <Link className="nav-link" to="/consulting" onClick={closeMobileMenu}>
-              CONSULTING
+            <Link className="nav-link" to="/connect" onClick={closeMobileMenu}>
+              CONNECT
             </Link>
           </li>
         </ul>

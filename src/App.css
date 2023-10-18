@@ -20,6 +20,7 @@
   font-weight: 500;
   margin: 0;
   border: 0;
+  scroll-behavior: smooth
 }
 
 /* Page d'accueil */
@@ -312,7 +313,6 @@
 form {
   width: 70%;
   max-width: 350px;
-  margin-top: 10vh;
 }
 form #form-title {
   margin-top: 0;
@@ -721,7 +721,6 @@ path {
 #main-doc {
   margin: 60px 0 0 24vw;
   padding: 0 30px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
@@ -730,7 +729,7 @@ path {
   border: 1px solid blue;
   overflow: auto;
   position: sticky;
-} */
+} 
 
 #doc-container {
   display: flex;
