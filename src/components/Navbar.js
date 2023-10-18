@@ -42,6 +42,11 @@ function Navbar({ isWhite = false }) {
               CONNECT
             </Link>
           </li>
+          <li className={`different ${isWhite ? "whiteNavBarDifferent" : ""}`}>
+            <Link className="nav-link" to="/consulting" onClick={closeMobileMenu}>
+              CONSULTING
+            </Link>
+          </li>
         </ul>
       </div>
 
