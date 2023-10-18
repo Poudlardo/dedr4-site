@@ -116,7 +116,7 @@
 }
 
 @media (max-width: 900px) {
-  /* Page HOME */
+  
   .Homehero {
     flex-direction: column;
     height: 100vh;
@@ -132,46 +132,154 @@
   }
 }
 /* Page GAMES */
+
 .gamespage {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
+  flex-direction: column;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
   object-fit: contain;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: hidden;
+}
+
+.dedra-intro {
+  background: rgba(14, 3, 13, 0.94);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99;
+  transition: all .3s;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+.dedra-intro h3:last-child {
+  margin-top: 15vh;
+  font-family: 'AddLGBitmap09';
+}
+
+.dedra-intro h3:last-child:hover { 
+  color: #2f9eaf;
+  cursor: pointer;
+ }
+
+ 
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dedra-title {
+  color: white;
+  font-family: Montserrat;
+  font-size: 100px;
+}
+
+.loader {
+  height: 70px;
+  width: 71px;
+  position: relative;
+  text-align: center;
+  animation: rotateFrame 2.5s infinite;
+  margin-left: 7px;
+}
+
+@keyframes rotateFrame {
+  0% {
+    transform: none;
+  }
+  
+  90% {
+    transform: none;
+  }
+  
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.top {
+  animation: top 2.5s linear infinite;
+  border-top: 35px solid #fff;
+  border-right: 35px solid transparent;
+  border-left: 35px solid transparent;
+  height: 0px;
+  width: 1px;
+  transform-origin: 50% 100%;
+}
+
+@keyframes top {
+  90% { transform: scale(0.3); }
+  100% { transform: scale(0);}
+}
+
+.bottom {
+  animation: bottom 2.5s linear infinite;
+  border-right: 35px solid transparent;
+  border-bottom: 35px solid #fff;
+  border-left: 35px solid transparent;
+  height: 0px;
+  width: 1px;
+  transform: scale(0);
+  transform-origin: 50% 100%;
+}
+
+@keyframes bottom {
+  10% { transform: scale(0); }
+  90% { transform: scale(1); }
+  100% { transform: scale(1); }
 }
 
 .gamespage-video {
   object-fit: cover;
   position: fixed;
-  width: 100%;
-  height: 100%;
   z-index: -1;
-}
-
-#gamesmainpage {
   width: 100%;
-  height: 100vh;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-items: center;
 }
 
-.gamescontent {
-  flex: 1;
+.gamespage .wh-navbar > *,
+.gamespage .wh-nav-link {
+  color: white;
+}
+
+.gamespage .wh-navbar {
+  width: 100%;
+  z-index: 999;
+}
+
+.gamespage.wh-nav-link {
+  display: inline-block;
+  position: relative;
+}
+.gamespage.wh-nav-link:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.gameinfo-container {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  min-width: 460px;
-  margin: 0;
-}
-
-.gametext {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row-reverse;
-  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  max-width: 49vw;
+  height: 30vh;
+  transform: translateY(-17vh);
 }
 
 .rectangle2 {
@@ -184,16 +292,131 @@
 
 .description2 {
   color: white;
-  max-width: 450px;
   text-align: justify;
   line-height: 1.6;
   font-weight: 500;
   font-size: 22px;
   animation-duration: 0.7s;
+  text-shadow: rgb(51, 51, 51) 2px 0 10px;
 }
 
 .partnerslogo {
-  height: 4.5em;
+  height: 6.5em;
+}
+
+.platformslist {
+  margin-top: -10vh;
+}
+
+
+form {
+  width: 70%;
+  max-width: 350px;
+  margin-top: 10vh;
+}
+form #form-title {
+  margin-top: 0;
+  font-weight: 400;
+  text-align: center;
+}
+form #debt-amount-slider {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  user-select: none;
+}
+form #debt-amount-slider::before {
+  content: " ";
+  position: absolute;
+  height: 2px;
+  width: calc(100% * (4 / 5));
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+form #debt-amount-slider input, form #debt-amount-slider label {
+  box-sizing: border-box;
+  flex: 1;
+  user-select: none;
+  cursor: pointer;
+}
+form #debt-amount-slider label {
+  display: inline-block;
+  position: relative;
+  width: 10%;
+  height: 50%;
+  user-select: none;
+}
+form #debt-amount-slider label::before {
+  content: attr(data-debt-amount);
+  position: absolute;
+  left: 50%;
+  padding-top: 10px;
+  transform: translate(-50%, 45px);
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0.85;
+  transition: all 0.15s ease-in-out;
+}
+form #debt-amount-slider label::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+form #debt-amount-slider label:hover::after {
+  transform: translate(-50%, -50%) scale(1.25);
+}
+form #debt-amount-slider input {
+  display: none;
+}
+form #debt-amount-slider input:checked + label::before {
+  font-weight: 800;
+  opacity: 1;
+}
+form #debt-amount-slider input:checked + label::after {
+  border-width: 4px;
+  transform: translate(-50%, -50%) scale(0.75);
+}
+
+#debt-amount-pos {
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  transition: all 0.15s ease-in-out;
+  transform: translate(-50%, -50%);
+  border: 2px solid #000;
+  opacity: 1;
+  z-index: 2;
+  top:25%;
+  left: 10%;
+}
+form:valid #debt-amount-slider input + label::before {
+  transform: translate(-50%, 45px) scale(0.9);
+  transition: all 0.15s linear;
+}
+form:valid #debt-amount-slider input:checked + label::before {
+  transform: translate(-50%, 45px) scale(1.1);
+  transition: all 0.15s linear;
 }
 
 .carousel {
@@ -201,11 +424,12 @@
   height: 100%;
 }
 
+label input .ovo:checked {
+ background-color: black;
+ color: black;
+}
+
 @media screen and (max-width: 900px) {
-  #gamesmainpage {
-    flex-direction: column;
-    align-items: center;
-  }
 
   .gamescontent {
     /* same styling is applied to <Vertical Carousel /> in its own css file*/
@@ -237,7 +461,7 @@
   align-items: center;
 }
 
-/* ABOUT PAGE */
+/* ABOUT PAGE */ 
 
 .aboutpage {
   width: 100vw;
@@ -488,7 +712,7 @@ path {
   text-align: justify;
 }
 
-/* .faq-container {
+ .faq-container {
   border: 1px solid greenyellow;
   width: 100%;
   display: flex;
