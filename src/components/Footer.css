@@ -47,10 +47,11 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.cn-nav-link {
+a.cn-nav-link {
   color: black;
   text-decoration: underline;
   white-space: nowrap;
+  width: fit-content;
 }
 
 .follow {

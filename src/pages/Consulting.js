@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import wasThatAddonPorted from './wasthataddonported.png'
 
 function Consulting() {
   return (
@@ -73,7 +74,7 @@ I started working on the game a while ago to help push it to Early Access and ma
         <div className="gamecards">
             <div className="consulting-cards">
               <img src="https://dedragames.com/consulting/assets/images/logo-800x400.png"></img>
-              <h1>Construct Courses</h1>
+              <a href=""><h1>Construct Courses</h1></a>
               <ul>
                 <li><a href="">Construct Time</a></li>
                 <li><a href="">Optimisation tricks in the Construct</a></li>
@@ -87,7 +88,7 @@ I started working on the game a while ago to help push it to Early Access and ma
               <p>I made a complex lighting system a while ago for my game, and I wrote a very detailed tutorial about how to replicate it.</p>
             </div>
             <div className="consulting-cards">
-              <img src="https://dedragames.com/consulting/assets/images/logo-800x400.png"></img>
+              <img src={wasThatAddonPorted}></img>
               <a href="https://wasthataddonported.surge.sh/"><h1>W T A P</h1></a>
               <p>'Was that addon ported ?' is a community driven website I made that references many popular Construct 2 addons that were then ported to Construct 3.</p>
             </div>
