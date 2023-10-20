@@ -2,12 +2,11 @@ import React from "react";
 import "../App.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import wasThatAddonPorted from './wasthataddonported.png'
 
 function Consulting() {
   return (
     <div id="consultingpage">
-      <Navbar isWhite={true} />
+      <Navbar isWhite={true} unStick={true} />
       <video className="gamespage-video" autoPlay loop muted>
         <source
           src="videos/constructvideo.mp4"
@@ -88,7 +87,7 @@ I started working on the game a while ago to help push it to Early Access and ma
               <p>I made a complex lighting system a while ago for my game, and I wrote a very detailed tutorial about how to replicate it.</p>
             </div>
             <div className="consulting-cards">
-              <img src={wasThatAddonPorted}></img>
+              <img src="images/wasthataddonported.png"/>
               <a href="https://wasthataddonported.surge.sh/"><h1>W T A P</h1></a>
               <p>'Was that addon ported ?' is a community driven website I made that references many popular Construct 2 addons that were then ported to Construct 3.</p>
             </div>

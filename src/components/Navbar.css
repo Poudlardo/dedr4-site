@@ -14,6 +14,20 @@
   top: 0;
 }
 
+.nosticky-navbar {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  top: 0;
+}
+
 .navbar-shadow {
   background-color: white;
   box-shadow: rgb(0, 0, 0, 0.1) 0 5px 10px 1px;
@@ -43,11 +57,11 @@
   color: rgb(255, 255, 255) !important;
 }
 
-.navbar ul {
+.navbar ul, .nosticky-navbar ul {
   display: flex;
 }
 
-.navbar li {
+.navbar li, .nosticky-navbar li {
   margin: 0 100px;
   font-weight: bold;
 }

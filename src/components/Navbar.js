@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar({ isWhite = false, hasShadow = false }) {
+function Navbar({ isWhite = false, hasShadow = false, unStick = false }) {
   const [click, setClick] = useState(false);
   const [whiteTheme, setWhiteTheme] = useState(isWhite);
 
@@ -32,7 +32,13 @@ function Navbar({ isWhite = false, hasShadow = false }) {
 
   return (
     <nav
-      className={`navbar ${
+      className={`
+      ${
+        unStick 
+        ? "nosticky-navbar"
+        : "navbar"
+      } 
+      ${
         hasShadow
           ? "navbar-shadow " + (isWhite ? "navbar-shadow-white" : "")
           : ""

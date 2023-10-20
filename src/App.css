@@ -1000,37 +1000,56 @@ path {
   background: transparent;
 }
 
+#community-content-container {
+  padding-top: 2%;
+}
+
 .gamecards {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   width: 100vw;
   height: max-content;
+  padding: 2% 0;
 }
 
 .consulting-cards {
   border-radius: 4px;
   background: #181818;
-  height: fit-content;
-  width: 28vw;
+  height: 410px;
+  width: 35%;
   display: flex;
   flex-flow: column nowrap;
-  margin: 3em;
+  margin: 1em;
+  text-align: start;
+}
+
+.consulting-cards img {
+  height: 45%;
+  object-fit: cover;
+}
+
+.consulting-cards ul {
+  list-style-type: none;
+  padding: 25px;
 }
 
 .consulting-cards p {
-  text-align: start;
-  padding: 30px;
+  padding: 25px;
+}
+
+.consulting-cards h1 {
+  padding: 25px;
+  padding-bottom: 0;
 }
 
 .consulting-cards a {
-  padding-top: 30px;
   text-decoration: none;
   color: white;
 }
 
 /* hover effect on all consulting-cars links*/
-.consulting-cards a h1::after {
+.consulting-cards a > h1::after {
   content: "";
   position: absolute;
   width: 0px;
@@ -1041,9 +1060,13 @@ path {
   transition: all ease-in-out 0.2s;
 }
 
-.consulting-cards a h1:hover::after {
+.consulting-cards a > h1:hover::after {
   width: 100%;
   left: 0;
+}
+
+.community-content {
+
 }
 
 .item-img {
