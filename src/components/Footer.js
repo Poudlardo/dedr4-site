@@ -7,9 +7,9 @@ function Footer({ connectPage = false }) {
 
   return (
     <div className="footer">
-      <p className="cn-leftpart">
+      <p className="leftpart">
         Dedra Games © 2023.{" "}
-        <span className="cn-nowrap">All Rights Reserved.</span>
+        <span className="nowrap">All Rights Reserved.</span>
       </p>
       <div className="rightpart">
         { connectPage ?  
@@ -19,7 +19,7 @@ function Footer({ connectPage = false }) {
       }      
         <div className="line"></div>
         { connectPage ? 
-           <Link className="cn-nav-link" to="/tos">
+           <Link className="nav-link" to="/tos">
                  TERMS OF SERVICE
            </Link> :    
            <div className="socialmedias">

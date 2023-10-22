@@ -110,7 +110,6 @@ const VerticalCarousel = ({ data, activeIndex, setActiveIndex}) => {
   });*/ 
 
   return (
-    
     <div className="carousel-inner">
       <a data-slide="prev" href="#quote-carousel" className="carousel-control" onClick={() => handleClick("prev")} >
         <Icon path={mdiChevronLeftCircleOutline} size={3} className="left" />
