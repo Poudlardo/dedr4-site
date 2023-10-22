@@ -270,7 +270,6 @@
   position: fixed;
   z-index: -1;
   width: 100%;
-  border: 1px solid red;
 }
 
 .gamespage .wh-navbar > *,
