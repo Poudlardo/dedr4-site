@@ -156,7 +156,7 @@
 }
 
 .dedra-intro {
-  background: rgba(14, 3, 13, 0.94);
+  background: rgba(0, 0, 0, 0.94);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -181,11 +181,13 @@
 .dedra-intro h3:last-child {
   margin-top: 15vh;
   font-family: "AddLGBitmap09";
+  transition: all .2s ease-in-out
 }
 
 .dedra-intro h3:last-child:hover {
-  color: #2f9eaf;
+  color: #fffb00;
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .title-container {
@@ -716,9 +718,14 @@ label input .ovo:checked {
   animation-duration: 1s;
 }
 
+.buttton-wrapper {
+  padding-top: 1.5em;
+}
+
 .email {
   animation: backInLeft;
   animation-duration: 1s;
+  padding-top: 1.5em;
 }
 
 svg {

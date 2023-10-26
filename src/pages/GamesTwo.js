@@ -11,6 +11,7 @@ function GamesTwo() {
   const [activeIndex, setActiveIndex] = useState(0);
 
  function hideIntroDiv() {
+  new Audio('videos/files_click.m4a').play();
   let introDiv = document.querySelector('.dedra-intro');
       introDiv.style.animation = 'fade-out 0.7s forwards';
       introDiv.addEventListener('animationend', () => {introDiv.style.display = "none"})  

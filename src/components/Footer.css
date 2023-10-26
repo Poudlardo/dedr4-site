@@ -62,7 +62,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-a.cn-nav-link {
+a.nav-link {
   color: black;
   text-decoration: underline;
   white-space: nowrap;

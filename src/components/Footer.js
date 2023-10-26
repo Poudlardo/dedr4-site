@@ -13,7 +13,7 @@ function Footer({ connectPage = false }) {
       </p>
       <div className="rightpart">
         { connectPage ?  
-          <Link className="cn-nav-link" to="/privacy">
+          <Link className="nav-link" to="/privacy">
             PRIVACY POLICY
           </Link> : <p className="follow">FOLLOW US</p>
       }      
