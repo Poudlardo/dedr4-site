@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function Consulting() {
+
+  useEffect(() => {
+
+  const handleScroll = () => {
+
+  }
+
+  window.addEventListener('scroll', handleScroll);    
+
+  })
+
   return (
     <div id="consultingpage">
       <Navbar isWhite={true} unStick={true} />
+      <a href="#consultingpage"><img id="go-back-up" src="images/blk-tutorials.png" ></img></a>
       <video className="gamespage-video" autoPlay loop muted>
         <source
           src="videos/constructvideo.mp4"
