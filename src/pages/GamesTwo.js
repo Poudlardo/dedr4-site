@@ -188,8 +188,8 @@ function GamesTwo() {
               <div class="more-info">
                 <h1>Adam Merhairi</h1>
                 <div class="coords">
-                  <span>Scenarist, Level designer</span>
                   <span>Co-Founder</span>
+                  <span>Scenarist, Level designer</span>
                 </div>
                 <div class="coords">
                   <span>Paris, France</span>

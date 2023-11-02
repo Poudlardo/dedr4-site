@@ -628,6 +628,7 @@ label input .ovo:checked {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  max-width: 1670px;
 }
 
 .teammembers img {
@@ -667,6 +668,16 @@ label input .ovo:checked {
   z-index: 2;
 }
 
+.card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);
+}
+
 .card.green .additional {
   background: linear-gradient(#92bCa6, #A2CCB6);
 }
@@ -689,18 +700,10 @@ label input .ovo:checked {
   margin-bottom: 0;
 }
 
-.card.green .additional .more-info h1 {
-  color: #224C36;
-}
-
 .card .additional .coords {
   margin: 0 1rem;
   color: #fff;
-  font-size: 1rem;
-}
-
-.card.green .additional .coords {
-  color: #325C46;
+  font-size: 0.9rem;
 }
 
 .card .additional .coords span + span {
@@ -1069,7 +1072,15 @@ path {
   bottom: 0;
   height: 100px;
   width: auto;
-  filter: drop-shadow(5px 0px 15px rgba(255,255,255, 1));
+}
+
+.hide {
+  opacity:0;
+  left:-100%;
+}
+.show {
+  opacity:1;
+  left:0;
 }
 
 #introduction-container h1 {

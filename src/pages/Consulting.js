@@ -4,21 +4,24 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function Consulting() {
+let blackFlag = document.getElementById('go-back-up');
 
-  useEffect(() => {
+useEffect(() => {
 
-  const handleScroll = () => {
+}, [])
 
+  let handleScroll = () => {
+    let y = window.scrollY
+    if (y >= window.innerHeight * 3) {
+      blackFlag.classList.add('show');
+    } else {
+      blackFlag.classList.add('hide');
+    }
   }
-
-  window.addEventListener('scroll', handleScroll);    
-
-  })
 
   return (
     <div id="consultingpage">
       <Navbar isWhite={true} unStick={true} />
-      <a href="#consultingpage"><img id="go-back-up" src="images/blk-tutorials.png" ></img></a>
       <video className="gamespage-video" autoPlay loop muted>
         <source
           src="videos/constructvideo.mp4"
@@ -121,6 +124,9 @@ I started working on the game a while ago to help push it to Early Access and ma
         </div>
         </div>
         </div>
+        <a href="#consultingpage">
+        <img id="go-back-up" src="images/blk-tutorials.png" ></img>
+      </a>
       <div id="reviews-container">
         <div id="reviews-introduction">
             <h1>Why me ?</h1>
