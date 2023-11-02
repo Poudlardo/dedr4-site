@@ -1080,7 +1080,7 @@ path {
 }
 .show {
   opacity:1;
-  left:0;
+  right:5vw;
 }
 
 #introduction-container h1 {

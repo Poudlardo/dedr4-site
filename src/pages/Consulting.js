@@ -4,20 +4,26 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function Consulting() {
-let blackFlag = document.getElementById('go-back-up');
 
 useEffect(() => {
 
-}, [])
+  let blackFlag = document.getElementById('go-back-up');
 
-  let handleScroll = () => {
+  let handleScroll = function() {
     let y = window.scrollY
-    if (y >= window.innerHeight * 3) {
-      blackFlag.classList.add('show');
+    if (y >= window.innerHeight * 3.3) {
+      blackFlag.className = 'show';
     } else {
-      blackFlag.classList.add('hide');
+      blackFlag.className = 'hide';
     }
   }
+  window.addEventListener("scroll", handleScroll);
+  
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+
+}, [])
 
   return (
     <div id="consultingpage">
