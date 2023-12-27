@@ -112,7 +112,7 @@ const VerticalCarousel = ({ data, activeIndex, setActiveIndex}) => {
   return (
     <div className="carousel-inner">
       <a data-slide="prev" href="#quote-carousel" className="carousel-control" onClick={() => handleClick("prev")} >
-        <Icon path={mdiChevronLeft} size={3} className="left" />
+        <Icon path={mdiChevronLeft} size={2} className="left" />
       </a>
       {data.map((item, i) => (
         <button
@@ -130,7 +130,7 @@ const VerticalCarousel = ({ data, activeIndex, setActiveIndex}) => {
         </button>
       ))}
       <a data-slide="next" href="#quote-carousel" className="carousel-control" onClick={() => handleClick("next")}>
-            <Icon path={mdiChevronRight} size={3} className="right"  />
+            <Icon path={mdiChevronRight} size={2} className="right"  />
       </a>
     </div>
   );

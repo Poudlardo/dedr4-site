@@ -149,10 +149,14 @@
 .games-carousel-container {
   width: 100vw;
   height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+  padding: 2%;
+  overflow-x: hidden;
+}
+
+.games-carousel-container h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
 }
 
 .dedra-intro {
@@ -290,170 +294,6 @@
 }
 .gamespage.wh-nav-link:hover {
   color: rgba(255, 255, 255, 0.9);
-}
-
-.gameinfo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 49vw;
-  height: 30vh;
-  transform: translateY(-17vh);
-}
-
-.rectangle2 {
-  width: 20px;
-  height: 100px;
-  background: linear-gradient(360deg, rgba(129, 20, 20, 0) 0%, #ffffff 100%);
-  margin-top: 8px;
-  animation-duration: 0.7s;
-}
-
-.description2 {
-  color: white;
-  text-align: justify;
-  line-height: 1.6;
-  font-weight: 500;
-  font-size: 22px;
-  animation-duration: 0.7s;
-  text-shadow: rgb(51, 51, 51) 2px 0 10px;
-}
-
-.partnerslogo {
-  height: 6.5em;
-}
-
-.platformslist {
-  margin-top: -10vh;
-}
-
-form {
-  width: 70%;
-  max-width: 350px;
-}
-form #form-title {
-  margin-top: 0;
-  font-weight: 400;
-  text-align: center;
-}
-form #debt-amount-slider {
-  display: flex;
-  flex-direction: row;
-  align-content: stretch;
-  position: relative;
-  width: 100%;
-  height: 50px;
-  user-select: none;
-}
-form #debt-amount-slider::before {
-  content: " ";
-  position: absolute;
-  height: 2px;
-  width: calc(100% * (4 / 5));
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-}
-form #debt-amount-slider input,
-form #debt-amount-slider label {
-  box-sizing: border-box;
-  flex: 1;
-  user-select: none;
-  cursor: pointer;
-}
-form #debt-amount-slider label {
-  display: inline-block;
-  position: relative;
-  width: 10%;
-  height: 50%;
-  user-select: none;
-}
-form #debt-amount-slider label::before {
-  content: attr(data-debt-amount);
-  position: absolute;
-  left: 50%;
-  padding-top: 10px;
-  transform: translate(-50%, 45px);
-  font-size: 14px;
-  letter-spacing: 0.4px;
-  font-weight: 400;
-  white-space: nowrap;
-  opacity: 0.85;
-  transition: all 0.15s ease-in-out;
-}
-form #debt-amount-slider label::after {
-  content: " ";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  border-radius: 50%;
-  pointer-events: none;
-  user-select: none;
-  z-index: 1;
-  cursor: pointer;
-  transition: all 0.15s ease-in-out;
-}
-form #debt-amount-slider label:hover::after {
-  transform: translate(-50%, -50%) scale(1.25);
-}
-form #debt-amount-slider input {
-  display: none;
-}
-form #debt-amount-slider input:checked + label::before {
-  font-weight: 800;
-  opacity: 1;
-}
-form #debt-amount-slider input:checked + label::after {
-  border-width: 4px;
-  transform: translate(-50%, -50%) scale(0.75);
-}
-
-#debt-amount-pos {
-  display: block;
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background: #000;
-  border-radius: 50%;
-  transition: all 0.15s ease-in-out;
-  transform: translate(-50%, -50%);
-  border: 2px solid #000;
-  opacity: 1;
-  z-index: 2;
-  top: 25%;
-  left: 10%;
-}
-form:valid #debt-amount-slider input + label::before {
-  transform: translate(-50%, 45px) scale(0.9);
-  transition: all 0.15s linear;
-}
-form:valid #debt-amount-slider input:checked + label::before {
-  transform: translate(-50%, 45px) scale(1.1);
-  transition: all 0.15s linear;
-}
-
-.carousel {
-  width: 100vw;
-  height: 100%;
-}
-
-label input .ovo:checked {
-  background-color: black;
-  color: black;
-}
-
-@media screen and (max-width: 900px) {
-  .gamescontent {
-    /* same styling is applied to <Vertical Carousel /> in its own css file*/
-    width: 60vw;
-    margin-top: 20vh;
-  }
 }
 
 /* BLOG PAGE */
