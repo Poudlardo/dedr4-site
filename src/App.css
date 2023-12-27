@@ -850,6 +850,7 @@ label input .ovo:checked {
 .buttton-wrapper {
   animation: backInRight;
   animation-duration: 1s;
+  cursor: pointer;
 }
 
 .buttton-wrapper {
@@ -860,6 +861,7 @@ label input .ovo:checked {
   animation: backInLeft;
   animation-duration: 1s;
   padding-top: 1.5em;
+  cursor: pointer;
 }
 
 svg {
