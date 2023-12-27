@@ -34,9 +34,9 @@ img {
   content: "";
   z-index: 1;
   position: absolute;
-  width: 120%;
   height: 140px;
   pointer-events: none;
+  overflow-x: hidden;
 }
 
 .carousel-inner::before {

@@ -151,12 +151,35 @@
   height: 90vh;
   padding: 2%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  column-gap: 30vh;
 }
 
 .games-carousel-container h1 {
   color: white;
   font-size: 40px;
   font-weight: 900;
+}
+
+.games-carousel-container h3 {
+  color: white;
+}
+
+.description2 {
+  max-width: 40%;
+  color: white;
+  font-size: 20px;
+  text-justify: auto;
+}
+
+.platformslist {
+  display: flex;
+  gap: 1.5vw;
+}
+
+.partnerslogo {
+  width: 250px
 }
 
 .dedra-intro {

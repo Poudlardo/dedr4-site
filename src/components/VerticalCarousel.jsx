@@ -51,10 +51,13 @@ const VerticalCarousel = ({ data, activeIndex, setActiveIndex}) => {
     const imgPlatformDeux = document.getElementById("logo2");
     const lienPlatformUn = document.getElementById("lien1");
     const lienPlatformDeux = document.getElementById("lien2");
+    const titreJeu = document.getElementById('titrejeu');
+
 
     if (descriptionDeux !== undefined && descriptionDeux !== null) {
       videoSource.src = data[activeIndex].videobackground;
       descriptionDeux.innerText = data[activeIndex].description;
+      titreJeu.innerText = data[activeIndex].introline;
       imgPlatformUn.src = data[activeIndex].platformun;
 
       data[activeIndex].platformdeux
@@ -114,24 +117,24 @@ const VerticalCarousel = ({ data, activeIndex, setActiveIndex}) => {
       <a data-slide="prev" href="#quote-carousel" className="carousel-control" onClick={() => handleClick("prev")} >
         <Icon path={mdiChevronLeft} size={2} className="left" />
       </a>
-      {data.map((item, i) => (
-        <button
-          type="button" 
-          className={cn("carousel-item", {
-            active: activeIndex === i,
-            visible: Math.abs(determinePlacement(i)) <= visibleStyleThreshold,
-          })}
-          key={i}
-          style={{
-            transform: `translateX(${determinePlacement(i)}px)`,
-          }}
-        >
-          <img src={item.images} className="gamesimages" />
-        </button>
-      ))}
       <a data-slide="next" href="#quote-carousel" className="carousel-control" onClick={() => handleClick("next")}>
-            <Icon path={mdiChevronRight} size={2} className="right"  />
+        <Icon path={mdiChevronRight} size={2} className="right"  />
       </a>
+    {data.map((item, i) => (
+      <button
+        type="button" 
+        className={cn("carousel-item", {
+          active: activeIndex === i,
+          visible: Math.abs(determinePlacement(i)) <= visibleStyleThreshold,
+        })}
+        key={i}
+        style={{
+          transform: `translateX(${determinePlacement(i)}px)`,
+        }}
+      >
+        <img src={item.images} className="gamesimages" />
+      </button>
+    ))}
     </div>
   );
 };
