@@ -6,10 +6,10 @@ import Footer from "../components/Footer";
 import "animate.css";
 import VerticalCarousel from "../components/VerticalCarousel";
 import Icon from "@mdi/react";
-import { mdiTwitter, mdiLink, mdiYoutube } from "@mdi/js";
+import { mdiChevronLeft, mdiChevronRight, mdiTwitter, mdiLink, mdiYoutube } from "@mdi/js";
 
 function GamesTwo() {
-  
+  const slidesNumber = data.slides.length
   const [activeIndex, setActiveIndex] = useState(0);
 
  function hideIntroDiv() {
@@ -61,9 +61,23 @@ function GamesTwo() {
         />
       </video>
       <div className="games-carousel-container">
-        <h1>OUR GAMES</h1>
-        <h2 id='titrejeu'>OVO</h2>
-        <p id="yearjeu"> (2020)</p>
+        <div className="titles-homepage">
+          <h1>OUR GAMES</h1>
+          <div className="carousel-control-container">
+            <a data-slide="prev" className="carousel-control" onClick={() => (activeIndex == 0)? setActiveIndex(slidesNumber - 1) : setActiveIndex(activeIndex - 1)} >
+          <Icon path={mdiChevronLeft} size={2} className="left" />
+            </a>
+            <p className="game-number">1 / 5</p>
+            <a data-slide="next"  className="carousel-control" onClick={() => (activeIndex == slidesNumber - 1)? setActiveIndex(0) : setActiveIndex(activeIndex + 1)}>
+          <Icon path={mdiChevronRight} size={2} className="right"  />
+            </a>
+          </div>
+          <div className="titreetannee">
+            <h2 id='titrejeu'>OVO</h2>
+            <p id="yearjeu"> (2020)</p>
+          </div>
+          
+        </div>
         <VerticalCarousel data={data.slides} leadingText={data.leadingText} activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
         <div className="gameinfo-container">
         <p className="description2">Arcade platform game in which you take part in speedruns using a stickman character. Your objective is to reach the flag at the finish line as quickly as possible. Your speed and efficiency will determine your success and high score. All you have to do is hop, skip and jump your way through the levels! If you really want to master the game, combine these actions to get even more power! You can jump higher right after a slide or a leap to the ground! Can you be the fastest speedrunner in the game ?</p>      
@@ -79,17 +93,20 @@ function GamesTwo() {
                   className="partnerslogo"
                 />
           </a>
-        </div> 
-      </div>
-        <div className="aboutpage">
-        <div className="slogancontainer animate__animated animate__slideInUp">
-        <h1>WE SPEND OUR TIME MAKING GAMES YOU'LL SPEND YOURS TO PLAY</h1>
-        <img src="images/ovo-avatars.png" />
-        <div className="arrow-box">
+        </div>
+        <a href="#aboutpage">
+          <div className="arrow-box">
           <span></span>
           <span></span>
           <span></span>
         </div>
+        </a>
+ 
+      </div>
+        <div id="aboutpage">
+        <div className="slogancontainer animate__animated animate__slideInUp">
+        <h1>WE SPEND OUR TIME MAKING GAMES YOU'LL SPEND YOURS TO PLAY</h1>
+        <img src="images/ovo-avatars.png" />
       </div>
       <div className="historycontainer">
         <div className="quisommesnous">
