@@ -52,13 +52,14 @@ const VerticalCarousel = ({ data, activeIndex, setActiveIndex}) => {
     const lienPlatformUn = document.getElementById("lien1");
     const lienPlatformDeux = document.getElementById("lien2");
     const titreJeu = document.getElementById('titrejeu');
-
+    const yearJeu = document.getElementById('yearjeu');
 
     if (descriptionDeux !== undefined && descriptionDeux !== null) {
       videoSource.src = data[activeIndex].videobackground;
       descriptionDeux.innerText = data[activeIndex].description;
       titreJeu.innerText = data[activeIndex].introline;
       imgPlatformUn.src = data[activeIndex].platformun;
+      yearJeu.innerText = data[activeIndex].year;
 
       data[activeIndex].platformdeux
         ? (imgPlatformDeux.src = data[activeIndex].platformdeux)
