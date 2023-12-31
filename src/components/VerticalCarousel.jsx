@@ -4,7 +4,7 @@ import cn from "classnames";
 import "./VerticalCarousel.css";
 import "animate.css";
 import Icon from '@mdi/react';
-import { mdiChevronLeftCircle, mdiChevronRightCircle, mdiChevronRightCircleOutline, mdiChevronLeftCircleOutline } from '@mdi/js';
+import { mdiChevronRight, mdiChevronLeft } from '@mdi/js';
 
 /*
  * Read the blog post here:
@@ -51,12 +51,17 @@ const VerticalCarousel = ({ data, activeIndex, setActiveIndex}) => {
     const imgPlatformDeux = document.getElementById("logo2");
     const lienPlatformUn = document.getElementById("lien1");
     const lienPlatformDeux = document.getElementById("lien2");
+    const titreJeu = document.getElementById('titrejeu');
+    const yearJeu = document.getElementById('yearjeu');
+    const gameNumber = document.querySelector('.game-number')
 
     if (descriptionDeux !== undefined && descriptionDeux !== null) {
       videoSource.src = data[activeIndex].videobackground;
       descriptionDeux.innerText = data[activeIndex].description;
+      titreJeu.innerText = data[activeIndex].introline;
       imgPlatformUn.src = data[activeIndex].platformun;
-
+      yearJeu.innerText = data[activeIndex].year;
+      gameNumber.innerText = `${data[activeIndex].id} / ${data.length}`;
       data[activeIndex].platformdeux
         ? (imgPlatformDeux.src = data[activeIndex].platformdeux)
         : (imgPlatformDeux.src = "");
@@ -111,27 +116,26 @@ const VerticalCarousel = ({ data, activeIndex, setActiveIndex}) => {
 
   return (
     <div className="carousel-inner">
-      <a data-slide="prev" href="#quote-carousel" className="carousel-control" onClick={() => handleClick("prev")} >
-        <Icon path={mdiChevronLeftCircleOutline} size={3} className="left" />
-      </a>
-      {data.map((item, i) => (
-        <button
-          type="button" 
-          className={cn("carousel-item", {
-            active: activeIndex === i,
-            visible: Math.abs(determinePlacement(i)) <= visibleStyleThreshold,
-          })}
-          key={i}
-          style={{
-            transform: `translateX(${determinePlacement(i)}px)`,
-          }}
-        >
-          <img src={item.images} className="gamesimages" />
-        </button>
-      ))}
-      <a data-slide="next" href="#quote-carousel" className="carousel-control" onClick={() => handleClick("next")}>
-            <Icon path={mdiChevronRightCircleOutline} size={3} className="right"  />
-      </a>
+      <div className="gamescontrols">
+      </div>
+      <br />
+      <div className="gamesimages">
+        {data.map((item, i) => (
+          <button
+            type="button" 
+            className={cn("carousel-item", {
+              active: activeIndex === i,
+              visible: Math.abs(determinePlacement(i)) <= visibleStyleThreshold,
+            })}
+            key={i}
+            style={{
+              transform: `translateX(${determinePlacement(i)}px)`,
+            }}
+          >
+            <img src={item.images} className="game-image" />
+          </button>
+        ))}
+      </div>
     </div>
   );
 };

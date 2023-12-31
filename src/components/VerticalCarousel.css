@@ -21,23 +21,21 @@ img {
 }
 
 /* REGLER LA TAILLE DE LA POLICE ET LA HAUTEUR ENTRE LES LIGNES */
+
+.carousel-inner {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  margin-top: 2vh;
+  height: 10em;
+}
+
 .carousel-inner p,
 .carousel-item {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
   color: var(--white);
   line-height: 1;
-
-}
-
-.carousel-inner {
-  position: relative; /* don't forget to set a duration! */  
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
-  column-gap: 86vw;
-  margin-top: 7vh;
 }
 
 .carousel-inner::before,
@@ -45,9 +43,8 @@ img {
   content: "";
   z-index: 1;
   position: absolute;
-  width: 120%;
-  height: 140px;
   pointer-events: none;
+  overflow-x: hidden;
 }
 
 .carousel-inner::before {
@@ -71,7 +68,6 @@ img {
 
 .carousel-item.visible {
   opacity: 1;
-  height: max-content;
 }
 
 .carousel-item.visible:not(.active) {
@@ -79,18 +75,9 @@ img {
   width: auto;
 }
 
-.carousel-control {
-  background: none;
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 3em;
-  text-shadow: none;
-  margin-top: 5em;
-  opacity:1;
-}
-
-.gamesimages {
+.game-image {
   width: auto;
-  height: 4em;
+  height: 5em
 }
 
 @media screen and (max-width: 900px) {
@@ -107,4 +94,8 @@ img {
     width: auto;
     height: 3em;
   }
+}
+
+.left:hover, .right:hover {
+  opacity: 1;
 }

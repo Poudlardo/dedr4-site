@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 function About() {
   return (
-    <div className="aboutpage">
+    <div id="aboutpage">
       <Navbar hasShadow={true} />
       <div className="slogancontainer animate__animated animate__slideInUp">
         <h1>WE SPEND OUR TIME MAKING GAMES YOU'LL SPEND YOURS TO PLAY</h1>
