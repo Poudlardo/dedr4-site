@@ -100,7 +100,6 @@ li.different:hover {
 .dedra {
   display: flex;
   align-items: center;
-  gap: 10px;
   font-size: larger;
   font-weight: bolder;
   text-decoration: none;

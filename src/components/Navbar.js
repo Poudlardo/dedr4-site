@@ -48,17 +48,16 @@ function Navbar({ isWhite = false, hasShadow = false, unStick = false }) {
         to="/"
         className={`dedra ${isWhite ? "whiteDedra" : ""}`}
         onClick={closeMobileMenu}
-      >
-        <img
+      >DEDRA
+      <img
           className={`dedra-logo${isWhite ? "-white" : ""}`}
           src={
             isWhite
               ? "images/unnamed-trnsprntwhite.png"
               : "images/unnamed-trnsprnt.png"
           }
-        />{" "}
-        DEDRA
-      </Link>
+        />{" "}GAMES
+        </Link>
       <div id="wrapper" className={`${isWhite ? "whiteNavBarWrapper" : ""}`}>
         <ul className={click ? "menu" : "menu menu-closed"}>
           <li className={`different ${isWhite ? "whiteNavBarDifferent" : ""}`}>

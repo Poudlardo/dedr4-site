@@ -40,69 +40,73 @@ function GamesTwo() {
 
   return (
     <div className="gamespage">
-      <div className="dedra-intro">
-        <div className="title-container">
-          <div className="dedra-title">D</div>
-          <div className="loader">
-            <div className="top"></div>
-            <div className="bottom"></div>
-         </div>
-         <div className="dedra-title">DRA</div>
-        </div>
-        <h3>A video game studio.</h3>
-        <h3 onClick={hideIntroDiv}>ENTER</h3>
-      </div>
-      <Navbar isWhite={true} />
-      <video className="gamespage-video" autoPlay loop muted>
-        <source
-          src="/videos/Desktop 17-08-2023 03-21-01.mp4"
-          className="gamespage-source"
-          type="video/mp4"
-        />
-      </video>
-      <div className="games-carousel-container">
-        <div className="titles-homepage">
-          <h1>OUR GAMES</h1>
-          <div className="carousel-control-container">
-            <a data-slide="prev" className="carousel-control" onClick={() => (activeIndex == 0)? setActiveIndex(slidesNumber - 1) : setActiveIndex(activeIndex - 1)} >
-          <Icon path={mdiChevronLeft} size={2} className="left" />
-            </a>
-            <p className="game-number">1 / 5</p>
-            <a data-slide="next"  className="carousel-control" onClick={() => (activeIndex == slidesNumber - 1)? setActiveIndex(0) : setActiveIndex(activeIndex + 1)}>
-          <Icon path={mdiChevronRight} size={2} className="right"  />
-            </a>
+          <div className="dedra-intro">
+          <div className="title-container">
+            <div className="dedra-title">D</div>
+            <div className="loader">
+              <div className="top"></div>
+              <div className="bottom"></div>
           </div>
-          <div className="titreetannee">
-            <h2 id='titrejeu'>OVO</h2>
-            <p id="yearjeu"> (2020)</p>
+          <div className="dedra-title">DRA</div>
+          </div>
+          <h3>A video game studio.</h3>
+          <h3 onClick={hideIntroDiv}>ENTER</h3>
+        </div>
+        <Navbar isWhite={true} />
+        <div className="video-wrapper">
+          <video className="gamespage-video" autoPlay loop muted>
+            <source
+              src="/videos/Desktop 17-08-2023 03-21-01.mp4"
+              className="gamespage-source"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div className="games-carousel-container">
+          <div className="titles-homepage">
+            <h1>OUR GAMES</h1>
+            <div className="carousel-control-container">
+              <a data-slide="prev" className="carousel-control" onClick={() => (activeIndex == 0)? setActiveIndex(slidesNumber - 1) : setActiveIndex(activeIndex - 1)} >
+            <Icon path={mdiChevronLeft} size={2} className="left" />
+              </a>
+              <p className="game-number">1 / 5</p>
+              <a data-slide="next"  className="carousel-control" onClick={() => (activeIndex == slidesNumber - 1)? setActiveIndex(0) : setActiveIndex(activeIndex + 1)}>
+            <Icon path={mdiChevronRight} size={2} className="right"  />
+              </a>
+            </div>
+            <div className="titreetannee">
+              <h2 id='titrejeu'>OVO</h2>
+              <p id="yearjeu"> (2020)</p>
+            </div>
+            
+          </div>
+          <VerticalCarousel data={data.slides} leadingText={data.leadingText} activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+          <div className="gameinfo-container">
+          <p className="description2">Take part in speedruns using a stickman character. Hop, skip and jump your way through the levels, and reach the finish flag as quickly as possible! <br/><br/> Can you be the fastest speedrunner in the game ?</p>      
+            <div className="platformslist">
+              <a id="lien1" href="https://poki.com/en/g/ovo-classic">
+                    <img src="images/poki.png" id="logo1" className="partnerslogo" />
+              </a>
+              <a id="lien2" href="https://www.coolmathgames.com/0-ovo">
+                    <img
+                      src="images/coolmathgames.png"
+                      id="logo2"
+                      className="partnerslogo"
+                    />
+              </a>
+            </div>
           </div>
           
-        </div>
-        <VerticalCarousel data={data.slides} leadingText={data.leadingText} activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
-        <div className="gameinfo-container">
-        <p className="description2">Arcade platform game in which you take part in speedruns using a stickman character. Your objective is to reach the flag at the finish line as quickly as possible. Your speed and efficiency will determine your success and high score. All you have to do is hop, skip and jump your way through the levels! If you really want to master the game, combine these actions to get even more power! You can jump higher right after a slide or a leap to the ground! Can you be the fastest speedrunner in the game ?</p>      
-        </div>
-        <div className="platformslist">
-          <a id="lien1" href="https://poki.com/en/g/ovo-classic">
-                <img src="images/poki.png" id="logo1" className="partnerslogo" />
+          <a href="#aboutpage">
+            <div className="arrow-box">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           </a>
-          <a id="lien2" href="https://www.coolmathgames.com/0-ovo">
-                <img
-                  src="images/coolmathgames.png"
-                  id="logo2"
-                  className="partnerslogo"
-                />
-          </a>
+  
         </div>
-        <a href="#aboutpage">
-          <div className="arrow-box">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        </a>
- 
-      </div>
+      
         <div id="aboutpage">
         <div className="slogancontainer animate__animated animate__slideInUp">
         <h1>WE SPEND OUR TIME MAKING GAMES YOU'LL SPEND YOURS TO PLAY</h1>

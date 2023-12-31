@@ -77,7 +77,9 @@
 }
 
 .gameinfo-container {
-  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5%;
 }
 
 .ovoLogo {
@@ -90,6 +92,7 @@
   margin-top: 2em;
   opacity: 0.6;
 }
+
 .textside > a {
   justify-self: center;
   grid-row: 2 / 3;
@@ -114,13 +117,13 @@
   justify-content: center;
   animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
-}
+} 
 
 .video {
   height: auto;
   width: 100%;
   max-width: 800px;
-}
+} 
 
 @media (max-width: 900px) {
   .Homehero {
@@ -148,6 +151,22 @@
   overflow-x: hidden;
 }
 
+.video-wrapper {
+  z-index: -1;
+  width: 100%;
+}
+
+.video-wrapper::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: linear-gradient(rgba(0,0,0,0.3), rgb(0, 0, 0));
+}
+
+
 .games-carousel-container {
   width: 100vw;
   height: 90vh;
@@ -163,7 +182,6 @@
  width: max-content;
  height: 52px;
  align-items: center;
- border-right: 1px solid yellow;
 }
 
 .carousel-control {
@@ -196,7 +214,6 @@
   flex-direction: row;
   width: max-content;
   column-gap: 10px;
-  border: 1px solid dodgerblue;
   margin-left: 5vw;
   margin-top: 2vw;
 }
@@ -215,18 +232,21 @@
   max-width: 40%;
   color: white;
   font-size: 20px;
-  text-justify: auto;
+  font-weight: lighter;
 }
 
 .platformslist {
+  height: 100%;
+  padding-top: 4%;
   display: flex;
+  flex-direction: row-reverse;
   gap: 1.3vw;
-  align-self: flex-start;
+  align-self: flex-end;
+  justify-content: end;
 }
 
 .partnerslogo {
-  width: 250px;
-
+  width: 200px;
 }
 
 .dedra-intro {
@@ -342,13 +362,13 @@
 }
 
 .gamespage-video {
-  object-fit: cover;
-  position: fixed;
+  position: absolute;
+  top: 0;
   z-index: -1;
   width: 100%;
-  margin: 0;
-  border: 0;
-  padding: 0;
+  height: 100vh;
+  min-height: 600px;
+  object-fit: cover;
 }
 
 .gamespage .wh-navbar > *,
