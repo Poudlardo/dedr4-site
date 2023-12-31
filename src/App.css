@@ -76,10 +76,12 @@
   height: min-content;
 }
 
-.gameinfo-container {
+.gameinfo-container {  
+  align-self: center;
   display: flex;
   justify-content: space-between;
   margin-top: 2.5%;
+  width: 90%;
 }
 
 .ovoLogo {
@@ -233,6 +235,7 @@
   color: white;
   font-size: 20px;
   font-weight: lighter;
+  text-align: justify;
 }
 
 .platformslist {
@@ -417,20 +420,10 @@
   height: 100vh;
   overflow-x: clip;
   height: 100%;
-  background: -moz-linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgba(221, 221, 221, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgba(221, 221, 221, 1) 100%
-  );
   background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgba(221, 221, 221, 1) 100%
+    0deg,
+    rgb(41, 41, 41) 31%,
+    rgb(0, 0, 0) 100%
   );
 }
 
@@ -439,7 +432,9 @@
 }
 
 .slogancontainer h1 {
-  font-size: 1.5em;
+  font-size: 2em;
+  font-weight: lighter;
+  color: white;
 }
 .slogancontainer {
   width: 100vw;
@@ -504,26 +499,17 @@
   justify-content: center;
   gap: 5em;
   padding-left: 7em;
-  background: -moz-linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgba(221, 221, 221, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgba(221, 221, 221, 1) 100%
-  );
   background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgba(221, 221, 221, 1) 100%
+    0deg,
+    rgb(0, 0, 0) 31%,
+    rgb(41, 41, 41) 100%
   );
 }
 
 .quisommesnous {
   max-width: 500px;
   text-align: justify;
+  color: white;
 }
 
 .ossamadam {
@@ -538,20 +524,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: -moz-linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgba(221, 221, 221, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgba(221, 221, 221, 1) 100%
-  );
   background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgba(221, 221, 221, 1) 100%
+    0deg,
+    rgb(0, 0, 0) 31%,
+    rgb(41, 41, 41) 100%
   );
 }
 
