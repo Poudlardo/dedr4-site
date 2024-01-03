@@ -568,6 +568,10 @@
   margin: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.534);
   box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.281);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 
 .card h1 {
@@ -626,6 +630,7 @@
   font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .card .additional .stats div.value {
@@ -647,6 +652,15 @@
   padding-top: 0;
   text-align: center;
   color: white;
+}
+
+.pp-team {
+  width: 210px;
+  border-radius: 100%;
+}
+
+.innershadow {
+  box-shadow: inset 10px 10px 10px rgb(0,0,0,1);
 }
 
 @media screen and (max-width: 1080px) {

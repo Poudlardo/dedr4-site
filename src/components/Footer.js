@@ -8,7 +8,7 @@ function Footer({ connectPage = false, isWhite = false }) {
   return (
     <div className={`footer${isWhite? '-white' : ''}`}>
       <p className={`leftpart${isWhite? '-white' : ''}`}>
-        Dedra Games © 2023. 
+        Dedra Games © 2024. 
         <span className={`nowrap${isWhite? '-white' : ''}`}> All Rights Reserved.</span>
       </p>
       <div className="rightpart">

@@ -11,6 +11,7 @@ import { mdiChevronLeft, mdiChevronRight, mdiTwitter, mdiLink, mdiYoutube } from
 function GamesTwo() {
   const slidesNumber = data.slides.length
   const [activeIndex, setActiveIndex] = useState(0);
+  const [tooltip, setTooltip] = useState(false);
 
  function hideIntroDiv() {
   new Audio('videos/files_click.m4a').play();
@@ -26,17 +27,6 @@ function GamesTwo() {
       window.sessionStorage.setItem('animated', 1);
     }
  }, [activeIndex]);
-
- /*const clickDiscord = (e) => {
-  // copy to clipboard
-  navigator.clipboard.writeText("games.dedra@gmail.com");
-  // show tooltip
-  if (tooltip) return;
-  setTooltip(true);
-  setTimeout(() => {
-    setTooltip(false);
-  }, 1300);
-};*/
 
   return (
     <div className="gamespage">
@@ -111,7 +101,7 @@ function GamesTwo() {
       </div>
       <div className="historycontainer">
         <div className="quisommesnous">
-          <h1>Who are we ?</h1>
+          <h1>WHO ARE WE ?</h1>
           <br />
           <p>
           We want our games to make sense. We strive to create universal experiences that everyone can identify with, while telling authentic and thought-provoking stories. Every game we develop is an original creation that has something new to offer our community of players. We are now in a position to self-publish our games to self-publish our games and put them directly into the hands of our players. We also share our publishing expertise and collaborate with other developers to bring their developers to bring their stories to life. We work with studios that share our values and whose creative vision aligns with our own.
@@ -146,12 +136,10 @@ function GamesTwo() {
                     </a>
                   </div>
                   <div>
-                    <div className="title">Discord</div>
-                    <a href="#">
+                    <div className="title" >Discord</div>
                     <svg className="discord-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 64 64" >
                       <path d="M48.584,16.847c0,0,7.416,8.589,7.416,24.061v3.244c0,0-9.366,6.103-12.22,6.103l-2.769-4.026	c1.721-0.771,4.068-2.109,4.068-2.109l-0.858-0.664c0,0-5.487,2.542-12.221,2.542s-12.221-2.542-12.221-2.542l-0.858,0.664	c0,0,2.347,1.338,4.068,2.109l-2.769,4.026C17.366,50.255,8,44.152,8,44.152v-3.244c0-15.472,7.416-24.061,7.416-24.061	s5.073-2.456,9.757-3.102l1.454,2.755c0,0,2.31-0.535,5.373-0.535s5.373,0.535,5.373,0.535l1.453-2.755	C43.511,14.391,48.584,16.847,48.584,16.847z M24.009,38.647c2.36,0,4.274-2.149,4.274-4.801c0-2.651-1.913-4.801-4.274-4.801	s-4.274,2.149-4.274,4.801C19.735,36.498,21.648,38.647,24.009,38.647z M39.991,38.647c2.36,0,4.274-2.149,4.274-4.801	c0-2.651-1.914-4.801-4.274-4.801s-4.274,2.149-4.274,4.801C35.717,36.498,37.631,38.647,39.991,38.647z"></path>
                     </svg>
-                  </a>
                   </div>
                   <div>
                     <div className="title">YouTube</div>
@@ -162,6 +150,7 @@ function GamesTwo() {
                 </div>
               </div>
             </div>
+            <img className="pp-team innershadow" src="images/pp-ossama.jpg"/>
             <div className="general">
             <h1>Ossama Jouini</h1>
               <p>Co-Founder & Main programmer</p>
@@ -176,7 +165,7 @@ function GamesTwo() {
               <div className="more-info">
                 <div className="stats">
                   <div>
-                    <div className="title">Discord</div>
+                    <div className="title" >Discord</div>
                     <svg className="discord-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 64 64" >
                       <path d="M48.584,16.847c0,0,7.416,8.589,7.416,24.061v3.244c0,0-9.366,6.103-12.22,6.103l-2.769-4.026	c1.721-0.771,4.068-2.109,4.068-2.109l-0.858-0.664c0,0-5.487,2.542-12.221,2.542s-12.221-2.542-12.221-2.542l-0.858,0.664	c0,0,2.347,1.338,4.068,2.109l-2.769,4.026C17.366,50.255,8,44.152,8,44.152v-3.244c0-15.472,7.416-24.061,7.416-24.061	s5.073-2.456,9.757-3.102l1.454,2.755c0,0,2.31-0.535,5.373-0.535s5.373,0.535,5.373,0.535l1.453-2.755	C43.511,14.391,48.584,16.847,48.584,16.847z M24.009,38.647c2.36,0,4.274-2.149,4.274-4.801c0-2.651-1.913-4.801-4.274-4.801	s-4.274,2.149-4.274,4.801C19.735,36.498,21.648,38.647,24.009,38.647z M39.991,38.647c2.36,0,4.274-2.149,4.274-4.801	c0-2.651-1.914-4.801-4.274-4.801s-4.274,2.149-4.274,4.801C35.717,36.498,37.631,38.647,39.991,38.647z"></path>
                     </svg>
@@ -184,6 +173,7 @@ function GamesTwo() {
                 </div>
               </div>
             </div>
+            <img className="pp-team innershadow" src="images/pp-adam.jpg"/>
             <div className="general">
               <h1>Adam Merhairi</h1>
               <p>Co-Founder, Level designer & scenarist</p>
@@ -212,11 +202,9 @@ function GamesTwo() {
                   </div>
                   <div>
                     <div className="title">Discord</div>
-                    <a href="#">
                     <svg className="discord-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 64 64" >
                       <path d="M48.584,16.847c0,0,7.416,8.589,7.416,24.061v3.244c0,0-9.366,6.103-12.22,6.103l-2.769-4.026	c1.721-0.771,4.068-2.109,4.068-2.109l-0.858-0.664c0,0-5.487,2.542-12.221,2.542s-12.221-2.542-12.221-2.542l-0.858,0.664	c0,0,2.347,1.338,4.068,2.109l-2.769,4.026C17.366,50.255,8,44.152,8,44.152v-3.244c0-15.472,7.416-24.061,7.416-24.061	s5.073-2.456,9.757-3.102l1.454,2.755c0,0,2.31-0.535,5.373-0.535s5.373,0.535,5.373,0.535l1.453-2.755	C43.511,14.391,48.584,16.847,48.584,16.847z M24.009,38.647c2.36,0,4.274-2.149,4.274-4.801c0-2.651-1.913-4.801-4.274-4.801	s-4.274,2.149-4.274,4.801C19.735,36.498,21.648,38.647,24.009,38.647z M39.991,38.647c2.36,0,4.274-2.149,4.274-4.801	c0-2.651-1.914-4.801-4.274-4.801s-4.274,2.149-4.274,4.801C35.717,36.498,37.631,38.647,39.991,38.647z"></path>
                     </svg>
-                  </a>
                   </div>
                   <div>
                     <div className="title">YouTube</div>
@@ -228,7 +216,7 @@ function GamesTwo() {
               </div>
             </div>
             <div className="general">
-              <h1>American member</h1>
+              <h1>U.S.A member</h1>
               <p>Musician & Sound designer</p>
             </div>
             </div>
@@ -267,7 +255,8 @@ function GamesTwo() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>            
+            <img className="pp-team innershadow" src="images/pp-nicolas.jpg"/>
             <div className="general">
               <h1>Nicolas Nogueira</h1>
               <p>Lead Artist & 3d designer</p>
