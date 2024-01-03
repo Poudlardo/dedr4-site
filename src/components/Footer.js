@@ -2,27 +2,27 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
-function Footer({ connectPage = false }) {
-
+function Footer({ connectPage = false, isWhite = false }) {
+  const [whiteTheme, setWhiteTheme] = useState(isWhite);
 
   return (
-    <div className="footer">
-      <p className="leftpart">
-        Dedra Games © 2023.{" "}
-        <span className="nowrap">All Rights Reserved.</span>
+    <div className={`footer${isWhite? '-white' : ''}`}>
+      <p className={`leftpart${isWhite? '-white' : ''}`}>
+        Dedra Games © 2023. 
+        <span className={`nowrap${isWhite? '-white' : ''}`}> All Rights Reserved.</span>
       </p>
       <div className="rightpart">
         { connectPage ?  
-          <Link className="nav-link" to="/privacy">
+          <Link className={`nav-link${isWhite? '-white' : ''}`} to="/privacy">
             PRIVACY POLICY
-          </Link> : <p className="follow">FOLLOW US</p>
+          </Link> : <p className={`follow${isWhite? '-white' : ''}`}>FOLLOW US</p>
       }      
-        <div className="line"></div>
+        <div className={`line${isWhite? '-white' : ''}`}></div>
         { connectPage ? 
-           <Link className="nav-link" to="/tos">
+           <Link className={`nav-link${isWhite? '-white' : ''}`} to="/tos">
                  TERMS OF SERVICE
            </Link> :    
-           <div className="socialmedias">
+           <div className={`socialmedias${isWhite? '-white' : ''}`}>
               <a href="https://discord.com/invite/ovo-speedrunning-community-645935373368688650">
                 <img src="images/discord.svg"  />
               </a>

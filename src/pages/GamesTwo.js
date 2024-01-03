@@ -96,7 +96,6 @@ function GamesTwo() {
               </a>
             </div>
           </div>
-          
           <a href="#aboutpage">
             <div className="arrow-box">
             <span></span>
@@ -104,9 +103,7 @@ function GamesTwo() {
             <span></span>
           </div>
           </a>
-  
         </div>
-      
         <div id="aboutpage">
         <div className="slogancontainer animate__animated animate__slideInUp">
         <h1>WE SPEND OUR TIME MAKING GAMES YOU'LL SPEND YOURS TO PLAY</h1>
@@ -126,7 +123,7 @@ function GamesTwo() {
         <div></div>
       </div>
       <div className="teamcontainer">
-        <h1>OUR DEDICATED TEAM</h1>
+        <h1>MEET OUR DEDICATED TEAM</h1>
         <div className="teammembers">
           <div className="ossam">
             <div className="card">
@@ -134,14 +131,6 @@ function GamesTwo() {
               <div className="user-card">
               </div>
               <div className="more-info">
-                <h1>Ossama Jouini</h1>
-                <div className="coords">
-                  <span>Co-Founder</span>
-                  <span>Game designer and programmer</span>
-                </div>
-                <div className="coords">
-                  <span>Paris, France</span>
-                </div>
                 <div className="stats">
                   <div>
                     <div className="title">Twitter</div>
@@ -174,12 +163,8 @@ function GamesTwo() {
               </div>
             </div>
             <div className="general">
-              <h1>Ossama Jouini</h1>
-              <p>The one supervising the team, dispatching some of the tasks, and
-              coordinating what each member of the team does. He also handles
-              coding Als of the games and the many interfaces the user will
-              encounter. Finally, he helps with all the coding part and the
-              scenario.</p>
+            <h1>Ossama Jouini</h1>
+              <p>Co-Founder & Main programmer</p>
             </div>
             </div>
           </div>
@@ -189,14 +174,6 @@ function GamesTwo() {
               <div className="user-card">
               </div>
               <div className="more-info">
-                <h1>Adam Merhairi</h1>
-                <div className="coords">
-                  <span>Co-Founder</span>
-                  <span>Scenarist, Level designer</span>
-                </div>
-                <div className="coords">
-                  <span>Paris, France</span>
-                </div>
                 <div className="stats">
                   <div>
                     <div className="title">Discord</div>
@@ -209,10 +186,7 @@ function GamesTwo() {
             </div>
             <div className="general">
               <h1>Adam Merhairi</h1>
-              <p>He is in charge of making our games feel complete and real by
-              doing the world building and level design, as well as creating
-              most of the scenario seen in the game. He is also in charge of
-              helping with some of the art of the games.</p>
+              <p>Co-Founder, Level designer & scenarist</p>
             </div>
             </div>
           </div>
@@ -222,14 +196,6 @@ function GamesTwo() {
               <div className="user-card">
               </div>
               <div className="more-info">
-                <h1>American</h1>
-                <div className="coords">
-                  <span>Musician</span>
-                  <span>not AI-made, promess!</span>
-                </div>
-                <div className="coords">
-                  <span>Seattle(WA), USA</span>
-                </div>
                 <div className="stats">
                   <div>
                     <div className="title">Twitter</div>
@@ -262,8 +228,8 @@ function GamesTwo() {
               </div>
             </div>
             <div className="general">
-              <h1>American</h1>
-              <p>Very little is know about the american employee. We need to investigate that matter</p>
+              <h1>American member</h1>
+              <p>Musician & Sound designer</p>
             </div>
             </div>
           </div>
@@ -273,14 +239,6 @@ function GamesTwo() {
               <div className="user-card">
               </div>
               <div className="more-info">
-                <h1>Nicolas Nogueira</h1>
-                <div className="coords">
-                  <span>Lead Artist</span>
-                  <span>2D/3D modelling</span>
-                </div>
-                <div className="coords">
-                  <span>Rio de Janeiro, Brazil</span>
-                </div>
                 <div className="stats">
                   <div>
                     <div className="title">Twitter</div>
@@ -312,14 +270,14 @@ function GamesTwo() {
             </div>
             <div className="general">
               <h1>Nicolas Nogueira</h1>
-              <p>Dedicated model artist from Brazil, Nicolas has a proficiency using Construct 3, Blender and many other tools. Drawing and music making are also an important part of his life. He still didn't learn french yet though.</p>
+              <p>Lead Artist & 3d designer</p>
             </div>
             </div>
           </div>
         </div>
       </div>
         </div>
-      <Footer />
+      <Footer isWhite />
     </div>
   );
 }
