@@ -37,8 +37,8 @@ useEffect(() => {
       </video>
       <div id="introduction-container">
         <h1>CONSTRUCT CONSULTING</h1>
-        <h3>I joined the Construct community back in 2014, and since then, I built up a lot of knowledge about the engine.
-            <br />I feel like, I can now make that knowledge available to other people.
+        <h3>We joined the Construct community back in 2014, and since then, we built up a lot of knowledge about the engine.
+            <br />We feel like, we can now make that knowledge available to other people.
             <br /><br />
             Give me a try :)
         </h3>
@@ -50,8 +50,8 @@ useEffect(() => {
       </div>
       <div id="previous-work-container">
         <div id="games-helped">
-            <h1>Some games I helped on</h1>
-            <h3> I saved a ton of <b>precious time</b> by solving <b>blocking issues</b> these games were having.</h3>
+            <h1>Some games we helped on</h1>
+            <h3> We saved a ton of <b>precious time</b> by solving <b>blocking issues</b> these games were having.</h3>
             <div id="games-img">
                 <a href="https://store.steampowered.com/app/1125860/Rabisco/"><img src='https://cdn.akamai.steamstatic.com/steam/apps/1125860/header.jpg?t=1603985198'></img></a>
                 <a href="https://store.steampowered.com/app/844590/Hypnospace_Outlaw/"><img src='https://cdn.akamai.steamstatic.com/steam/apps/844590/header.jpg?t=1691139843'></img></a>
@@ -60,8 +60,8 @@ useEffect(() => {
             </div>
         </div>
         <div id="games-worked">
-          <h1>Some games I worked on</h1>
-          <h3>Games I am a <b>primary developer</b> in.</h3>
+          <h1>Some games we worked on</h1>
+          <h3>Games we are a <b>primary developer</b> in.</h3>
           <div className="gamecards">
               <div className="consulting-cards">
                   <img src="https://i.pinimg.com/736x/a2/9c/ad/a29cad95d398a2174872dee9d2f94227.jpg" className="item-img" ></img>
@@ -73,13 +73,13 @@ It started as a fun game jam entry, but it is now a popular speedrun game with a
                   <img src="https://cdn.akamai.steamstatic.com/steam/apps/1001970/header.jpg?t=1666992397" className="item-img"></img>
                   <a href="https://store.steampowered.com/app/1001970/Rhythmy/"><h1>Rythmy</h1></a>
                   <p>Rhythmy is an arcade-style rhythm bullet hell game.<br />
-I started working on the game a while ago to help push it to Early Access and make a level editor for it.</p>
+We've been working on the game a while ago to help push it to Early Access and make a level editor for it.</p>
               </div>
           </div>
         </div>
         <div id="addons-made">
-        <h1>Some addons I made</h1>
-        <h3>Popular <b>plugins, behaviors</b> and <b>effects</b> I made, downloaded by hundreds.</h3>
+        <h1>Some addons we made</h1>
+        <h3>Popular <b>plugins, behaviors</b> and <b>effects</b> we made, downloaded by hundreds.</h3>
         <div id="addons-icons">
             <a href="https://www.construct.net/en/make-games/addons/294/input-manager"><img src='images/input-manager.png'></img></a>
             <a href="https://www.construct.net/en/make-games/addons/361/skin-behavior"><img src='images/skin-bahavior.png'></img></a>
@@ -89,8 +89,8 @@ I started working on the game a while ago to help push it to Early Access and ma
         </div>
         </div>
         <div id="community-content-container">
-        <h1>Community content I produced</h1>
-        <h3>I also produced a good amount of courses, tutorials, community and blog posts.</h3>
+        <h1>Community content we produced</h1>
+        <h3>We also produced a good amount of courses, tutorials, community and blog posts.</h3>
         <div className="gamecards">
             <div className="consulting-cards">
               <img src="https://dedragames.com/consulting/assets/images/logo-800x400.png"></img>
@@ -105,17 +105,17 @@ I started working on the game a while ago to help push it to Early Access and ma
             <div className="consulting-cards">
               <img src="https://dedragames.com/consulting/assets/images/d7cosm6w4aedi37-447x398.jpg"></img>
               <a href="https://www.construct.net/en/tutorials/making-advanced-lighting-2232"><h1>Advanced Lighting</h1></a>
-              <p>I made a complex lighting system a while ago for my game, and I wrote a very detailed tutorial about how to replicate it.</p>
+              <p>We made a complex lighting system a while ago for my game, and we wrote a very detailed tutorial about how to replicate it.</p>
             </div>
             <div className="consulting-cards">
               <img src="images/wasthataddonported.png"/>
               <a href="https://wasthataddonported.surge.sh/"><h1>W T A P</h1></a>
-              <p>'Was that addon ported ?' is a community driven website I made that references many popular Construct 2 addons that were then ported to Construct 3.</p>
+              <p>'Was that addon ported ?' is a community driven website we made that references many popular Construct 2 addons that were then ported to Construct 3.</p>
             </div>
             <div className="consulting-cards">
               <img src="https://dedragames.com/consulting/assets/images/meditate-1-400x400.jpg"></img>
               <a href="https://www.construct.net/en/blogs/skymen-13"><h1>Skymen's Blog</h1></a>
-              <p>I also keep a blog about various projects or takes I have that are related to Contruct in some way.</p>
+              <p>We also keep a blog about various projects or takes we have that are related to Contruct in some way.</p>
             </div>
         </div>
         <div id="gallery-container">
@@ -131,14 +131,14 @@ I started working on the game a while ago to help push it to Early Access and ma
         </div>
         </div>
         <a href="#consultingpage">
-        <img id="go-back-up" src="images/blk-tutorials.png" ></img>
+        <img id="go-back-up" className="hide" src="images/blk-tutorials.png" ></img>
       </a>
       <div id="reviews-container">
         <div id="reviews-introduction">
             <h1>Why me ?</h1>
-            <h3>Well, that's simple: <b>I wanna help.</b><br />
-            I'm always glad to help out on Construct projects, <em>no matter the size</em>.<br />
-            I have acquired a ton of <b>knowledge </b>over the years, and it'd be a <em>shame</em> for that to go to waste.</h3>
+            <h3>Well, that's simple: <b>We wanna help.</b><br />
+            We're always glad to help out on Construct projects, <em>no matter the size</em>.<br />
+            We have acquired a ton of <b>knowledge </b>over the years, and it'd be a <em>shame</em> for that to go to waste.</h3>
             <h3>I have already helped with many projects, be it by <em><b>giving tips</b>, <b>making addons</b>,</em> or <em><b>fixing bugs</b></em>.</h3>
         </div>
         <div id="reviews-quotes">
@@ -146,7 +146,7 @@ I started working on the game a while ago to help push it to Early Access and ma
             <div id="all-quotes">
                 <div className="quotecard">
                     <p>I was looking for a complete Slider Bar solution for C3 with no events, just plug & play, to build my own apps easily.
-At first my idea was a custom plugin, but Ossama came up with a more efficient solution using a fully customisable JS script.
+At first my idea was a custom plugin, but Ossama - Dedra CEO - came up with a more efficient solution using a fully customisable JS script.
 It worked perfectly for my needs with nice extra additions.
 <br />100% Recommended.</p>
                   <div className="card-downside">
@@ -160,7 +160,7 @@ It worked perfectly for my needs with nice extra additions.
                   </div>
                 </div>
                 <div className="quotecard">
-                    <p>Skymen came to the rescue a few minutes after mentioning my issue on the Construct Community Discord channel.
+                    <p>Ossama - Dedra CEO - came to the rescue a few minutes after mentioning my issue on the Construct Community Discord channel.
                     <br />We had our game ready to ship in the next few hours, it was unbelievable!
 <br />His service is absolutely astonishing, definitely your best bet when it comes to Construct.</p>
                     <div className="card-downside">                      
@@ -187,7 +187,7 @@ It worked perfectly for my needs with nice extra additions.
                   </div>
                 </div>
                 <div className="quotecard">
-                    <p>One of my games (Rabisco) has a very specific tileset arrangement, making it a bit hard to implement traditional auto-tiling algorithms, so I contacted Skymen and he managed to create a custom system in just a few minutes!
+                    <p>One of my games (Rabisco) has a very specific tileset arrangement, making it a bit hard to implement traditional auto-tiling algorithms, so I contacted Dedra and he managed to create a custom system in just a few minutes!
 <br />I was very pleased with the results and I’m still using his work to this day.</p>
                   <div className="card-downside">                    
                     <div className="quotepp-wrapper">

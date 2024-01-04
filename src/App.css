@@ -498,16 +498,24 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 5em;
-  padding-left: 7em;
+  justify-content: flex-start;
+  gap: 3em;
   background: linear-gradient(
     0deg,
     rgb(34, 34, 34) 31%,
     rgb(19, 19, 19) 100%
   );
+  color: white;
+  font-size: larger;
+  text-align: justify;
 }
+
+.historycontainer h2, .historycontainer p {
+  max-width: 70%;
+}
+.historycontainer p { font-weight: lighter;}
 
 .quisommesnous {
   max-width: 500px;
