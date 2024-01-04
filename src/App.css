@@ -248,7 +248,7 @@
   flex-direction: row-reverse;
   gap: 1.3vw;
   align-self: flex-end;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .partnerslogo {

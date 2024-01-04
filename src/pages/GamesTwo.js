@@ -5,13 +5,26 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "animate.css";
 import VerticalCarousel from "../components/VerticalCarousel";
+import Glide from "@glidejs/glide";
 import Icon from "@mdi/react";
 import { mdiChevronLeft, mdiChevronRight, mdiTwitter, mdiLink, mdiYoutube } from "@mdi/js";
+
+const imgs = [
+  "images/img-slider/0803521735725015.png",
+  "images/img-slider/0804549868744833.png",
+  "images/img-slider/2988729323070635.jpg",
+  "images/img-slider/ossamadam.jpg",
+  "images/img-slider/risededra__2018-01-26T213110.000Z.jpg",
+  "images/img-slider/risededra__2018-04-06T133400.000Z.jpg",
+  "images/img-slider/risededra__2018-04-29T193909.000Z.jpg",
+  "images/img-slider/risededra__2018-06-04T123013.000Z.jpg",
+  "images/img-slider/risededra__2018-06-11T091430.000Z.jpg",
+  "/images/img-slider/risededra_highlight_1695722717759097885.jpg"
+];
 
 function GamesTwo() {
   const slidesNumber = data.slides.length
   const [activeIndex, setActiveIndex] = useState(0);
-  const [tooltip, setTooltip] = useState(false);
 
  function hideIntroDiv() {
   new Audio('videos/files_click.m4a').play();
@@ -27,6 +40,7 @@ function GamesTwo() {
       window.sessionStorage.setItem('animated', 1);
     }
  }, [activeIndex]);
+
 
   return (
     <div className="gamespage">
@@ -100,15 +114,20 @@ function GamesTwo() {
         <img src="images/ovo-avatars.png" />
       </div>
       <div className="historycontainer">
-
-<h2>DEDRA GAMES is a small, dedicated and passionate video game company. What started as a passion for video games between two parisian friends, evolved into creating awesome games with awesome people worldwide.</h2>
-<p>We think of video games as not just being a hobby, but a distinct form of art. A complex medium that can teach humans useful things, convey emotions and unites people. We know it because that is our story.
-<br /><br />
-A school group project in 2017 around a multiplayer game called RISE, sparked Ossama and Adam's interest - the two cofounders and real-life friends - in creating their dream game concepts they have been discussing on for months. DEDRA GAMES was born and RISE the first game ever released. For years on, we have been insiders of the video game industry, sharpened our knowledge of game making, and met the best qualified people in their areas, both online and on the ground. From Paris to the world. 
-<br /><br />
-Currently, we're proud to be Poki company ambassador, empowering us to provide the best web game experiences. Our next title will be Duck Duck Dodge, soon available on Poki's website. And also, we're developing our new secret game, far from web browsers...
-<br /><br />
-Our games awards gameplay skills, good mechanics but welcomes new comers and occasional players at the same time! OVO, our most played title to date, now gathers a great community of speedrunners, sharing their exploits throughout the internet. At Dedra we're thankful for that, and hope to create even more rich experiences in the future.</p>
+        <h2>
+          DEDRA GAMES is a small, dedicated and passionate video game company. What started as a passion for video games between two parisian friends, evolved into creating awesome games with awesome people worldwide.
+        </h2>
+        <p>
+          We think of video games as not just being a hobby, but a distinct form of art. A complex medium that can teach humans useful things, convey emotions and unites people. We know it because that is our story.
+          <br /><br />
+        A school group project in 2017 around a multiplayer game called RISE, sparked Ossama and Adam's interest - the two cofounders and real-life friends - in creating their dream game concepts they have been discussing on for months. DEDRA GAMES was born and RISE the first game ever released. For years on, we have been insiders of the video game industry, sharpened our knowledge of game making, and met the best qualified people in their areas, both online and on the ground. From Paris to the world. 
+          <br /><br />        
+        </p>
+        <p>
+          Currently, we're proud to be Poki company ambassador, empowering us to provide the best web game experiences. Our next title will be Duck Duck Dodge, soon available on Poki's website. And also, we're developing our new secret game, far from web browsers...
+          <br /><br />
+          Our games awards gameplay skills, good mechanics but welcomes new comers and occasional players at the same time! OVO, our most played title to date, now gathers a great community of speedrunners, sharing their exploits throughout the internet. At Dedra we're thankful for that, and hope to create even more rich experiences in the future.
+        </p>
       </div>
       <div className="teamcontainer">
         <h1>MEET OUR DEDICATED TEAM</h1>
