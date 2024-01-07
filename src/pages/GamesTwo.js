@@ -5,26 +5,38 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "animate.css";
 import VerticalCarousel from "../components/VerticalCarousel";
-import Glide from "@glidejs/glide";
 import Icon from "@mdi/react";
 import { mdiChevronLeft, mdiChevronRight, mdiTwitter, mdiLink, mdiYoutube } from "@mdi/js";
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 const imgs = [
   "images/img-slider/0803521735725015.png",
   "images/img-slider/0804549868744833.png",
-  "images/img-slider/2988729323070635.jpg",
-  "images/img-slider/ossamadam.jpg",
+  "images/img-slider/2988729323070635.png",
+  "/images/img-slider/risededra_highlight_1695722717759097885.png",
   "images/img-slider/risededra__2018-01-26T213110.000Z.jpg",
   "images/img-slider/risededra__2018-04-06T133400.000Z.jpg",
   "images/img-slider/risededra__2018-04-29T193909.000Z.jpg",
   "images/img-slider/risededra__2018-06-04T123013.000Z.jpg",
   "images/img-slider/risededra__2018-06-11T091430.000Z.jpg",
-  "/images/img-slider/risededra_highlight_1695722717759097885.jpg"
+  "images/img-slider/ossamadam.jpg"
 ];
+
+const items = imgs.map((el, index) => {
+  const style = { width: 150 + index * 30 };
+  return <img src={el} className="item" style={style} data-value={index + 1} />;
+});
+
 
 function GamesTwo() {
   const slidesNumber = data.slides.length
   const [activeIndex, setActiveIndex] = useState(0);
+
+  function hidePopUp () {
+    let light = document.getElementById('light');
+    light.style.display='none';
+  }
 
  function hideIntroDiv() {
   new Audio('videos/files_click.m4a').play();
@@ -53,7 +65,7 @@ function GamesTwo() {
           </div>
           <div className="dedra-title">DRA</div>
           </div>
-          <h3>A video game studio.</h3>
+          <h3>Independant video game studio.</h3>
           <h3 onClick={hideIntroDiv}>ENTER</h3>
         </div>
         <Navbar isWhite={true} />
@@ -82,9 +94,13 @@ function GamesTwo() {
               <h2 id='titrejeu'>OVO</h2>
               <p id="yearjeu"> (2020)</p>
             </div>
-            
           </div>
           <VerticalCarousel data={data.slides} leadingText={data.leadingText} activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+          <div id="light" className="white_content">
+            <a onClick={(e) => {hidePopUp(); e.preventDefault()}} >X</a>
+            <img src="images/pop-up.png"/>
+            <p>AVAILABLE EXCLUSIVELY ON<br />COOLMATH GAMES</p>
+          </div>
           <div className="gameinfo-container">
           <p className="description2">Take part in speedruns using a stickman character. Hop, skip and jump your way through the levels, and reach the finish flag as quickly as possible! <br/><br/> Can you be the fastest speedrunner in the game ?</p>      
             <div className="platformslist">
@@ -123,12 +139,24 @@ function GamesTwo() {
         A school group project in 2017 around a multiplayer game called RISE, sparked Ossama and Adam's interest - the two cofounders and real-life friends - in creating their dream game concepts they have been discussing on for months. DEDRA GAMES was born and RISE the first game ever released. For years on, we have been insiders of the video game industry, sharpened our knowledge of game making, and met the best qualified people in their areas, both online and on the ground. From Paris to the world. 
           <br /><br />        
         </p>
+        <AliceCarousel
+        autoWidth
+        mouseTracking
+        disableButtonsControls
+        disableDotsControls
+        items={items}
+        />
+      </div>        
+      <div className="videos-container">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K2mUuZ6iD6M?si=0SL3m729JDv6wxyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <br />
         <p>
           Currently, we're proud to be Poki company ambassador, empowering us to provide the best web game experiences. Our next title will be Duck Duck Dodge, soon available on Poki's website. And also, we're developing our new secret game, far from web browsers...
           <br /><br />
           Our games awards gameplay skills, good mechanics but welcomes new comers and occasional players at the same time! OVO, our most played title to date, now gathers a great community of speedrunners, sharing their exploits throughout the internet. At Dedra we're thankful for that, and hope to create even more rich experiences in the future.
         </p>
-      </div>
+        </div>  
       <div className="teamcontainer">
         <h1>MEET OUR DEDICATED TEAM</h1>
         <div className="teammembers">

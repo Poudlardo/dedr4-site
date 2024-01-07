@@ -74,6 +74,11 @@ function Navbar({ isWhite = false, hasShadow = false, unStick = false }) {
               CONNECT
             </Link>
           </li>
+          <li className={`different ${isWhite ? "whiteNavBarDifferent" : ""}`}>
+            <Link className="nav-link" to="https://teespring.com/stores/ovo-merch" onClick={closeMobileMenu}>
+              MERCH
+            </Link>
+          </li>
         </ul>
       </div>
 
