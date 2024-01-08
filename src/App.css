@@ -26,157 +26,6 @@
   scroll-behavior: smooth;
 }
 
-/* Page d'accueil */
-
-.home-container {
-  overflow: hidden;
-  background: -moz-linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgba(221, 221, 221, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgba(221, 221, 221, 1) 100%
-  );
-  background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgba(221, 221, 221, 1) 100%
-  );
-}
-
-.Homehero {
-  display: flex;
-  height: 85vh;
-  align-items: center;
-}
-
-.white_content {
-  position: absolute;
-  align-items: flex-end;
-  width: fit-content;
-  height: fit-content;
-  z-index: 1002;
-  left: 85em;
-  bottom: 20em;
-}
-.white_content > img {
-  width: auto;
-  height: 350px;
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 8px;
-}
-
-.white_content > a {
-  cursor: pointer;
-  color: white;
-  font-size: 60px;
-  font-weight: bolder;
-  text-shadow: rgb(0, 0, 0) 1px 0 10px;
-  position: absolute;
-  top: 16px;
-  right: 18px;
-  font-size: 18px;
-}
-
-.white_content > p {
-  color: #D83978;
-  text-shadow: #EB538F 1px 0 10px;
-  text-align: center;
-  font-weight: bolder;
-  animation: flickerz 3.5s infinite alternate;
-}
-
-/* Flickering animation */
-@keyframes flickerz {
-    
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-
-      text-shadow:
-      0 0 4px #ee6b9f,
-      0 0 11px #ee6b9f,
-      0 0 19px #ee6b9f,
-      0 0 40px #EB538F,
-      0 0 80px #EB538F,
-      0 0 90px #EB538F,
-      0 0 100px #EB538F,
-      0 0 150px #EB538F;
-  
-  }
-  
-  20%, 24%, 55% {        
-      text-shadow: none;
-  }    
-}
-
-
-.white_content > p::after {
-  content: url();
-}
-
-.gameinfo-container {  
-  align-self: center;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2.5%;
-  width: 90%;
-}
-
-.ovoLogo {
-  opacity: 0.6;
-  width: 20em;
-  height: auto;
-}
-
-.textside > a {
-  justify-self: center;
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-}
-
-.playnow {
-  font-weight: bolder;
-  color: white;
-  background: linear-gradient(180deg, #b0b0b0 0%, #000000 100%);
-  border-radius: 0.7em;
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-  width: 11em;
-  height: 3.5em;
-}
-
-.videoside-content {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-} 
-
-.video {
-  height: auto;
-  width: 100%;
-  max-width: 800px;
-} 
-
-@media (max-width: 900px) {
-  .Homehero {
-    flex-direction: column;
-    height: 100vh;
-  }
-  .textside,
-  .videoside-content {
-    width: 90%;
-    height: auto;
-    justify-content: center;
-  }
-  .textside {
-    justify-content: center;
-  }
-}
 /* Page GAMES */
 
 .gamespage {
@@ -553,19 +402,45 @@
 
 .videos-container {
   width: 100vw;
-  height: 130vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-    background: linear-gradient(
-    0deg,
-    rgb(42,42,42) 31%,
-    rgb(34, 34, 34) 100%
-  );
+  justify-content: flex-start;
+  gap: 3em;
+  background: linear-gradient(
+  0deg,
+  rgb(42,42,42) 31%,
+  rgb(34, 34, 34) 100%
+);
   color: white;
   font-size: larger;
   text-align: justify;
+}
+
+.videos-container div {
+  display: flex;
+  gap: 40px
+}
+
+.videos-container div iframe {
+  border: 1px solid white;
+}
+
+.our-partners {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10vh;
+  background: linear-gradient(
+    0deg,
+    rgb(42,42,42) 31%,
+    rgb(41, 41, 41) 100%
+  );
 }
 
 .quisommesnous {
@@ -590,7 +465,7 @@
 
 .teamcontainer {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -600,17 +475,18 @@
     rgb(54, 54, 54) 31%,
     rgb(42, 42, 42) 100%
   );
+  gap: 8em;
 }
 
 .teamcontainer > h1 {
   color: white;
+  margin-bottom: 1em;
 }
 
 .teammembers {
   display: flex;
   column-gap: 7em;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   max-width: 1200px;
 }
