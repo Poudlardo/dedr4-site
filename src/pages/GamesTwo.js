@@ -21,6 +21,7 @@ const imgs = [
   "images/img-slider/risededra__2018-06-04T123013.000Z.jpg",
   "images/img-slider/risededra__2018-06-11T091430.000Z.jpg",
   "images/img-slider/ossamadam.jpg",
+  "images/img-slider/DSC00852.jpg"
 ];
 
 const items = imgs.map((el, index) => {
