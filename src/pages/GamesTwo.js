@@ -21,8 +21,6 @@ const imgs = [
   "images/img-slider/risededra__2018-06-04T123013.000Z.jpg",
   "images/img-slider/risededra__2018-06-11T091430.000Z.jpg",
   "images/img-slider/ossamadam.jpg",
-  "images/img-slider/DSC00852.jpg"
-
 ];
 
 const items = imgs.map((el, index) => {
@@ -161,11 +159,7 @@ function GamesTwo() {
           <br /><br />
           Our games awards gameplay skills, good mechanics but welcomes new comers and occasional players at the same time! OVO, our most played title to date, now gathers a great community of speedrunners, sharing their exploits throughout the internet. At Dedra we're thankful for that, and hope to create even more rich experiences in the future.
         </p>
-        </div>
-         {/*<div className="our-partners"> 
-          <h1>OUR PARTNERS</h1>
-          <div className="logos-white"></div>
-        </div>*/}
+        </div>  
       <div className="teamcontainer">
         <h1>MEET OUR DEDICATED TEAM</h1>
         <div className="teammembers">
