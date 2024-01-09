@@ -9,6 +9,7 @@ import Icon from "@mdi/react";
 import { mdiChevronLeft, mdiChevronRight, mdiTwitter, mdiLink, mdiYoutube } from "@mdi/js";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { Link } from "react-router-dom";
 
 const imgs = [
   "images/img-slider/0803521735725015.png",
@@ -25,7 +26,7 @@ const imgs = [
 ];
 
 const items = imgs.map((el, index) => {
-  const style = { width: 150 + index * 30 };
+  const style = { width: 150 + index * 30, paddingRight: 10 };
   return <img src={el} className="item" style={style} data-value={index + 1} />;
 });
 
@@ -160,7 +161,15 @@ function GamesTwo() {
           <br /><br />
           Our games awards gameplay skills, good mechanics but welcomes new comers and occasional players at the same time! OVO, our most played title to date, now gathers a great community of speedrunners, sharing their exploits throughout the internet. At Dedra we're thankful for that, and hope to create even more rich experiences in the future.
         </p>
-        </div>  
+        </div>
+        <div className="partners-container">
+        <h1>OUR PARTNERS</h1>
+        <div>
+          <a href="https://poki.com/"><img className="partners-logo" src="images/poki-white.svg"/></a>
+          <a href="https://www.crazygames.com/"><img className="partners-logo" src="images/crazy-games-white.svg"/></a>
+          <a href="https://www.coolmathgames.com/"><img className="partners-logo" src="images/Coolmath_Games_2018.svg"/></a>
+        </div>
+        </div>
       <div className="teamcontainer">
         <h1>MEET OUR DEDICATED TEAM</h1>
         <div className="teammembers">
@@ -313,6 +322,8 @@ function GamesTwo() {
             </div>
           </div>
         </div>
+        <br /><br />
+        <p>For any job enquiries, please head to <Link to='/connect'>CONNECT</Link> page.</p>
       </div>
         </div>
       <Footer isWhite />
