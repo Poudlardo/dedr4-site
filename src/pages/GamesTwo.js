@@ -165,6 +165,7 @@ function GamesTwo() {
         <div className="partners-container">
         <h1>OUR PARTNERS</h1>
         <div>
+          <a href="https://www.construct.net/"><img className="partners-logo" src="images/construct.svg" /></a>
           <a href="https://poki.com/"><img className="partners-logo" src="images/poki-white.svg"/></a>
           <a href="https://www.crazygames.com/"><img className="partners-logo" src="images/crazy-games-white.svg"/></a>
           <a href="https://www.coolmathgames.com/"><img className="partners-logo" src="images/Coolmath_Games_2018.svg"/></a>
@@ -246,27 +247,8 @@ function GamesTwo() {
               <div className="more-info">
                 <div className="stats">
                   <div>
-                    <div className="title">Twitter</div>
-                    <a href="https://twitter.com/#">
-                    <Icon path={mdiTwitter}
-                    title="User Profile"
-                    size={2}
-                    horizontal
-                    vertical
-                    rotate={180}
-                    color="white"
-                    />
-                    </a>
-                  </div>
-                  <div>
-                    <div className="title">Discord</div>
-                    <svg className="discord-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 64 64" >
-                      <path d="M48.584,16.847c0,0,7.416,8.589,7.416,24.061v3.244c0,0-9.366,6.103-12.22,6.103l-2.769-4.026	c1.721-0.771,4.068-2.109,4.068-2.109l-0.858-0.664c0,0-5.487,2.542-12.221,2.542s-12.221-2.542-12.221-2.542l-0.858,0.664	c0,0,2.347,1.338,4.068,2.109l-2.769,4.026C17.366,50.255,8,44.152,8,44.152v-3.244c0-15.472,7.416-24.061,7.416-24.061	s5.073-2.456,9.757-3.102l1.454,2.755c0,0,2.31-0.535,5.373-0.535s5.373,0.535,5.373,0.535l1.453-2.755	C43.511,14.391,48.584,16.847,48.584,16.847z M24.009,38.647c2.36,0,4.274-2.149,4.274-4.801c0-2.651-1.913-4.801-4.274-4.801	s-4.274,2.149-4.274,4.801C19.735,36.498,21.648,38.647,24.009,38.647z M39.991,38.647c2.36,0,4.274-2.149,4.274-4.801	c0-2.651-1.914-4.801-4.274-4.801s-4.274,2.149-4.274,4.801C35.717,36.498,37.631,38.647,39.991,38.647z"></path>
-                    </svg>
-                  </div>
-                  <div>
                     <div className="title">YouTube</div>
-                    <a href="https://www.youtube.com/channel/UCkHfyzgi2KhEvvhlbVndoeA">
+                    <a href="https://www.youtube.com/@rcab6615">
                     <Icon path={mdiYoutube} size={2} color="white"/>
                     </a>
                   </div>
@@ -274,7 +256,8 @@ function GamesTwo() {
               </div>
             </div>
             <div className="general">
-              <h1>U.S.A member</h1>
+            <img className="pp-team innershadow" src="images/pp-rcab.jpg"/>
+              <h1>rcab</h1>
               <p>Musician & Sound designer</p>
             </div>
             </div>
