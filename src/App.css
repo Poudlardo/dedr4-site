@@ -573,7 +573,7 @@
 
 .videos-container {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -598,7 +598,7 @@
 
 .partners-container {
 width: 100%;
-height: 40vh;
+height: 80vh;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -612,18 +612,18 @@ background: linear-gradient(
 }
 
 .partners-container > div {
-  width: 100%;
-
+  width: 50%;
   display: flex;
+  row-gap: 3em;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .partners-logo {
   width: auto;
   height: 80px;
-  opacity: 0.5;
-}
+  opacity: 0.5;}
 
 .partners-logo:hover { 
   opacity: 1;
