@@ -124,59 +124,12 @@
   width: 90%;
 }
 
-.ovoLogo {
-  opacity: 0.6;
-  width: 20em;
-  height: auto;
-}
-
-.textside > a {
-  justify-self: center;
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-}
-
-.playnow {
-  font-weight: bolder;
-  color: white;
-  background: linear-gradient(180deg, #b0b0b0 0%, #000000 100%);
-  border-radius: 0.7em;
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-  width: 11em;
-  height: 3.5em;
-}
-
-.videoside-content {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-} 
-
 .video {
   height: auto;
   width: 100%;
   max-width: 800px;
 } 
 
-@media (max-width: 900px) {
-  .Homehero {
-    flex-direction: column;
-    height: 100vh;
-  }
-  .textside,
-  .videoside-content {
-    width: 90%;
-    height: auto;
-    justify-content: center;
-  }
-  .textside {
-    justify-content: center;
-  }
-}
 /* Page GAMES */
 
 .gamespage {
@@ -557,12 +510,6 @@
   color: white;
 }
 
-.alice-carousel {
-}
-
-.alice-carousel__stage {
-}
-
 .alice-carousel__stage-item {
   opacity: 0.5;
   display: block;
@@ -785,17 +732,26 @@ background: linear-gradient(
 }
 
 @media screen and (max-width: 900px) {
-  .historycontainer {
-    flex-direction: column;
-    padding: 0;
-  }
-  .teamcontainer {
-    row-gap: 0;
-  }
-  .teammembers {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.games-carousel-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  border: 1px solid red;
+  position: relative;
+}
+.titles-homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gameinfo-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 }
 
 /* CONNECT PAGE */

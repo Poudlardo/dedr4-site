@@ -116,9 +116,6 @@ const VerticalCarousel = ({ data, activeIndex, setActiveIndex}) => {
 
   return (
     <div className="carousel-inner">
-      <div className="gamescontrols">
-      </div>
-      <br />
       <div className="gamesimages">
         {data.map((item, i) => (
           <button
