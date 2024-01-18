@@ -768,6 +768,36 @@ background: linear-gradient(
   transform: translate(-50%, -50%);
 }
 
+.slogancontainer h1 {
+  text-align: center;
+  max-width: 90%;
+}
+
+.historycontainer h2, .historycontainer p, .videos-container p {
+  max-width: 90%;
+}
+
+.videos-container {
+  flex-direction: column;
+  margin: 8em 0em;
+}
+
+.videos-container div {
+  flex-direction: column;
+  gap: 2em;
+}
+
+.partners-container {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2em;
+}
+
+.partners-logo {
+  width: 100%;
+}
+
 }
 
 /* CONNECT PAGE */

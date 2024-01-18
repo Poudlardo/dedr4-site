@@ -123,18 +123,20 @@ a.nav-link-white {
 }
 
 @media (max-width: 900px) {
-  .footer {
+  .footer, .footer-white {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-start;
     padding: 5vh 0vw 3vh 0vw;
   }
-  .follow,
-  .line {
+  .follow, .follow-white, .line-white, .line {
     display: none;
   }
   .rightpart {
     padding-left: 10em;
+  }
+  .leftpart, .leftpart-white {
+    margin: 0;
   }
 }
