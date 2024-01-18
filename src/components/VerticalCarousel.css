@@ -86,6 +86,7 @@ img {
   width: 100%;
   display: flex;
   margin: 0;
+  margin-top: 3%;
   margin-right: 12%;
 }
 .carousel-inner > * {
