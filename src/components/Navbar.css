@@ -73,7 +73,7 @@
 li.different {
   border: none;
   position: relative;
-  text-shadow: rgba(0, 0, 0, 0.507) 1px 0 10px;
+  text-shadow: rgba(0, 0, 0, 0.2) 10px 0 15px;
 }
 li.different:hover {
   border: none;
@@ -143,6 +143,26 @@ li.different:hover {
 ul.menu {
   margin-left: 0;
 }
+
+
+.gamespage .wh-navbar > *,
+.gamespage .wh-nav-link {
+  color: white;
+}
+
+.gamespage .wh-navbar {
+  width: 100%;
+  z-index: 999;
+}
+
+.gamespage.wh-nav-link {
+  display: inline-block;
+  position: relative;
+}
+.gamespage.wh-nav-link:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 
 @media screen and (max-width: 900px) {
 

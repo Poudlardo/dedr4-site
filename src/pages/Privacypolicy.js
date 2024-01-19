@@ -1,7 +1,6 @@
 import React from "react";
 import "../App.css";
 import Navbar from "../components/Navbar";
-import { Link, withRouter } from "react-router-dom";
 
 function Privacypolicy() {
   return (

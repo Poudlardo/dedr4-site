@@ -99,7 +99,7 @@
       0 0 11px #ee6b9f,
       0 0 19px #ee6b9f,
       0 0 40px #EB538F,
-      0 0 80px #EB538F,
+      0 0 80px #EB538F, 
       0 0 90px #EB538F,
       0 0 100px #EB538F,
       0 0 150px #EB538F;
@@ -109,11 +109,6 @@
   20%, 24%, 55% {        
       text-shadow: none;
   }    
-}
-
-
-.white_content > p::after {
-  content: url();
 }
 
 .gameinfo-container {  
@@ -362,24 +357,6 @@
   height: 100vh;
   min-height: 600px;
   object-fit: cover;
-}
-
-.gamespage .wh-navbar > *,
-.gamespage .wh-nav-link {
-  color: white;
-}
-
-.gamespage .wh-navbar {
-  width: 100%;
-  z-index: 999;
-}
-
-.gamespage.wh-nav-link {
-  display: inline-block;
-  position: relative;
-}
-.gamespage.wh-nav-link:hover {
-  color: rgba(255, 255, 255, 0.9);
 }
 
 /* BLOG PAGE */
