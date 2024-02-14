@@ -56,11 +56,9 @@
 .white_content {
   position: absolute;
   align-items: flex-end;
-  width: fit-content;
-  height: fit-content;
   z-index: 1002;
-  left: 87em;
-  bottom: 20em;
+  left: 66%;
+  bottom: 30%;
 }
 .white_content > img {
   width: auto;
@@ -466,14 +464,10 @@
   align-items: center;
   justify-content: flex-start;
   gap: 3em;
-  background: linear-gradient(
-    0deg,
-    rgb(20, 20, 20) 31%,
-    rgb(13, 13, 13) 100%
-  );
   color: white;
   font-size: larger;
   text-align: justify;
+  margin: 5em 0em;
 }
 
 .historycontainer h2, .historycontainer p, .videos-container p {
@@ -506,7 +500,7 @@
   background: linear-gradient(
     0deg,
     rgb(32, 32, 32) 31%,
-    rgb(19, 19, 19) 100%
+    rgb(24, 24, 24) 100%
   );
   color: white;
   font-size: larger;
@@ -529,11 +523,7 @@ column-gap: 20%;
 align-items: center;
 justify-content: center;
 color: white;
-background: linear-gradient(
-  0deg,
-  rgb(45, 45, 45) 31%,
-  rgb(32, 32, 32) 100%
-);
+margin: 4em 0;
 }
 
 .partners-container > div {
@@ -564,7 +554,7 @@ background: linear-gradient(
   background: linear-gradient(
     0deg,
     rgb(54, 54, 54) 31%,
-    rgb(45, 45, 45) 100%
+    rgb(42, 42, 42) 100%
   );
 }
 
